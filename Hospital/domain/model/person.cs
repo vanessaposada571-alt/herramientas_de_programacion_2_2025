@@ -7,18 +7,16 @@ using System.Threading.Tasks;
 
 namespace Hospital.domain.model
 {
-    internal class person
+    internal class Person
     {
         private String name;
-        private long cedula;
-        private MailAddress correo;
-        private long telefono;
-
-        public person() { }
+        private long id;
+        private MailAddress email;
+        private long cellphone;
 
         public string Name { get => name; set => name = value; }
-        public long Cedula { get => cedula; set => cedula = value; }
-        public MailAddress Correo { get => correo; set => correo = value; }
-        public long Telefono { get => telefono; set => telefono = value; }
+        public long Id { get => id; set => id = value; }
+        public MailAddress Email { get => email; set => email = value; }
+        public long Cellphone { get => cellphone; set => cellphone = value; }
     }
 }

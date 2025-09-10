@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hospital.domain.model
 {
-    internal class contacto:person
+    internal class Contact:person
     {
         private person name;
         private person cedula;

@@ -1,9 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\herramientas_de_programacion_2_2025\\Hospital\\",
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\sistemas\\documents\\herramientas_de_programacion_2_2025\\herramientas_de_programacion_2_2025\\hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\visita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\visita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\orden_procedimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\orden_procedimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\orden_medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\orden_medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\orden_ayuda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\orden_ayuda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\orden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\orden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -19,18 +51,114 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\herramientas_de_programacion_2_2025\\Hospital\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\herramientas_de_programacion_2_2025\\Hospital\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "Title": "visita.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\visita.cs",
+              "RelativeDocumentMoniker": "domain\\model\\visita.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\visita.cs",
+              "RelativeToolTip": "domain\\model\\visita.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T17:33:13.982Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-08-27T18:41:38.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "usuario.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\usuario.cs",
+              "RelativeDocumentMoniker": "domain\\model\\usuario.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\usuario.cs",
+              "RelativeToolTip": "domain\\model\\usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:41:12.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "person.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\person.cs",
+              "RelativeDocumentMoniker": "domain\\model\\person.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\person.cs",
+              "RelativeToolTip": "domain\\model\\person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:41:10.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "paciente.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\paciente.cs",
+              "RelativeDocumentMoniker": "domain\\model\\paciente.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\paciente.cs",
+              "RelativeToolTip": "domain\\model\\paciente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:40:53.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "orden_procedimiento.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\orden_procedimiento.cs",
+              "RelativeDocumentMoniker": "domain\\model\\orden_procedimiento.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\orden_procedimiento.cs",
+              "RelativeToolTip": "domain\\model\\orden_procedimiento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:40:51.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "orden_medicamento.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\orden_medicamento.cs",
+              "RelativeDocumentMoniker": "domain\\model\\orden_medicamento.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\orden_medicamento.cs",
+              "RelativeToolTip": "domain\\model\\orden_medicamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:40:48.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "orden_ayuda.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\orden_ayuda.cs",
+              "RelativeDocumentMoniker": "domain\\model\\orden_ayuda.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\orden_ayuda.cs",
+              "RelativeToolTip": "domain\\model\\orden_ayuda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:40:45.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "orden.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\orden.cs",
+              "RelativeDocumentMoniker": "domain\\model\\orden.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\orden.cs",
+              "RelativeToolTip": "domain\\model\\orden.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:40:43.794Z"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\herramientas_de_programacion_2_2025\\Hospital\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\herramientas_de_programacion_2_2025\\Hospital\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T17:33:13.982Z"
             }
           ]
         }
