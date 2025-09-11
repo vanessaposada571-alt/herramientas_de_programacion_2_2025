@@ -12,8 +12,8 @@ namespace Hospital.domain.model
         private Order_medicine orden_Medicine;
         private Order_procedure orden_Procedure;
 
-        internal Order_help Order_Help { get => order_Help; set => order_Help = value; }
-        internal Order_medicine Orden_Medicine { get => orden_Medicine; set => orden_Medicine = value; }
-        internal Order_procedure Orden_Procedure { get => orden_Procedure; set => orden_Procedure = value; }
+        internal Order_help order_Help { get => order_Help; set => order_Help = value; }
+        internal Order_medicine orden_Medicine { get => orden_Medicine; set => orden_Medicine = value; }
+        internal Order_procedure orden_Procedure { get => orden_Procedure; set => orden_Procedure = value; }
     }
 }

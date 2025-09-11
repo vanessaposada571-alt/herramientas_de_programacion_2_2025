@@ -10,11 +10,13 @@ namespace Hospital.domain.model
     {
         private long id_patient; //Id del paciente
         private string insurance; //Seguro medico
+        private string policyNumber; // Número de Poliza
         private string gender;
         private Contact contact;
 
         public long Id_patient { get => id_patient; set => id_patient = value; }
         public string Insurance { get => insurance; set => insurance = value; }
+        public string PolicyNumber { get => policyNumber; set => policyNumber = value; }
         public string Gender { get => gender; set => gender = value; }
         internal Contact Contact { get => contact; set => contact = value; }
     }

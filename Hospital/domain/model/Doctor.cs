@@ -8,9 +8,11 @@ namespace Hospital.domain.model
 {
     internal class Doctor: Patient
     {
+        private Person name;
         private Patient paciente;
         private Order orden;
 
+        internal Person Name{ get => name; set => name = value; }
         internal Patient Paciente { get => paciente; set => paciente = value; }
         internal Order Orden { get => orden; set => orden = value; }
     }
