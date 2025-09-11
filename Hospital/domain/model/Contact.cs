@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Hospital.domain.model
 {
-    internal class Contact:person
+    internal class Contact:Person
     {
-        private person name;
-        private person cedula;
-        private person mail;
-        private person telefono;
+        private Person name;
+        private Person cedula;
+        private Person mail;
+        private Person telefono;
 
-        internal person Name1 { get => name; set => name = value; }
-        internal person Cedula1 { get => cedula; set => cedula = value; }
-        internal person Mail { get => mail; set => mail = value; }
-        internal person Telefono1 { get => telefono; set => telefono = value; }
+        internal Person Name1 { get => name; set => name = value; }
+        internal Person Cedula { get => cedula; set => cedula = value; }
+        internal Person Mail { get => mail; set => mail = value; }
+        internal Person Telefono { get => telefono; set => telefono = value; }
     }
 }

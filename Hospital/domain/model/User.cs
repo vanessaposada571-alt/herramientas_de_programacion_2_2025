@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Hospital.domain.model
 {
-    internal class User
+    internal class User : Person
     {
-        private String rol;
+        private string rol;
         private string name_user;
         private string password;
 
