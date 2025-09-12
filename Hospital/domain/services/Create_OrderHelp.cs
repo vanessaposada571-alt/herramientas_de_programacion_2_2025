@@ -21,20 +21,20 @@ namespace Hospital.domain.services
             orderHelp.Id_specialist = "";
             orderHelp.Item = "";
 
-            if (Order_help_port.FindByNumOrderA(orderHelp) != null)
+            if (orderHelpPort.FindByNumOrderA(orderHelp) != null)
             {
                 throw new Exception("Ya existe el número de orden");
             }
-            if (Order_help_port.FindByIdHelp(orderHelp) != null)
+            if (orderHelpPort.FindByIdHelp(orderHelp) != null)
             {
                 throw new Exception("Ya existe el número de ayuda");
             }
-            if (Order_help_port.FindBySpecialist(orderHelp) = null)
+            if (orderHelpPort.FindBySpecialist(orderHelp) = null)
             {
                 throw new Exception("El especialista no existe");
             }
 
-            Order_help_port.Save(orderHelp);
+            orderHelpPort.Save(orderHelp);
         }
 
     }

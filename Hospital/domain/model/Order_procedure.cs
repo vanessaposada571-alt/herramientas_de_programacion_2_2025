@@ -16,12 +16,12 @@ namespace Hospital.domain.model
         private long id_specialist;
         private long item;
 
-        public long Num_order { get => num_order; set => num_order = value; }
-        public long Id_procedure { get => id_procedure; set => id_procedure = value; }
+        public long NumOrder { get => num_orderP; set => num_orderP = value; }
+        public long IdProcedure { get => id_procedure; set => id_procedure = value; }
         public int Amount { get => amount; set => amount = value; }
         public string Frequency { get => frequency; set => frequency = value; }
         public bool Specialist { get => specialist; set => specialist = value; }
-        public long Id_specialist { get => id_specialist; set => id_specialist = value; }
+        public long IdSpecialist { get => id_specialist; set => id_specialist = value; }
         public long Item { get => item; set => item = value; }
     }
 }

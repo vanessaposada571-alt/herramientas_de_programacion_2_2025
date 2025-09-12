@@ -12,9 +12,9 @@ namespace Hospital.domain.ports
     {
         public Order_help FindByNumOrderA(Order_help orderHelp);
         public Order_help FindByIdHelp(Order_help orderHelp);
-        public Order_help FindBySpecialist(Order_help orderHelp);
+        public Order_help FindByIdSpecialist(Order_help orderHelp);
+        public Order_medicine FindByNumOrder(Order_medicine orderMedicine);
         public void Save(Order_help orderHelp);
         public void Update(Order_help orderHelp);
-        public void Delete(Order_help orderHelp);
     }
 }

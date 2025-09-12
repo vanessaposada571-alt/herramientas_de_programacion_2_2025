@@ -6,6 +6,6 @@
     "\\domain\\ports",
     "\\domain\\services"
   ],
-  "SelectedNode": "\\domain\\model\\person.cs",
+  "SelectedNode": "\\domain\\ports\\Order_port.cs",
   "PreviewInSolutionExplorer": false
 }
