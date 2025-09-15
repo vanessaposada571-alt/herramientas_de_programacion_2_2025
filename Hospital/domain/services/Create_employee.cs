@@ -14,7 +14,7 @@ namespace Hospital.domain.services
         private Employee_port employee_Port;
         public void Create(User user, string list)
         {
-            user.Name_user = "";
+         user.Name_user = "";
             user.Password = "";
             user.Rol = "rol";
 
