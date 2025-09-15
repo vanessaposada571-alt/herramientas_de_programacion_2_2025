@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\domain",
+    "\\domain\\model",
+    "\\domain\\ports",
+    "\\domain\\services"
+  ],
+  "SelectedNode": "\\domain\\ports\\Order_port.cs",
+  "PreviewInSolutionExplorer": false
+}

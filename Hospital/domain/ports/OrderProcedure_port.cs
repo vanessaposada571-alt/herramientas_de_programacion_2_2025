@@ -1,0 +1,22 @@
+﻿using Hospital.domain.model;
+using Hospital.domain.services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Hospital.domain.ports
+{
+    internal interface Order_procedure_port
+    {
+        public Order_procedure FindByNumOrder(Order_procedure orderProcedure);
+        public Order_procedure FindByIdProcedure(Order_procedure orderProcedure);
+        public Order_procedure FindBySpecialist(Order_procedure orderProcedure);
+        public Order_procedure FindByIdSpecialist(Order_procedure orderProcedure);
+        public Order_procedure FindByItem(Order_procedure orderProcedure);
+        public void Save(Order_procedure orderProcedure);
+        public void Update(Order_procedure orderProcedure);
+    }
+}
+
