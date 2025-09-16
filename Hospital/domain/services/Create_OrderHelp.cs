@@ -12,14 +12,8 @@ namespace Hospital.domain.services
     internal class Create_OrderHelp
     {
         private Order_help_port orderHelpPort;
-        public void Create(Order_help orderHelp, string list)
+        public void Create(Order_help orderHelp)
         {
-            orderHelp.Num_orderA = "";
-            orderHelp.Id_help = "";
-            orderHelp.Amount = "";
-            orderHelp.Assistance = "true";
-            orderHelp.Id_specialist = "";
-            orderHelp.Item = "";
 
             if (orderHelpPort.FindByNumOrderA(orderHelp) != null)
             {
@@ -29,7 +23,7 @@ namespace Hospital.domain.services
             {
                 throw new Exception("Ya existe el número de ayuda");
             }
-            if (orderHelpPort.FindBySpecialist(orderHelp) = null)
+            if (orderHelpPort.FindByIdSpecialist(orderHelp) != null)
             {
                 throw new Exception("El especialista no existe");
             }

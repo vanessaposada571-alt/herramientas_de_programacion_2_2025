@@ -16,26 +16,30 @@ namespace Hospital.domain.services
         public void Create(Billings billings)
         {
             
-            Medical_insurance.policy_number = "";
-            Medical_insurance.insurance_cost = "";
+            // Medical_insurance.policy_number = "";
+            //Medical_insurance.insurance_cost = "";
 
-            if (billings_port.FindById_billings(billings) != null)
+            if (billings_Port.FindById_billings(billings) != null)
             {
-                throw new Exception("Ya existe una factura con ese numero");
+                throw new Exception("Ya existe una factura con ese ID.");
             }
 
-            billings_port.Save(billings);
+            if (billings_Port.FindById_Patient(billings) != null)
+            {
+                throw new Exception("Ya existe un paciente registrado con ese ID.");
+            }
+
+            if (billings_Port.FindByPolicy_number(billings) != null)
+            {
+                throw new Exception("Ya existe una póliza registrada con ese número.");
+            }
+
+            if (billings_Port.FindByInsurance_cost(billings) != null)
+            {
+                throw new Exception("Ya existe un seguro con ese costo de póliza.");
+            }
+
+            billings_Port.Save(billings);
         }
     }
 }
-
-
-if (employee_Port.FindByName_user(user) != null)
-{
-    throw new Exception("Ya existe un empleado registrado con ese nombre");
-}
-if (employee_Port.FindById(user) != null)
-{
-    throw new Exception("Ya existe un empleado registrado con ese documento");
-}
-

@@ -12,21 +12,18 @@ namespace Hospital.domain.services
     internal class Create_Order
     {
         private Order_port orderPort;
-        public void Create(Order orderGrl, string list)
+        public void Create(Order orderGrl)
         {
-            orderGrl.order_Help = "";
-            orderGrl.order_Medicine = "";
-            orderGrl.order_Procedure = "";
 
-            if (orderPort.FindByorder_Help(orderGrl) == false)
+            if (orderPort.FindByorder_Help(orderGrl) == null )
             {
                 throw new Exception("No requiere ayuda diagnóstica");
             }
-            if (orderPort.FindByorder_Medicine(orderGrl) == false)
+            if (orderPort.FindByorder_Medicine(orderGrl) == null)
             {
                 throw new Exception("No requiere medicamento");
             }
-            if (orderPort.FindByorder_Procedure(orderGrl) == false)
+            if (orderPort.FindByorder_Procedure(orderGrl) == null)
             {
                 throw new Exception("No requiere Procedimiento");
             }

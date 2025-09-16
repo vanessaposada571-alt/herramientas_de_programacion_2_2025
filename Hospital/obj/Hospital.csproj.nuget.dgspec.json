@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\hospital\\Hospital.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj": {
+    "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\hospital\\Hospital.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\hospital\\Hospital.csproj",
         "projectName": "Hospital",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\hospital\\Hospital.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\hospital\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

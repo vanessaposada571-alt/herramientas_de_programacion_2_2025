@@ -12,15 +12,15 @@ namespace Hospital.domain.services
     internal class Create_OrderProcedure
     {
         private Order_procedure_port orderProcedurePort;
-        public void Create(Order_procedure orderProcedure, string list)
+        public void Create(Order_procedure orderProcedure)
         {
-            orderProcedure.NumOrder = "";
-            orderProcedure.IdProcedure = "";
-            orderProcedure.Specialist = "";
-            orderProcedure.IdSpecialist = "";
-            orderProcedure.Item = "";
+            orderProcedure.NumOrder = 0;
+            orderProcedure.IdProcedure = 0;
+            orderProcedure.Specialist = true;
+            orderProcedure.IdSpecialist = 0;
+            orderProcedure.Item = 0;
 
-            if (orderProcedurePort.FindBySpecialist(orderProcedure) = false)
+            if (orderProcedurePort.FindBySpecialist(orderProcedure) != null)
             {
                 throw new Exception("No requiere atención de especialista");
             }
@@ -28,11 +28,11 @@ namespace Hospital.domain.services
             {
                 throw new Exception("Ya existe el número de orden");
             }
-            if (orderProcedurePort.FindByIdProcedure(orderProcedure) = null)
+            if (orderProcedurePort.FindByIdProcedure(orderProcedure) != null)
             {
                 throw new Exception("El procedimiento no existe");
             }
-            if (orderProcedurePort.FindByItem(orderProcedure) = null)
+            if (orderProcedurePort.FindByItem(orderProcedure) != null)
             {
                 throw new Exception("No existe el número de orden");
             }
