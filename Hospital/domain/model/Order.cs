@@ -9,9 +9,9 @@ namespace Hospital.domain.model
     internal class Order
     {
         private int IdOrder;
-        private Order_help order_Help;
-        private Order_medicine order_Medicine;
-        private Order_procedure order_Procedure;
+        private Order_help NumOrderA;
+        private Order_medicine NumOrderA;
+        private Order_procedure NumOrderA;
 
         public int IDOrder { get => IdOrder; set => IdOrder = value; }
         internal Order_help Order_Help { get => order_Help; set => order_Help = value; }
