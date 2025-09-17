@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Hospital.domain.services
 {
-    internal class Search_Order
+    internal class S_Order
     {
         private Order_port order_Port;
         public void Search(Order order)

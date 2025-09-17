@@ -1,0 +1,7 @@
+C:\Users\SISTEMAS\Pictures\herramientas_de_programacion_2\Hospital\obj\Debug\net8.0-windows\Hospital.Form1.resources
+C:\Users\SISTEMAS\Pictures\herramientas_de_programacion_2\Hospital\obj\Debug\net8.0-windows\Hospital.csproj.GenerateResource.cache
+C:\Users\SISTEMAS\Pictures\herramientas_de_programacion_2\Hospital\obj\Debug\net8.0-windows\Hospital.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SISTEMAS\Pictures\herramientas_de_programacion_2\Hospital\obj\Debug\net8.0-windows\Hospital.AssemblyInfoInputs.cache
+C:\Users\SISTEMAS\Pictures\herramientas_de_programacion_2\Hospital\obj\Debug\net8.0-windows\Hospital.AssemblyInfo.cs
+C:\Users\SISTEMAS\Pictures\herramientas_de_programacion_2\Hospital\obj\Debug\net8.0-windows\Hospital.csproj.CoreCompileInputs.cache
+C:\Users\SISTEMAS\Pictures\herramientas_de_programacion_2\Hospital\obj\Debug\net8.0-windows\Hospital.sourcelink.json

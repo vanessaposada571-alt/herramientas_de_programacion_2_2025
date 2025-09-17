@@ -9,7 +9,7 @@ using System.Xml;
 
 namespace Hospital.domain.services
 {
-    internal class Create_MedicalRecord
+    internal class S_MedicalRecord
     {
         private MedicalRecord_port medicalrecord_Port;
 

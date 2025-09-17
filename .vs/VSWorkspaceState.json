@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Hospital",
+    "\\Hospital\\domain",
+    "\\Hospital\\domain\\model",
+    "\\Hospital\\domain\\ports",
+    "\\Hospital\\domain\\services"
+  ],
+  "SelectedNode": "\\Hospital\\domain\\services\\U_Patient.cs",
+  "PreviewInSolutionExplorer": false
+}
