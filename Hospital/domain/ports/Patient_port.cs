@@ -11,8 +11,10 @@ namespace Hospital.domain.ports
     internal interface Patient_port
     {
         public Patient FindById_patient(Patient patient);
+        public Patient FindByIdSure(Patient patient);
         public void Save(Patient patient);
         public void Update(Patient patient);
-       public  void Delete(string id);
+        public  void Delete(Patient patient);
+        public  void Search(Patient patient);
     }
 }

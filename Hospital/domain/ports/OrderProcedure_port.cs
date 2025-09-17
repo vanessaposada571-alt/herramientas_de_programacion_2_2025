@@ -17,6 +17,8 @@ namespace Hospital.domain.ports
         public Order_procedure FindByItem(Order_procedure orderProcedure);
         public void Save(Order_procedure orderProcedure);
         public void Update(Order_procedure orderProcedure);
+        public void Delete(Order_procedure orderProcedure);
+        public void Search(Order_procedure orderProcedure);
     }
 }
 

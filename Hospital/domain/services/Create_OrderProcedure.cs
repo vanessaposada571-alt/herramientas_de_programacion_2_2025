@@ -14,11 +14,6 @@ namespace Hospital.domain.services
         private Order_procedure_port orderProcedurePort;
         public void Create(Order_procedure orderProcedure)
         {
-            orderProcedure.NumOrder = 0;
-            orderProcedure.IdProcedure = 0;
-            orderProcedure.Specialist = true;
-            orderProcedure.IdSpecialist = 0;
-            orderProcedure.Item = 0;
 
             if (orderProcedurePort.FindBySpecialist(orderProcedure) != null)
             {

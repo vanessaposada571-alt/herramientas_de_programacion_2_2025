@@ -12,11 +12,8 @@ namespace Hospital.domain.services
     internal class Create_OrderMedicine
     {
         private Order_medicine_port orderMedicinePort;
-        public void Create(Order_medicine orderMedicine, string list)
+        public void Create(Order_medicine orderMedicine)
         {
-            orderMedicine.NumOrder = "";
-            orderMedicine.IdMedicine = "";
-            orderMedicine.Item = "";
 
             if (orderMedicinePort.FindByNumOrder(orderMedicine) != null)
             {

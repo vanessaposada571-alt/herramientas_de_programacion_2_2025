@@ -15,5 +15,7 @@ namespace Hospital.domain.ports
         public User FindByName_user(User user);
         public void Save(User user);
         public void Update(User user);
+        public void Delete(User user);
+        public void Search(User user);
     }
 }

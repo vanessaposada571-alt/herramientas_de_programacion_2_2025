@@ -12,11 +12,8 @@ namespace Hospital.domain.services
     internal class C_Employee
     {
         private Employee_port employee_Port;
-        public void Create(User user, string list)
+        public void Create(User user)
         {
-            /*user.Name_user = "";
-            user.Password = "";
-            user.Rol = "rol";*/
 
             if (employee_Port.FindByName_user(user) != null)
             {
@@ -28,16 +25,6 @@ namespace Hospital.domain.services
             }
 
             employee_Port.Save(user);
-        }
-        public void Update(User user, string list)
-        {
-            var existing = employee_Port.FindById(user);
-            if (existing == null)
-            {
-                throw new Exception("El empleado no existe en el sistema");
-            
-            }
-            employee_Port.Update(user);
         }
     }
 }

@@ -16,5 +16,7 @@ namespace Hospital.domain.ports
         public Order_medicine FindByNumOrder(Order_medicine orderMedicine);
         public void Save(Order_help orderHelp);
         public void Update(Order_help orderHelp);
+        public void Search(Order_help orderHelp);
+        public void Delete(Order_help orderHelp);
     }
 }

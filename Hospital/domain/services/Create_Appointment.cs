@@ -14,9 +14,6 @@ namespace Hospital.domain.services
 
         public void Create(Appointment appointment)
         {
-            if (appointment == null)
-                throw new ArgumentNullException(nameof(appointment));
-
             // 1. Validar que el Id del paciente no esté vacío
             if (appointment_Port.FindById_patient(appointment) != null)
             {
