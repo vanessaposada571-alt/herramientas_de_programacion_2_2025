@@ -15,15 +15,15 @@ namespace Hospital.domain.services
         public void Create(Order orderGrl)
         {
 
-            if (orderPort.FindByorder_Help(orderGrl) == null )
+            if (orderPort.FindByNumOrderA(orderGrl) == null )
             {
                 throw new Exception("No requiere ayuda diagnóstica");
             }
-            if (orderPort.FindByorder_Medicine(orderGrl) == null)
+            if (orderPort.FindByNumOrder(orderGrl) == null)
             {
                 throw new Exception("No requiere medicamento");
             }
-            if (orderPort.FindByorder_Procedure(orderGrl) == null)
+            if (orderPort.FindByNumOrder(orderGrl) == null)
             {
                 throw new Exception("No requiere Procedimiento");
             }
