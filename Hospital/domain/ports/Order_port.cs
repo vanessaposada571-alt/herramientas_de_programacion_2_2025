@@ -11,9 +11,9 @@ namespace Hospital.domain.ports
     internal interface Order_port
     {
         public Order FindByIDOrder(Order order);
-        public Order FindByorder_Help(Order orderGrl);
-        public Order FindByorder_Medicine(Order orderGrl);
-        public Order FindByorder_Procedure(Order orderGrl);
+        public Order FindByNumOrderA(Order orderGrl);
+        public Order FindByNumOrder(Order orderGrl);
+        public Order FindByNumOrder(Order orderGrl);
         public void Save(Order orderGrl);
         public void Update(Order orderGrl);
         public void Search(Order orderGrl);
