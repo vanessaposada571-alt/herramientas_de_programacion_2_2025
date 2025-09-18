@@ -19,13 +19,13 @@ namespace Hospital.domain.services
             {
                 throw new Exception("Ya existe el número de orden");
             }
-            if (orderMedicinePort.FindByIdMedicine(orderMedicine) = null)
+            if (orderMedicinePort.FindByIdMedicine(orderMedicine) == null)
             {
-                throw new Exception("No se tiene el medicamento");
+                throw new Exception("No esta disponible el medicamento");
             }
-            if (orderMedicinePort.FindByItem(orderMedicine) = null)
+            if (orderMedicinePort.FindByItem(orderMedicine) != null)
             {
-                throw new Exception("No existe el número de orden");
+                throw new Exception("Ya existe un medicamento asignado");
             }
 
             orderMedicinePort.Save(orderMedicine);

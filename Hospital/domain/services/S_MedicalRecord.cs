@@ -11,7 +11,7 @@ namespace Hospital.domain.services
 {
     internal class S_MedicalRecord
     {
-        private MedicalRecord_port medicalrecord_Port;
+        private MedicalRecord_Port medicalrecord_Port;
 
         public void Search(Medical_record medical_Record)
         {

@@ -23,7 +23,7 @@ namespace Hospital.domain.services
             {
                 throw new Exception("Ya existe el número de ayuda");
             }
-            if (orderHelpPort.FindByIdSpecialist(orderHelp) != null)
+            if (orderHelpPort.FindByIdSpecialist(orderHelp) == null)
             {
                 throw new Exception("El especialista no existe");
             }

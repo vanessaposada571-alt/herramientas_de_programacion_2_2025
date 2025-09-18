@@ -16,7 +16,7 @@ namespace Hospital.domain.services
         {
             if (contact_Port.FindByName1(contact) == null)
             {
-                throw new Exception("El nombre no puede ser vacío/nulo");
+                throw new Exception("Ingrese un nombre, el campo no puede estar vacío");
             }
             if(contact_Port.FindById_patient(contact) == null)
             {
@@ -24,7 +24,7 @@ namespace Hospital.domain.services
             }
             if(contact_Port.FindByCellphone(contact) == null)
             {
-                throw new Exception("El número de celular no puede estar vacío");
+                throw new Exception("Ingrese un número de celular el campo no puede estar vacío");
             }
 
             contact_Port.Save(contact);

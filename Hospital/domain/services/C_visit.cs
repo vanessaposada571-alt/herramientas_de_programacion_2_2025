@@ -19,7 +19,7 @@ namespace Hospital.domain.services
             {
                 throw new Exception("El paciente no existe");
             }
-            if (visit_Port.FindById_doctor(visit == null)
+            if (visit_Port.FindById_doctor(visit) == null)
             {
                 throw new Exception("El doctor ingresado no existe");
             }
@@ -27,24 +27,24 @@ namespace Hospital.domain.services
             {
                 throw new Exception("El ID de procedimiento no existe");
             }
-            if (visit_Port.FindByPressure(visit) < 60 || visit_Port.FindByPressure(visit) > 180)
+            if (visit_Port.FindByPressure(visit) == null)
             {
-                throw new Exception("La presión ingresada no es válida");
+                throw new Exception("Debes ingresar la presión del paciente");
             }
 
-            if (visit_Port.FindByTemperature(visit) < 35 || visit_Port.FindByTemperature(visit) > 42)
+            if (visit_Port.FindByTemperature(visit) == null)
             {
-                throw new Exception("La temperatura ingresada no es válida");
+                throw new Exception("Debes ingresar la temperatura del paciente");
             }
 
-            if (visit_Port.FindByPulse(visit) < 40 || visit_Port.FindByPulse(visit) > 180)
+            if (visit_Port.FindByPulse(visit) == null)
             {
-                throw new Exception("El pulso ingresado no es válido");
+                throw new Exception("Debes ingresar el pulso del paciente");
             }
 
-            if (visit_Port.FindByBlood_oxygen_level(visit) < 70 || visit_Port.FindByBlood_oxygen_level(visit) > 100)
+            if (visit_Port.FindByBlood_oxygen_level(visit) == null)
             {
-                throw new Exception("El nivel de oxígeno en sangre no es válido");
+                throw new Exception("Debes ingresar el nivel de oxígeno en sangre del paciente");
             }
             visit_Port.Save(visit);
         }

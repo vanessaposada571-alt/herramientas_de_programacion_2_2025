@@ -29,14 +29,9 @@ namespace Hospital.domain.services
                 throw new Exception("Ya existe un paciente registrado con ese ID.");
             }
 
-            if (billings_Port.FindByPolicy_number(billings) != null)
+            if (billings_Port.FindByPolicy_number(billings) == null)
             {
-                throw new Exception("Ya existe una póliza registrada con ese número.");
-            }
-
-            if (billings_Port.FindByInsurance_cost(billings) != null)
-            {
-                throw new Exception("Ya existe un seguro con ese costo de póliza.");
+                throw new Exception("Debe de colocar el numero de poliza.");
             }
 
             billings_Port.Save(billings);

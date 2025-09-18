@@ -11,7 +11,7 @@ namespace Hospital.domain.services
 {
     internal class C_MedicalRecord
     {
-        private MedicalRecord_port medicalrecord_Port;
+        private MedicalRecord_Port medicalrecord_Port;
 
         public void Create(Medical_record medical_Record)
         {
@@ -29,7 +29,7 @@ namespace Hospital.domain.services
             }
             if(medicalrecord_Port.FindByIdOrder(medical_Record) == null)
             {
-                throw new Exeption("La orden no existe");
+                throw new Exception("La orden no existe");
             }
 
             medicalrecord_Port.Save(medical_Record);

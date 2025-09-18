@@ -19,7 +19,7 @@ namespace Hospital.domain.model
         private string specialty;
         private string id_doctor;
 
-        public string Specialist { get => specialty; set => specialty = value; }
+        public string Specialty { get => specialty; set => specialty = value; }
         public string Id_doctor { get => id_doctor; set => id_doctor = value; }
     }
 }

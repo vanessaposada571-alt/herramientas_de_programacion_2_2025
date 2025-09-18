@@ -15,7 +15,7 @@ namespace Hospital.domain.services
         {
             if (patient_Port.FindById_patient(patient) == null)
             {
-                throw new Exception("El paciente no existe")
+                throw new Exception("El paciente no existe");
             }
 
             patient_Port.Update(patient);

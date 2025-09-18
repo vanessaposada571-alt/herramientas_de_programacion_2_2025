@@ -15,7 +15,7 @@ namespace Hospital.domain.services
         public void Create(Order orderGrl)
         {
 
-            if (orderPort.FindByNumOrderA(orderGrl) == null )
+            if (orderPort.FindByNumOrderA1(orderGrl) == null )
             {
                 throw new Exception("No requiere ayuda diagnóstica");
             }
@@ -23,7 +23,7 @@ namespace Hospital.domain.services
             {
                 throw new Exception("No requiere medicamento");
             }
-            if (orderPort.FindByNumOrder(orderGrl) == null)
+            if (orderPort.FindByNumOrderP1(orderGrl) == null)
             {
                 throw new Exception("No requiere Procedimiento");
             }

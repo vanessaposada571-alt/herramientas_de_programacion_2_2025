@@ -1,174 +1,178 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\",
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\C_visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\ports\\employee_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\ports\\employee_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\Visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Visit_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\ports\\Visit_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_Patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\Create_Patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\c_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\c_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_OrderProcedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\Create_OrderProcedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\c_medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\c_medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\C_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\u_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\u_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\Create_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\User_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\ports\\User_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\c_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\c_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\Patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\ports\\patient_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\ports\\patient_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderProcedure_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\ports\\OrderProcedure_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\c_orderprocedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\c_orderprocedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Vital_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\Vital_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\c_orderhelp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\c_orderhelp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Patient_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\ports\\Patient_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\order_procedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\order_procedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\S_MedicalRecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\S_MedicalRecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\c_ordermedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\c_ordermedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_Contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\Create_Contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\c_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\c_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\U_MedicalRecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\U_MedicalRecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\c_contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\c_contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\S_Order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\S_Order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\c_billings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\c_billings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_OrderHelp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\Create_OrderHelp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\c_appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\c_appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_billings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\Create_billings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\s_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\s_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\U_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\U_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\u_medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\u_medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_Order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\Create_Order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\u_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\u_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Employee_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\ports\\Employee_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\ports\\ordermedicine_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\ports\\ordermedicine_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_MedicalRecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\Create_MedicalRecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\ports\\order_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\ports\\order_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\ports\\orderprocedure_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\ports\\orderprocedure_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Billings_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\ports\\Billings_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_Appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\Create_Appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\s_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\s_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\Order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\order_help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\order_help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\Order_medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\order_medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\order_medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\Order_help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\ports\\visit_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\ports\\visit_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\Doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\ports\\orderhelp_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\ports\\orderhelp_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Billings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\Billings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\ports\\medicalrecord_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\ports\\medicalrecord_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\Contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\ports\\contact_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\ports\\contact_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\Appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\ports\\billings_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\ports\\billings_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_OrderMedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\services\\Create_OrderMedicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\ports\\appointment_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\ports\\appointment_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderMedicine_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\ports\\OrderMedicine_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\vital_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\vital_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Order_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\ports\\Order_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Contact_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\ports\\Contact_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\medical_record.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\medical_record.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderHelp_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\ports\\OrderHelp_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\medical_insurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\medical_insurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\MedicalRecord_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\ports\\MedicalRecord_port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Medical_record.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\Medical_record.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\billings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\billings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_procedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\Order_procedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Medical_insurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:domain\\model\\Medical_insurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\s_medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\s_medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\hp\\desktop\\visual grafico\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\c_visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\c_visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -178,515 +182,544 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "C_visit.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_visit.cs",
-              "RelativeDocumentMoniker": "domain\\services\\C_visit.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_visit.cs*",
-              "RelativeToolTip": "domain\\services\\C_visit.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Patient.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Patient.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Patient.cs",
+              "RelativeToolTip": "domain\\model\\Patient.cs",
+              "ViewState": "AgIAAAUAAAAA1szMzMwXwA8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:35:09.314Z",
+              "WhenOpened": "2025-09-17T22:06:10.083Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Visit_port.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Visit_port.cs",
-              "RelativeDocumentMoniker": "domain\\ports\\Visit_port.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Visit_port.cs",
-              "RelativeToolTip": "domain\\ports\\Visit_port.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Title": "person.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\person.cs",
+              "RelativeDocumentMoniker": "domain\\model\\person.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\person.cs",
+              "RelativeToolTip": "domain\\model\\person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:37:36.219Z",
+              "WhenOpened": "2025-09-17T22:06:12.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "User_port.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\User_port.cs",
-              "RelativeDocumentMoniker": "domain\\ports\\User_port.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\User_port.cs",
-              "RelativeToolTip": "domain\\ports\\User_port.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Doctor.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Doctor.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Doctor.cs",
+              "RelativeToolTip": "domain\\model\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:48:12.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Patient.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Patient.cs",
-              "RelativeDocumentMoniker": "domain\\model\\Patient.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Patient.cs",
-              "RelativeToolTip": "domain\\model\\Patient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T13:12:03.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\User.cs",
-              "RelativeDocumentMoniker": "domain\\model\\User.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\User.cs",
-              "RelativeToolTip": "domain\\model\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:55:46.93Z"
+              "WhenOpened": "2025-09-17T22:00:42.99Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Create_Patient.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_Patient.cs",
-              "RelativeDocumentMoniker": "domain\\services\\Create_Patient.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_Patient.cs",
-              "RelativeToolTip": "domain\\services\\Create_Patient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABDAAAAAAAAAA==",
+              "Title": "C_Employee.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Employee.cs",
+              "RelativeDocumentMoniker": "domain\\services\\C_Employee.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Employee.cs",
+              "RelativeToolTip": "domain\\services\\C_Employee.cs",
+              "ViewState": "AgIAAAwAAADAHwAAAADwvyAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:35:28.922Z",
+              "WhenOpened": "2025-09-17T21:42:41.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "C_Employee.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Employee.cs",
-              "RelativeDocumentMoniker": "domain\\services\\C_Employee.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Employee.cs",
-              "RelativeToolTip": "domain\\services\\C_Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA1AAAAAAAAAA==",
+              "Title": "U_Employee.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\U_Employee.cs",
+              "RelativeDocumentMoniker": "domain\\services\\U_Employee.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\U_Employee.cs",
+              "RelativeToolTip": "domain\\services\\U_Employee.cs",
+              "ViewState": "AgIAAAEAAAAAMTMzMzP7vxkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:37:00.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create_OrderProcedure.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_OrderProcedure.cs",
-              "RelativeDocumentMoniker": "domain\\services\\Create_OrderProcedure.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_OrderProcedure.cs",
-              "RelativeToolTip": "domain\\services\\Create_OrderProcedure.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:59:40.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Visit.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Visit.cs",
-              "RelativeDocumentMoniker": "domain\\model\\Visit.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Visit.cs",
-              "RelativeToolTip": "domain\\model\\Visit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:30:51.183Z",
+              "WhenOpened": "2025-09-17T21:56:41.725Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create_user.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_user.cs",
-              "RelativeDocumentMoniker": "domain\\services\\Create_user.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_user.cs",
-              "RelativeToolTip": "domain\\services\\Create_user.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\User.cs",
+              "RelativeDocumentMoniker": "domain\\model\\User.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\User.cs",
+              "RelativeToolTip": "domain\\model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBkAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T06:06:23.266Z"
+              "WhenOpened": "2025-09-17T22:06:14.36Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Vital_data.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Vital_data.cs",
-              "RelativeDocumentMoniker": "domain\\model\\Vital_data.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Vital_data.cs",
-              "RelativeToolTip": "domain\\model\\Vital_data.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Employee_port.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Employee_port.cs",
+              "RelativeDocumentMoniker": "domain\\ports\\Employee_port.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Employee_port.cs",
+              "RelativeToolTip": "domain\\ports\\Employee_port.cs",
+              "ViewState": "AgIAAAAAAADAMzMzMzMrwBkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:47:42.979Z"
+              "WhenOpened": "2025-09-17T22:00:19.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "C_MedicalRecord.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_MedicalRecord.cs",
+              "RelativeDocumentMoniker": "domain\\services\\C_MedicalRecord.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_MedicalRecord.cs",
+              "RelativeToolTip": "domain\\services\\C_MedicalRecord.cs",
+              "ViewState": "AgIAAAUAAABAm5mZmdkhwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:43:10.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "C_Patient.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Patient.cs",
+              "RelativeDocumentMoniker": "domain\\services\\C_Patient.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Patient.cs",
+              "RelativeToolTip": "domain\\services\\C_Patient.cs",
+              "ViewState": "AgIAAAoAAAAAOzMzMzMrwCkAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:54:04.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Patient_port.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Patient_port.cs",
+              "RelativeDocumentMoniker": "domain\\ports\\Patient_port.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Patient_port.cs",
+              "RelativeToolTip": "domain\\ports\\Patient_port.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T22:00:32.572Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "OrderProcedure_port.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderProcedure_port.cs",
-              "RelativeDocumentMoniker": "domain\\ports\\OrderProcedure_port.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderProcedure_port.cs",
-              "RelativeToolTip": "domain\\ports\\OrderProcedure_port.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "C_OrderProcedure.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_OrderProcedure.cs",
+              "RelativeDocumentMoniker": "domain\\services\\C_OrderProcedure.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_OrderProcedure.cs",
+              "RelativeToolTip": "domain\\services\\C_OrderProcedure.cs",
+              "ViewState": "AgIAAAcAAAAg+P////8RwB8AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:44:12.834Z"
+              "WhenOpened": "2025-09-17T21:53:01.021Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "S_MedicalRecord.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\S_MedicalRecord.cs",
-              "RelativeDocumentMoniker": "domain\\services\\S_MedicalRecord.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\S_MedicalRecord.cs",
-              "RelativeToolTip": "domain\\services\\S_MedicalRecord.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "C_OrderHelp.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_OrderHelp.cs",
+              "RelativeDocumentMoniker": "domain\\services\\C_OrderHelp.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_OrderHelp.cs",
+              "RelativeToolTip": "domain\\services\\C_OrderHelp.cs",
+              "ViewState": "AgIAAAUAAACAPjMzMzP/vxkAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:38:46.113Z"
+              "WhenOpened": "2025-09-17T21:47:28.809Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Patient_port.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Patient_port.cs",
-              "RelativeDocumentMoniker": "domain\\ports\\Patient_port.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Patient_port.cs",
-              "RelativeToolTip": "domain\\ports\\Patient_port.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Title": "Order_procedure.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_procedure.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Order_procedure.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_procedure.cs",
+              "RelativeToolTip": "domain\\model\\Order_procedure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:43:08.991Z"
+              "WhenOpened": "2025-09-17T22:02:50.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "C_OrderMedicine.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_OrderMedicine.cs",
+              "RelativeDocumentMoniker": "domain\\services\\C_OrderMedicine.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_OrderMedicine.cs",
+              "RelativeToolTip": "domain\\services\\C_OrderMedicine.cs",
+              "ViewState": "AgIAAAkAAADMZWZmZmYwwBsAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:47:48.807Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "Create_Contact.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_Contact.cs",
-              "RelativeDocumentMoniker": "domain\\services\\Create_Contact.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_Contact.cs",
-              "RelativeToolTip": "domain\\services\\Create_Contact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABRAAAAAAAAAA==",
+              "Title": "C_Order.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Order.cs",
+              "RelativeDocumentMoniker": "domain\\services\\C_Order.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Order.cs",
+              "RelativeToolTip": "domain\\services\\C_Order.cs",
+              "ViewState": "AgIAAAUAAAAgYWZmZmYUwBsAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T05:00:18.674Z"
+              "WhenOpened": "2025-09-17T21:45:28.151Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "U_MedicalRecord.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\U_MedicalRecord.cs",
-              "RelativeDocumentMoniker": "domain\\services\\U_MedicalRecord.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\U_MedicalRecord.cs",
-              "RelativeToolTip": "domain\\services\\U_MedicalRecord.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "C_Contact.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Contact.cs",
+              "RelativeDocumentMoniker": "domain\\services\\C_Contact.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Contact.cs",
+              "RelativeToolTip": "domain\\services\\C_Contact.cs",
+              "ViewState": "AgIAAAEAAABg//////8hwBAAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T05:33:03.216Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Create_OrderHelp.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_OrderHelp.cs",
-              "RelativeDocumentMoniker": "domain\\services\\Create_OrderHelp.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_OrderHelp.cs",
-              "RelativeToolTip": "domain\\services\\Create_OrderHelp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:39:59.779Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Create_billings.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_billings.cs",
-              "RelativeDocumentMoniker": "domain\\services\\Create_billings.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_billings.cs",
-              "RelativeToolTip": "domain\\services\\Create_billings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:36:40.664Z"
+              "WhenOpened": "2025-09-17T21:41:15.408Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "S_Order.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\S_Order.cs",
-              "RelativeDocumentMoniker": "domain\\services\\S_Order.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\S_Order.cs",
-              "RelativeToolTip": "domain\\services\\S_Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
+              "Title": "C_Billings.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Billings.cs",
+              "RelativeDocumentMoniker": "domain\\services\\C_Billings.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Billings.cs",
+              "RelativeToolTip": "domain\\services\\C_Billings.cs",
+              "ViewState": "AgIAABEAAAC4yszMzMwmwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T05:01:23.674Z"
+              "WhenOpened": "2025-09-17T21:39:32.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "C_Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Appointment.cs",
+              "RelativeDocumentMoniker": "domain\\services\\C_Appointment.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Appointment.cs",
+              "RelativeToolTip": "domain\\services\\C_Appointment.cs",
+              "ViewState": "AgIAAAwAAAA4NTMzMzMiwBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:34:34.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "S_Patient.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\S_Patient.cs",
+              "RelativeDocumentMoniker": "domain\\services\\S_Patient.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\S_Patient.cs",
+              "RelativeToolTip": "domain\\services\\S_Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:56:30.285Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "U_Employee.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\U_Employee.cs",
-              "RelativeDocumentMoniker": "domain\\services\\U_Employee.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\U_Employee.cs",
-              "RelativeToolTip": "domain\\services\\U_Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "U_MedicalRecord.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\U_MedicalRecord.cs",
+              "RelativeDocumentMoniker": "domain\\services\\U_MedicalRecord.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\U_MedicalRecord.cs",
+              "RelativeToolTip": "domain\\services\\U_MedicalRecord.cs",
+              "ViewState": "AgIAAAAAAABgmZmZmZkuwA8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T05:30:49.259Z"
+              "WhenOpened": "2025-09-17T21:58:43.319Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "Create_Order.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_Order.cs",
-              "RelativeDocumentMoniker": "domain\\services\\Create_Order.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_Order.cs",
-              "RelativeToolTip": "domain\\services\\Create_Order.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Title": "U_Patient.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\U_Patient.cs",
+              "RelativeDocumentMoniker": "domain\\services\\U_Patient.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\U_Patient.cs",
+              "RelativeToolTip": "domain\\services\\U_Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:36:19.665Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Employee_port.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Employee_port.cs",
-              "RelativeDocumentMoniker": "domain\\ports\\Employee_port.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Employee_port.cs",
-              "RelativeToolTip": "domain\\ports\\Employee_port.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T13:11:42.535Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Create_MedicalRecord.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_MedicalRecord.cs",
-              "RelativeDocumentMoniker": "domain\\services\\Create_MedicalRecord.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_MedicalRecord.cs",
-              "RelativeToolTip": "domain\\services\\Create_MedicalRecord.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:36:50.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "person.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\person.cs",
-              "RelativeDocumentMoniker": "domain\\model\\person.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\person.cs",
-              "RelativeToolTip": "domain\\model\\person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:55:41.765Z"
+              "WhenOpened": "2025-09-17T21:59:39.566Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "Billings_port.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Billings_port.cs",
-              "RelativeDocumentMoniker": "domain\\ports\\Billings_port.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Billings_port.cs",
-              "RelativeToolTip": "domain\\ports\\Billings_port.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Order.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order.cs",
+              "RelativeToolTip": "domain\\model\\Order.cs",
+              "ViewState": "AgIAAAIAAACQmZmZmZkuwBIAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T13:12:25.807Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Create_Appointment.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_Appointment.cs",
-              "RelativeDocumentMoniker": "domain\\services\\Create_Appointment.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_Appointment.cs",
-              "RelativeToolTip": "domain\\services\\Create_Appointment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:38:56.983Z"
+              "WhenOpened": "2025-09-17T22:00:49.24Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order.cs",
-              "RelativeDocumentMoniker": "domain\\model\\Order.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order.cs",
-              "RelativeToolTip": "domain\\model\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABYAAAAAAAAAA==",
+              "Title": "Order_help.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_help.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Order_help.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_help.cs",
+              "RelativeToolTip": "domain\\model\\Order_help.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T13:13:47.215Z"
+              "WhenOpened": "2025-09-17T22:00:50.364Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
               "Title": "Order_medicine.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_medicine.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_medicine.cs",
               "RelativeDocumentMoniker": "domain\\model\\Order_medicine.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_medicine.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_medicine.cs",
               "RelativeToolTip": "domain\\model\\Order_medicine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T05:10:15.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Order_help.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_help.cs",
-              "RelativeDocumentMoniker": "domain\\model\\Order_help.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_help.cs",
-              "RelativeToolTip": "domain\\model\\Order_help.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T05:09:55.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Doctor.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Doctor.cs",
-              "RelativeDocumentMoniker": "domain\\model\\Doctor.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Doctor.cs",
-              "RelativeToolTip": "domain\\model\\Doctor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T13:13:29.487Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Billings.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Billings.cs",
-              "RelativeDocumentMoniker": "domain\\model\\Billings.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Billings.cs",
-              "RelativeToolTip": "domain\\model\\Billings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T13:12:36.359Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Contact.cs",
-              "RelativeDocumentMoniker": "domain\\model\\Contact.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Contact.cs",
-              "RelativeToolTip": "domain\\model\\Contact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T05:09:41.989Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Appointment.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Appointment.cs",
-              "RelativeDocumentMoniker": "domain\\model\\Appointment.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Appointment.cs",
-              "RelativeToolTip": "domain\\model\\Appointment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T05:09:49.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Create_OrderMedicine.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_OrderMedicine.cs",
-              "RelativeDocumentMoniker": "domain\\services\\Create_OrderMedicine.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\Create_OrderMedicine.cs",
-              "RelativeToolTip": "domain\\services\\Create_OrderMedicine.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T05:00:48.949Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "OrderMedicine_port.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderMedicine_port.cs",
-              "RelativeDocumentMoniker": "domain\\ports\\OrderMedicine_port.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderMedicine_port.cs",
-              "RelativeToolTip": "domain\\ports\\OrderMedicine_port.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:48:53.842Z"
+              "WhenOpened": "2025-09-17T22:03:32.714Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "Order_port.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Order_port.cs",
-              "RelativeDocumentMoniker": "domain\\ports\\Order_port.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Order_port.cs",
-              "RelativeToolTip": "domain\\ports\\Order_port.cs",
+              "Title": "Visit.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Visit.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Visit.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Visit.cs",
+              "RelativeToolTip": "domain\\model\\Visit.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:48:44.885Z"
+              "WhenOpened": "2025-09-17T22:06:16.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Vital_data.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Vital_data.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Vital_data.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Vital_data.cs",
+              "RelativeToolTip": "domain\\model\\Vital_data.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T22:06:17.495Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 36,
-              "Title": "Contact_port.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Contact_port.cs",
-              "RelativeDocumentMoniker": "domain\\ports\\Contact_port.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Contact_port.cs",
-              "RelativeToolTip": "domain\\ports\\Contact_port.cs",
+              "Title": "Medical_record.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Medical_record.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Medical_record.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Medical_record.cs",
+              "RelativeToolTip": "domain\\model\\Medical_record.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:48:57.843Z"
+              "WhenOpened": "2025-09-17T22:00:47.526Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 37,
-              "Title": "OrderHelp_port.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderHelp_port.cs",
-              "RelativeDocumentMoniker": "domain\\ports\\OrderHelp_port.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderHelp_port.cs",
-              "RelativeToolTip": "domain\\ports\\OrderHelp_port.cs",
+              "Title": "Medical_insurance.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Medical_insurance.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Medical_insurance.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Medical_insurance.cs",
+              "RelativeToolTip": "domain\\model\\Medical_insurance.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:48:56.085Z"
+              "WhenOpened": "2025-09-17T22:00:42.483Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 38,
-              "Title": "MedicalRecord_port.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\MedicalRecord_port.cs",
-              "RelativeDocumentMoniker": "domain\\ports\\MedicalRecord_port.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\MedicalRecord_port.cs",
-              "RelativeToolTip": "domain\\ports\\MedicalRecord_port.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Contact.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Contact.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Contact.cs",
+              "RelativeToolTip": "domain\\model\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T13:10:26.82Z"
+              "WhenOpened": "2025-09-17T22:00:40.825Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 39,
-              "Title": "Medical_record.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Medical_record.cs",
-              "RelativeDocumentMoniker": "domain\\model\\Medical_record.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Medical_record.cs",
-              "RelativeToolTip": "domain\\model\\Medical_record.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Title": "Billings.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Billings.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Billings.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Billings.cs",
+              "RelativeToolTip": "domain\\model\\Billings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T13:12:54.528Z"
+              "WhenOpened": "2025-09-17T22:00:39.772Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 40,
-              "Title": "Order_procedure.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_procedure.cs",
-              "RelativeDocumentMoniker": "domain\\model\\Order_procedure.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Order_procedure.cs",
-              "RelativeToolTip": "domain\\model\\Order_procedure.cs",
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Appointment.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Appointment.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Appointment.cs",
+              "RelativeToolTip": "domain\\model\\Appointment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:31:19.335Z"
+              "WhenOpened": "2025-09-17T22:00:38.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Visit_port.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Visit_port.cs",
+              "RelativeDocumentMoniker": "domain\\ports\\Visit_port.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Visit_port.cs",
+              "RelativeToolTip": "domain\\ports\\Visit_port.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T22:00:34.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "OrderProcedure_port.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderProcedure_port.cs",
+              "RelativeDocumentMoniker": "domain\\ports\\OrderProcedure_port.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderProcedure_port.cs",
+              "RelativeToolTip": "domain\\ports\\OrderProcedure_port.cs",
+              "ViewState": "AgIAAAYAAABAJzMzMzP7vw0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T22:00:30.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "OrderHelp_port.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderHelp_port.cs",
+              "RelativeDocumentMoniker": "domain\\ports\\OrderHelp_port.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderHelp_port.cs",
+              "RelativeToolTip": "domain\\ports\\OrderHelp_port.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T22:00:26.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Contact_port.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Contact_port.cs",
+              "RelativeDocumentMoniker": "domain\\ports\\Contact_port.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Contact_port.cs",
+              "RelativeToolTip": "domain\\ports\\Contact_port.cs",
+              "ViewState": "AgIAAAAAAAAAMzMzMzP7vwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T22:00:14.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Billings_port.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Billings_port.cs",
+              "RelativeDocumentMoniker": "domain\\ports\\Billings_port.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Billings_port.cs",
+              "RelativeToolTip": "domain\\ports\\Billings_port.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T22:00:11.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Appointment_port.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Appointment_port.cs",
+              "RelativeDocumentMoniker": "domain\\ports\\Appointment_port.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Appointment_port.cs",
+              "RelativeToolTip": "domain\\ports\\Appointment_port.cs",
+              "ViewState": "AgIAAAoAAACA//////8wwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T22:00:03.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "S_Order.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\S_Order.cs",
+              "RelativeDocumentMoniker": "domain\\services\\S_Order.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\S_Order.cs",
+              "RelativeToolTip": "domain\\services\\S_Order.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAABYPQAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:56:17.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MedicalRecord_port.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\MedicalRecord_port.cs",
+              "RelativeDocumentMoniker": "domain\\ports\\MedicalRecord_port.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\MedicalRecord_port.cs",
+              "RelativeToolTip": "domain\\ports\\MedicalRecord_port.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:55:45.77Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 41,
-              "Title": "Medical_insurance.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Medical_insurance.cs",
-              "RelativeDocumentMoniker": "domain\\model\\Medical_insurance.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Medical_insurance.cs",
-              "RelativeToolTip": "domain\\model\\Medical_insurance.cs",
+              "Title": "S_MedicalRecord.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\S_MedicalRecord.cs",
+              "RelativeDocumentMoniker": "domain\\services\\S_MedicalRecord.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\S_MedicalRecord.cs",
+              "RelativeToolTip": "domain\\services\\S_MedicalRecord.cs",
+              "ViewState": "AgIAAAcAAAAAJjMzMzP7vw0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:55:30.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "C_visit.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_visit.cs",
+              "RelativeDocumentMoniker": "domain\\services\\C_visit.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_visit.cs",
+              "RelativeToolTip": "domain\\services\\C_visit.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T13:10:03.291Z"
+              "WhenOpened": "2025-09-17T21:55:27.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OrderMedicine_port.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderMedicine_port.cs",
+              "RelativeDocumentMoniker": "domain\\ports\\OrderMedicine_port.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\OrderMedicine_port.cs",
+              "RelativeToolTip": "domain\\ports\\OrderMedicine_port.cs",
+              "ViewState": "AgIAAAsAAAAQzMzMzMw3wAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:49:17.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Order_port.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Order_port.cs",
+              "RelativeDocumentMoniker": "domain\\ports\\Order_port.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\VISUAL GRAFICO\\herramientas_de_programacion_2_2025\\Hospital\\domain\\ports\\Order_port.cs",
+              "RelativeToolTip": "domain\\ports\\Order_port.cs",
+              "ViewState": "AgIAAAIAAAAAMjMzMzMbwA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T21:45:58.224Z"
             }
           ]
         }

@@ -3,6 +3,7 @@ using Hospital.domain.ports;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
@@ -23,8 +24,9 @@ namespace Hospital.domain.services
             {
                 throw new Exception("Ya existe un empleado registrado con ese documento");
             }
-
+            
             employee_Port.Save(user);
         }
     }
 }
+

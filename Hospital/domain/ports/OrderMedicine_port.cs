@@ -1,4 +1,5 @@
-﻿Susing Hospital.domain.model;
+﻿using Hospital.domain.model;
+using Hospital.domain.model;
 using Hospital.domain.services;
 using System;
 using System.Collections.Generic;

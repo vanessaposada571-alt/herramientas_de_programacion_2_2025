@@ -15,21 +15,21 @@ namespace Hospital.domain.services
         public void Create(Order_procedure orderProcedure)
         {
 
-            if (orderProcedurePort.FindBySpecialist(orderProcedure) != null)
+            /*if (orderProcedurePort.FindBySpecialist(orderProcedure) == false )
             {
                 throw new Exception("No requiere atención de especialista");
-            }
+            }*/
             if (orderProcedurePort.FindByNumOrder(orderProcedure) != null)
             {
                 throw new Exception("Ya existe el número de orden");
             }
             if (orderProcedurePort.FindByIdProcedure(orderProcedure) != null)
             {
-                throw new Exception("El procedimiento no existe");
+                throw new Exception("El procedimiento con ese ID ya existe");
             }
             if (orderProcedurePort.FindByItem(orderProcedure) != null)
             {
-                throw new Exception("No existe el número de orden");
+                throw new Exception("Ya existe un procedimiento asignado");
             }
 
             orderProcedurePort.Save(orderProcedure);

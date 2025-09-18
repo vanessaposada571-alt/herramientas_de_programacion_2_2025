@@ -11,7 +11,7 @@ namespace Hospital.domain.services
 {
     internal class U_MedicalRecord
     {
-        private MedicalRecord_port medicalrecord_Port;
+        private MedicalRecord_Port medicalrecord_Port;
 
         public void Update(Medical_record medical_Record)
         {
