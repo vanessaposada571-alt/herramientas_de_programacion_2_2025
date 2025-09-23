@@ -14,38 +14,11 @@ namespace Hospital.domain.services
         private Visit_port visit_Port;
         public void Create(Visit visit)
         {
-
-            if (visit_Port.FindById_patient(visit) == null)
+            if (visit_Port.FindByNumOrder(visit) == null) // se trae la orden, la orden trae el procedimiento (si existe o no), tambien se trae el paciente y el doctor
             {
-                throw new Exception("El paciente no existe");
+                throw new Exception("La orden no exite");
             }
-            if (visit_Port.FindById_doctor(visit) == null)
-            {
-                throw new Exception("El doctor ingresado no existe");
-            }
-            if (visit_Port.FindById_procedure(visit) == null)
-            {
-                throw new Exception("El ID de procedimiento no existe");
-            }
-            if (visit_Port.FindByPressure(visit) == null)
-            {
-                throw new Exception("Debes ingresar la presión del paciente");
-            }
-
-            if (visit_Port.FindByTemperature(visit) == null)
-            {
-                throw new Exception("Debes ingresar la temperatura del paciente");
-            }
-
-            if (visit_Port.FindByPulse(visit) == null)
-            {
-                throw new Exception("Debes ingresar el pulso del paciente");
-            }
-
-            if (visit_Port.FindByBlood_oxygen_level(visit) == null)
-            {
-                throw new Exception("Debes ingresar el nivel de oxígeno en sangre del paciente");
-            }
+            //Agragar orden
             visit_Port.Save(visit);
         }
     }

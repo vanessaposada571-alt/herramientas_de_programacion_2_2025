@@ -11,9 +11,8 @@ namespace Hospital.domain.ports
     internal interface Billings_port
     {
         public Billings FindById_billings(Billings billings);
-        public Patient FindById_Patient(Billings billings);
-        public Medical_insurance FindByPolicy_number(Billings billings);
-        public Medical_insurance FindByInsurance_cost(Billings billings);
+        public Order FindByNumOrder(Billings billings);
+
         public void Save(Billings billings);
         public void Update(Billings billings);
     }

@@ -15,19 +15,10 @@ namespace Hospital.domain.services
         public void Create(Order_help orderHelp)
         {
 
-            if (orderHelpPort.FindByNumOrderA(orderHelp) != null)
+            if (orderHelpPort.FindByNumOrder(orderHelp) != null)
             {
                 throw new Exception("Ya existe el número de orden");
             }
-            if (orderHelpPort.FindByIdHelp(orderHelp) != null)
-            {
-                throw new Exception("Ya existe el número de ayuda");
-            }
-            if (orderHelpPort.FindByIdSpecialist(orderHelp) == null)
-            {
-                throw new Exception("El especialista no existe");
-            }
-
             orderHelpPort.Save(orderHelp);
         }
 

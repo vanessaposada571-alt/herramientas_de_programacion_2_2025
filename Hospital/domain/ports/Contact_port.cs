@@ -10,9 +10,8 @@ namespace Hospital.domain.ports
 {
     internal interface Contact_port
     {
-        public Person FindByName1(Contact contact);
         public Patient FindById_patient(Contact contact);
-        public Person FindByCellphone(Contact contact);
+
         public void Save(Contact contact);
         public void Delete(Contact contact);
         public void Update(Contact contact);

@@ -10,14 +10,8 @@ namespace Hospital.domain.ports
 {
     internal interface Visit_port
     {
-        public Patient FindById_patient(Visit visit);
-        public Doctor FindById_doctor(Visit visit);
-        public Order_procedure FindById_procedure(Visit visit);
-        public Vital_data FindByPressure(Visit visit);
-        public Vital_data FindByTemperature(Visit visit);
-        public Vital_data FindByPulse(Visit visit);
-        public Vital_data FindByBlood_oxygen_level(Visit visit);
-
+        public Order FindByNumOrder(Visit visit);
+        
         public void Save(Visit visit);
         public void Update(Visit visit);
         public void Search(Visit visit);

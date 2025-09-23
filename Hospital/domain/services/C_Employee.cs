@@ -20,7 +20,7 @@ namespace Hospital.domain.services
             {
                 throw new Exception("Ya existe un empleado registrado con ese nombre");
             }
-            if (employee_Port.FindById(user) != null)
+            if (employee_Port.FindById1(user) != null)
             {
                 throw new Exception("Ya existe un empleado registrado con ese documento");
             }

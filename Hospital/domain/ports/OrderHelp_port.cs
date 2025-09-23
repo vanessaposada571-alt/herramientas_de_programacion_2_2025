@@ -10,10 +10,8 @@ namespace Hospital.domain.ports
 {
     internal interface Order_help_port
     {
-        public Order_help FindByNumOrderA(Order_help orderHelp);
-        public Order_help FindByIdHelp(Order_help orderHelp);
-        public Order_help FindByIdSpecialist(Order_help orderHelp);
-        public Order_medicine FindByNumOrder(Order_medicine orderMedicine);
+        public Order FindByNumOrder(Order_help orderHelp);
+
         public void Save(Order_help orderHelp);
         public void Update(Order_help orderHelp);
         public void Search(Order_help orderHelp);

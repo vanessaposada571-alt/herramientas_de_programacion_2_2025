@@ -14,7 +14,7 @@ namespace Hospital.domain.services
         private Employee_port employee_Port;
         public void Update(User user, string list)
         {
-            if (employee_Port.FindById(user) == null)
+            if (employee_Port.FindById1(user) == null)
             {
                 throw new Exception("El empleado no existe en el sistema");
             

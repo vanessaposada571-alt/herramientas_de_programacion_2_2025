@@ -24,16 +24,10 @@ namespace Hospital.domain.services
                 throw new Exception("Ya existe una factura con ese ID.");
             }
 
-            if (billings_Port.FindById_Patient(billings) != null)
+            if (billings_Port.FindByNumOrder(billings) == null) // La orden trae el paciente
             {
-                throw new Exception("Ya existe un paciente registrado con ese ID.");
+                throw new Exception("La orden no existe");
             }
-
-            if (billings_Port.FindByPolicy_number(billings) == null)
-            {
-                throw new Exception("Debe de colocar el numero de poliza.");
-            }
-
             billings_Port.Save(billings);
         }
     }

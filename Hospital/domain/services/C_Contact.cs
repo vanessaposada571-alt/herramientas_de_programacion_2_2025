@@ -14,19 +14,10 @@ namespace Hospital.domain.services
         private Contact_port contact_Port;
         public void Create(Contact contact)
         {
-            if (contact_Port.FindByName1(contact) == null)
-            {
-                throw new Exception("Ingrese un nombre, el campo no puede estar vacío");
-            }
             if(contact_Port.FindById_patient(contact) == null)
             {
                 throw new Exception("El paciente no existe");
             }
-            if(contact_Port.FindByCellphone(contact) == null)
-            {
-                throw new Exception("Ingrese un número de celular el campo no puede estar vacío");
-            }
-
             contact_Port.Save(contact);
 
         }

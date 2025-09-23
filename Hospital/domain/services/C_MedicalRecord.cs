@@ -19,15 +19,7 @@ namespace Hospital.domain.services
             {
                 throw new Exception("Ya existe una orden creada con ese ID");
             }
-            if(medicalrecord_Port.FindById_patient(medical_Record) == null)
-            {
-                throw new Exception("El paciente no existe");
-            }
-            if(medicalrecord_Port.FindById_doctor(medical_Record) == null)
-            {
-                throw new Exception("El medico no existe");
-            }
-            if(medicalrecord_Port.FindByIdOrder(medical_Record) == null)
+            if(medicalrecord_Port.FindByIdOrder(medical_Record) == null) // De la orden se trae el paciente y el doctor
             {
                 throw new Exception("La orden no existe");
             }
