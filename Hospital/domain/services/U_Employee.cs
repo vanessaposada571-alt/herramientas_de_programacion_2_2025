@@ -12,7 +12,7 @@ namespace Hospital.domain.services
     internal class U_Employee
     {
         private Employee_port employee_Port;
-        public void Update(User user, string list)
+        public void Update(User user)
         {
             if (employee_Port.FindById1(user) == null)
             {

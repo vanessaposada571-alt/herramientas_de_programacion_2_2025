@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hospital.domain.model
 {
-    internal class Doctor : Person
+    internal class Doctor : User
     {
         /*private Person name;
         private Patient paciente;
