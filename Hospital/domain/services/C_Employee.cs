@@ -10,7 +10,7 @@ using System.Xml;
 
 namespace Hospital.domain.services
 {
-    internal class C_Employee
+    public class C_Employee
     {
         private Employee_port employee_Port;
         public void Create(User user)

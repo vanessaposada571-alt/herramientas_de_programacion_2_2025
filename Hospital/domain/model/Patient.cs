@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hospital.domain.model
 {
-    internal class Patient:Person
+    public class Patient:Person
     {
         private string id_patient; //Id del paciente
         private Medical_insurance idSure; //Seguro medico

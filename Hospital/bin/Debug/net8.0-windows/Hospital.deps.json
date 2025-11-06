@@ -1,0 +1,77 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Hospital/1.0.0": {
+        "dependencies": {
+          "DotNetOpenAuth.OpenId.Core": "4.3.4.13329"
+        },
+        "runtime": {
+          "Hospital.dll": {}
+        }
+      },
+      "DotNetOpenAuth.Core/4.3.4.13329": {
+        "dependencies": {
+          "Microsoft.Net.Http": "2.0.20505"
+        },
+        "runtime": {
+          "lib/net45-full/DotNetOpenAuth.Core.dll": {
+            "assemblyVersion": "4.3.0.0",
+            "fileVersion": "4.3.4.13329"
+          }
+        }
+      },
+      "DotNetOpenAuth.OpenId.Core/4.3.4.13329": {
+        "dependencies": {
+          "DotNetOpenAuth.Core": "4.3.4.13329"
+        },
+        "runtime": {
+          "lib/net45-full/DotNetOpenAuth.OpenId.dll": {
+            "assemblyVersion": "4.3.0.0",
+            "fileVersion": "4.3.4.13329"
+          }
+        }
+      },
+      "Microsoft.Net.Http/2.0.20505": {
+        "runtime": {
+          "lib/net40/System.Net.Http.WebRequest.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hospital/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DotNetOpenAuth.Core/4.3.4.13329": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sgTuUWHv5tn1weh8jLqXytGQKWpebhk+D4e/RTNNH21eqCEs/ch+x7YxQxzp2u70DO1Hvcjb6dTDj2rO3grgxA==",
+      "path": "dotnetopenauth.core/4.3.4.13329",
+      "hashPath": "dotnetopenauth.core.4.3.4.13329.nupkg.sha512"
+    },
+    "DotNetOpenAuth.OpenId.Core/4.3.4.13329": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-r8XKTJ6c+YvOOQcTLMgjWsfAkNxgxp8QVsP6pRXrg1Onp5TpzNZ9ULVzKkyRRipmC0fEGitydRnjKRDD2QxLtg==",
+      "path": "dotnetopenauth.openid.core/4.3.4.13329",
+      "hashPath": "dotnetopenauth.openid.core.4.3.4.13329.nupkg.sha512"
+    },
+    "Microsoft.Net.Http/2.0.20505": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XRsKQP2XEd/DGLerVsU+T2pKQGTFc9ctWsIVbRblL/y+jT/BUo28aJ5mWN40oAeUwwbpXshAc8uO/LRscWav9A==",
+      "path": "microsoft.net.http/2.0.20505",
+      "hashPath": "microsoft.net.http.2.0.20505.nupkg.sha512"
+    }
+  }
+}

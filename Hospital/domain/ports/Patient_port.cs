@@ -17,6 +17,6 @@ namespace Hospital.domain.ports
         public void Save(Patient patient);
         public void Update(Patient patient);
         public  void Delete(Patient patient);
-        public  void Search(Patient patient);
+        public  Patient Search(Patient patient);
     }
 }

@@ -5,3 +5,25 @@ C:\Users\SISTEMAS\Pictures\herramientas_de_programacion_2\Hospital\obj\Debug\net
 C:\Users\SISTEMAS\Pictures\herramientas_de_programacion_2\Hospital\obj\Debug\net8.0-windows\Hospital.AssemblyInfo.cs
 C:\Users\SISTEMAS\Pictures\herramientas_de_programacion_2\Hospital\obj\Debug\net8.0-windows\Hospital.csproj.CoreCompileInputs.cache
 C:\Users\SISTEMAS\Pictures\herramientas_de_programacion_2\Hospital\obj\Debug\net8.0-windows\Hospital.sourcelink.json
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.Form1.resources
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.AssemblyInfo.cs
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.sourcelink.json
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\bin\Debug\net8.0-windows\Hospital.exe
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\bin\Debug\net8.0-windows\Hospital.deps.json
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\bin\Debug\net8.0-windows\Hospital.runtimeconfig.json
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\bin\Debug\net8.0-windows\Hospital.dll
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\bin\Debug\net8.0-windows\Hospital.pdb
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\bin\Debug\net8.0-windows\DotNetOpenAuth.Core.dll
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\bin\Debug\net8.0-windows\DotNetOpenAuth.OpenId.dll
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\bin\Debug\net8.0-windows\System.Net.Http.WebRequest.dll
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.csproj.Up2Date
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.dll
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\refint\Hospital.dll
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.pdb
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.genruntimeconfig.cache
+C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\ref\Hospital.dll

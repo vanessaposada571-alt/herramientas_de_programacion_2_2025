@@ -1,6 +1,7 @@
 using Hospital.domain.model;
 using System;
 using System.Text.RegularExpressions;
+using Hospital.application.validators;
 
 namespace Hospital.application.validators
 {
@@ -46,20 +47,5 @@ namespace Hospital.application.validators
             var firstNames = string.Join(" ", parts, 0, parts.Length - 1);
             return (firstNames, lastName);
         }
-    }
-
-    public class ValidationResult
-    {
-        public bool IsValid { get; }
-        public string ErrorMessage { get; }
-
-        private ValidationResult(bool isValid, string errorMessage)
-        {
-            IsValid = isValid;
-            ErrorMessage = errorMessage;
-        }
-
-        public static ValidationResult Success() => new ValidationResult(true, null);
-        public static ValidationResult Fail(string errorMessage) => new ValidationResult(false, errorMessage);
     }
 }

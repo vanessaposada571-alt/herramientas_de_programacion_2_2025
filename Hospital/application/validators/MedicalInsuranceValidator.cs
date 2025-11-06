@@ -22,8 +22,6 @@ namespace Hospital.application.validators
             if (insurance.Policy_number.Length > 60)
                 return ValidationResult.Fail("El número de póliza es demasiado largo (máximo 60 caracteres).");
 
-            // Estado de póliza (boolean) -> se asume presente en la entidad, no requiere validación adicional
-
             // Vigencia: fecha de finalización (Effective_Date) obligatoria y no anterior a hoy
             if (insurance.Effective_Date == default(DateTime))
                 return ValidationResult.Fail("La fecha de finalización de la póliza es obligatoria y debe ser válida (dd/mm/yyyy).");
@@ -32,20 +30,5 @@ namespace Hospital.application.validators
 
             return ValidationResult.Success();
         }
-    }
-
-    public class ValidationResult
-    {
-        public bool IsValid { get; }
-        public string ErrorMessage { get; }
-
-        private ValidationResult(bool isValid, string errorMessage)
-        {
-            IsValid = isValid;
-            ErrorMessage = errorMessage;
-        }
-
-        public static ValidationResult Success() => new ValidationResult(true, null);
-        public static ValidationResult Fail(string errorMessage) => new ValidationResult(false, errorMessage);
     }
 }

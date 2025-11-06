@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace Hospital.domain.services
 {
-    internal class S_Patient
+    public class S_Patient
     {
         private Patient_port patient_Port;
-        public void Search(Patient patient)
+        public Patient Search(Patient patient)
         {
             if (patient_Port.FindById_patient(patient) == null)
             {
                 throw new Exception("El paciente no existe");
             }
-            patient_Port.Search(patient);
+            return patient_Port.Search(patient);
         }
     }
 }

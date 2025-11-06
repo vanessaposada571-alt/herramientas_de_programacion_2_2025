@@ -43,7 +43,7 @@ namespace Hospital.application.usecases
 
         public Patient GetPatientById(Patient patient)
         {
-            return _selectPatient.Select(patient);
+            return _selectPatient.Search(patient);
         }
     }
 }

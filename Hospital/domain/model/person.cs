@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Hospital.domain.model
 {
-    internal class Person
+    public class Person
     {
         private String name;
         private long id;

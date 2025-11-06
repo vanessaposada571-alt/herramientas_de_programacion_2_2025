@@ -27,10 +27,6 @@ namespace Hospital.application.validators
             if (nacimiento > DateTime.Now || nacimiento < DateTime.Now.AddYears(-150))
                 return ValidationResult.Fail("La fecha de nacimiento no es válida.");
 
-            // Género: puede validarse si existe (aquí se acepta que venga en Gender1 o en Gender heredado)
-            // (si se requiere valor explícito, descomentar la validación siguiente)
-            // if (patient.Gender1 == null && patient.Gender == default(bool)) ...
-
             // Dirección
             var direccion = patient.Direction1?.Direction ?? patient.Direction;
             if (!string.IsNullOrWhiteSpace(direccion) && direccion.Length > 100)
@@ -38,7 +34,7 @@ namespace Hospital.application.validators
 
             // Teléfono: 10 dígitos (se comprueba contacto de emergencia primero si existe)
             long telefono = 0;
-            if (patient.Contact?.Cellphone != default) telefono = patient.Contact.Cellphone;
+            if (patient.Contact?.Cellphone != null) telefono = patient.Contact.Cellphone.Cellphone;
             if (telefono == 0) telefono = patient.Cellphone1?.Cellphone != default ? patient.Cellphone1.Cellphone : patient.Cellphone;
             var telefonoStr = telefono != 0 ? telefono.ToString() : string.Empty;
             if (string.IsNullOrWhiteSpace(telefonoStr) || telefonoStr.Length != 10)
@@ -75,20 +71,5 @@ namespace Hospital.application.validators
                 return false;
             }
         }
-    }
-
-    public class ValidationResult
-    {
-        public bool IsValid { get; }
-        public string ErrorMessage { get; }
-
-        private ValidationResult(bool isValid, string errorMessage)
-        {
-            IsValid = isValid;
-            ErrorMessage = errorMessage;
-        }
-
-        public static ValidationResult Success() => new ValidationResult(true, null);
-        public static ValidationResult Fail(string errorMessage) => new ValidationResult(false, errorMessage);
     }
 }

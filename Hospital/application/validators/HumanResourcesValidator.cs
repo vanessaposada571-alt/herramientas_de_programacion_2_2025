@@ -17,9 +17,6 @@ namespace Hospital.application.validators
             if (user.Id1 == null || user.Id1.Id <= 0)
                 return ValidationResult.Fail("El número de cédula es obligatorio y debe ser mayor a cero.");
 
-            /* if (!Regex.IsMatch(user.Email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
-            return ValidationResult.Fail("El correo electrónico no es válido.");*/
-
             // Validación de correo electrónico
             if (user.Email1?.Email == null || !IsValidEmail(user.Email1.Email.Address))
                 return ValidationResult.Fail("El correo electrónico no es válido.");
@@ -64,19 +61,4 @@ namespace Hospital.application.validators
             }
         }
     }
-
-    public class ValidationResult
-    {
-        public bool IsValid { get; }
-        public string ErrorMessage { get; }
-
-        private ValidationResult(bool isValid, string errorMessage)
-        {
-            IsValid = isValid;
-            ErrorMessage = errorMessage;
-        }
-
-        public static ValidationResult Success() => new ValidationResult(true, null);
-        public static ValidationResult Fail(string errorMessage) => new ValidationResult(false, errorMessage);
-    }
-}   
+}

@@ -12,4 +12,8 @@
     <PackageReference Include="DotNetOpenAuth.OpenId.Core" Version="4.3.4.13329" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="application\common\" />
+  </ItemGroup>
+
 </Project>

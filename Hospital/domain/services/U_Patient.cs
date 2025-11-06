@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Hospital.domain.services
 {
-    internal class U_Patient
+    public class U_Patient
     {
         private Patient_port patient_Port;
         public void Update(Patient patient)

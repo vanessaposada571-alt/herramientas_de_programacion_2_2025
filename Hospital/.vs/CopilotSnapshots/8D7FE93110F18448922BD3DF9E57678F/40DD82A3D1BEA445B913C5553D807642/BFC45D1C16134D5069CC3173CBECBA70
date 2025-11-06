@@ -1,0 +1,11 @@
+﻿// Facade wrapper that re-exports the shared ValidationResult into the validators namespace
+using Hospital.Common;
+
+namespace Hospital.application.validators
+{
+ public static class ValidationResultFacade
+ {
+ public static ValidationResult Success() => ValidationResult.Success();
+ public static ValidationResult Fail(string errorMessage) => ValidationResult.Fail(errorMessage);
+ }
+}
