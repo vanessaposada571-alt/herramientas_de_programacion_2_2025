@@ -1,0 +1,33 @@
+csharp Hospital\application\validators\InformationSupportValidator.cs
+using System;
+using Hospital.domain.model;
+
+namespace Hospital.application.validators
+{
+    public class InformationSupportValidator
+    {
+        public ValidationResult ValidateMedicine(Order_medicine medicine)
+        {
+            if (medicine == null) return ValidationResult.Fail("Medicamento nulo.");
+            if (medicine.Item <= 0) return ValidationResult.Fail("El costo del medicamento debe ser mayor a 0.");
+            if (string.IsNullOrWhiteSpace(medicine.NumOrder)) return ValidationResult.Fail("Número de orden de medicina es obligatorio.");
+            return ValidationResult.Success();
+        }
+
+        public ValidationResult ValidateProcedure(Order_procedure procedure)
+        {
+            if (procedure == null) return ValidationResult.Fail("Procedimiento nulo.");
+            if (procedure.Amount <= 0) return ValidationResult.Fail("El monto del procedimiento debe ser mayor a 0.");
+            if (string.IsNullOrWhiteSpace(procedure.NumOrderP)) return ValidationResult.Fail("Número de orden de procedimiento es obligatorio.");
+            return ValidationResult.Success();
+        }
+
+        public ValidationResult ValidateHelp(Order_help help)
+        {
+            if (help == null) return ValidationResult.Fail("Ayuda diagnóstica nula.");
+            if (help.Amount <= 0) return ValidationResult.Fail("El monto de la ayuda diagnóstica debe ser mayor a 0.");
+            if (string.IsNullOrWhiteSpace(help.NumOrderA)) return ValidationResult.Fail("Número de orden de ayuda diagnóstica es obligatorio.");
+            return ValidationResult.Success();
+        }
+    }
+}

@@ -1,0 +1,61 @@
+csharp Hospital\application\validators\BillingValidator.cs
+using System;
+using System.Text.RegularExpressions;
+using Hospital.domain.model;
+
+namespace Hospital.application.validators
+{
+    public class BillingValidator
+    {
+        public ValidationResult Validate(Patient patient, Order order)
+        {
+            if (patient == null) return ValidationResult.Fail("Paciente requerido para facturación.");
+            if (order == null) return ValidationResult.Fail("Orden requerida para facturación.");
+
+            // Contacto de emergencia: obligatorio
+            var contact = patient.Contact;
+            if (contact == null) return ValidationResult.Fail("El paciente debe tener un contacto de emergencia.");
+
+            if (string.IsNullOrWhiteSpace(contact.Name1?.Name))
+                return ValidationResult.Fail("El contacto de emergencia debe incluir nombre completo.");
+
+            if (string.IsNullOrWhiteSpace(contact.Relation))
+                return ValidationResult.Fail("La relación del contacto de emergencia con el paciente es obligatoria.");
+
+            // Teléfono 10 dígitos numéricos
+            string phone = string.Empty;
+            try
+            {
+                var phoneLong = contact.Cellphone?.Cellphone ?? 0L;
+                phone = phoneLong > 0 ? phoneLong.ToString() : string.Empty;
+            }
+            catch { phone = string.Empty; }
+
+            if (string.IsNullOrWhiteSpace(phone))
+                return ValidationResult.Fail("El contacto de emergencia debe tener un número de teléfono.");
+            if (!Regex.IsMatch(phone, @"^\d{10}$"))
+                return ValidationResult.Fail("El número de teléfono de emergencia debe contener exactamente 10 dígitos numéricos.");
+
+            // Validar póliza (si existe)
+            var insurance = patient.IdSure;
+            if (insurance != null)
+            {
+                if (string.IsNullOrWhiteSpace(insurance.Company_name))
+                    return ValidationResult.Fail("La compañía de seguros indicada es inválida.");
+
+                if (insurance.Effective_Date != DateTime.MinValue && insurance.Effective_Date < DateTime.Now.AddYears(-100))
+                    return ValidationResult.Fail("Fecha de vigencia de la póliza inválida.");
+            }
+
+            // Totales: la orden debe contener al menos un ítem clínico
+            bool hasItems = (order.NumOrder1 != null) || (order.NumOrderP1 != null) || (order.NumOrderA1 != null)
+                || (order.Medications != null && order.Medications.Any())
+                || (order.Procedures != null && order.Procedures.Any())
+                || (order.DiagnosticTests != null && order.DiagnosticTests.Any());
+
+            if (!hasItems) return ValidationResult.Fail("La orden no contiene ítems clínicos para facturar.");
+
+            return ValidationResult.Success();
+        }
+    }
+}
