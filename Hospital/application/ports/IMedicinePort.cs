@@ -1,5 +1,4 @@
-﻿csharp Hospital\application\ports\IMedicinePort.cs
-using Hospital.domain.model;
+﻿using Hospital.domain.model;
 
 namespace Hospital.application.ports
 {

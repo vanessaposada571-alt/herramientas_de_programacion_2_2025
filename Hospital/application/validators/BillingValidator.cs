@@ -1,4 +1,3 @@
-csharp Hospital\application\validators\BillingValidator.cs
 using System;
 using System.Text.RegularExpressions;
 using Hospital.domain.model;
@@ -48,10 +47,7 @@ namespace Hospital.application.validators
             }
 
             // Totales: la orden debe contener al menos un ítem clínico
-            bool hasItems = (order.NumOrder1 != null) || (order.NumOrderP1 != null) || (order.NumOrderA1 != null)
-                || (order.Medications != null && order.Medications.Any())
-                || (order.Procedures != null && order.Procedures.Any())
-                || (order.DiagnosticTests != null && order.DiagnosticTests.Any());
+            bool hasItems = (order.NumOrder1 != null) || (order.NumOrderP1 != null) || (order.NumOrderA1 != null);
 
             if (!hasItems) return ValidationResult.Fail("La orden no contiene ítems clínicos para facturar.");
 

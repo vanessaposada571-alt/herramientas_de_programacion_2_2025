@@ -1,0 +1,16 @@
+using Hospital.domain.model;
+using Hospital.domain.ports;
+using System;
+
+namespace Hospital.domain.services
+{
+ public class S_OrderHelp
+ {
+ private Order_help_port orderHelpPort;
+
+ public Order FindByNumOrder(Order_help orderHelp)
+ {
+ return orderHelpPort.FindByNumOrder(orderHelp);
+ }
+ }
+}

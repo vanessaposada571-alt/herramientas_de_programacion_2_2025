@@ -1,5 +1,4 @@
-﻿csharp Hospital\application\ports\IBillingPort.cs
-using Hospital.domain.model;
+﻿using Hospital.domain.model;
 using System.Collections.Generic;
 
 namespace Hospital.application.ports

@@ -1,4 +1,3 @@
-csharp Hospital\application\ports\IHelpPort.cs
 using Hospital.domain.model;
 
 namespace Hospital.application.ports

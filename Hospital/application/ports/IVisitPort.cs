@@ -1,4 +1,3 @@
-csharp Hospital\application\ports\IVisitPort.cs
 using Hospital.domain.model;
 using System.Collections.Generic;
 

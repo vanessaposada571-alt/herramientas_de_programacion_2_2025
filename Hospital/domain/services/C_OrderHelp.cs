@@ -9,7 +9,7 @@ using System.Xml;
 
 namespace Hospital.domain.services
 {
-    internal class C_OrderHelp
+    public class C_OrderHelp
     {
         private Order_help_port orderHelpPort;
         public void Create(Order_help orderHelp)
