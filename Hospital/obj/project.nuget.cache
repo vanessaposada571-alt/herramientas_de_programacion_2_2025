@@ -1,21 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "nKXKx/ZzYQk=",
+  "dgSpecHash": "NHTohcpGpLk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\Visual 2022 Proyectos\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\HP\\.nuget\\packages\\dotnetopenauth.core\\4.3.4.13329\\dotnetopenauth.core.4.3.4.13329.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\dotnetopenauth.openid.core\\4.3.4.13329\\dotnetopenauth.openid.core.4.3.4.13329.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.net.http\\2.0.20505\\microsoft.net.http.2.0.20505.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\dotnetopenauth.core\\4.3.4.13329\\dotnetopenauth.core.4.3.4.13329.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\dotnetopenauth.openid.core\\4.3.4.13329\\dotnetopenauth.openid.core.4.3.4.13329.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.net.http\\2.0.20505\\microsoft.net.http.2.0.20505.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.22\\microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.22\\microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.22\\microsoft.netcore.app.host.win-x64.8.0.22.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1602",
       "level": "Warning",
       "message": "DotNetOpenAuth.Core 4.3.4.13329 no proporciona un límite inferior inclusivo para la dependencia Microsoft.Net.Http. Microsoft.Net.Http 2.0.20505 se resolvió en su lugar.",
-      "projectPath": "C:\\Users\\HP\\Desktop\\Visual 2022 Proyectos\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\HP\\Desktop\\Visual 2022 Proyectos\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
+      "filePath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
       "libraryId": "Microsoft.Net.Http",
       "targetGraphs": [
         "net8.0-windows7.0"
@@ -25,9 +29,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "El paquete \"DotNetOpenAuth.Core 4.3.4.13329\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "projectPath": "C:\\Users\\HP\\Desktop\\Visual 2022 Proyectos\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\HP\\Desktop\\Visual 2022 Proyectos\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
+      "filePath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
       "libraryId": "DotNetOpenAuth.Core",
       "targetGraphs": [
         "net8.0-windows7.0"
@@ -37,9 +41,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "El paquete \"DotNetOpenAuth.OpenId.Core 4.3.4.13329\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "projectPath": "C:\\Users\\HP\\Desktop\\Visual 2022 Proyectos\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\HP\\Desktop\\Visual 2022 Proyectos\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
+      "filePath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
       "libraryId": "DotNetOpenAuth.OpenId.Core",
       "targetGraphs": [
         "net8.0-windows7.0"
@@ -49,9 +53,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "El paquete \"Microsoft.Net.Http 2.0.20505\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "projectPath": "C:\\Users\\HP\\Desktop\\Visual 2022 Proyectos\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\HP\\Desktop\\Visual 2022 Proyectos\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
+      "filePath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
       "libraryId": "Microsoft.Net.Http",
       "targetGraphs": [
         "net8.0-windows7.0"

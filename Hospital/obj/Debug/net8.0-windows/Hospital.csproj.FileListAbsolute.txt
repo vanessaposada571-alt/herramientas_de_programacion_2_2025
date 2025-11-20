@@ -30,3 +30,11 @@ C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Ho
 C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.dll
 C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\refint\Hospital.dll
 C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.pdb
+C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.Form1.resources
+C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.AssemblyInfo.cs
+C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.sourcelink.json
