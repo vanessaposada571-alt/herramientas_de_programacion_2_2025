@@ -1,9 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Sebas\\Documents\\herramientas_de_programacion_2_2025\\",
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sebas\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\ports\\IProcedurePort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\usecases\\ClinicalHistoryUseCase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hospital\\application\\usecases\\ClinicalHistoryUseCase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\validators\\ClinicalHistoryValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hospital\\application\\validators\\ClinicalHistoryValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\ports\\IClinicalHistoryPort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hospital\\application\\ports\\IClinicalHistoryPort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\usecases\\BillingUseCase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hospital\\application\\usecases\\BillingUseCase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\ports\\IProcedurePort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hospital\\application\\ports\\IProcedurePort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,15 +35,65 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ClinicalHistoryUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\usecases\\ClinicalHistoryUseCase.cs",
+              "RelativeDocumentMoniker": "Hospital\\application\\usecases\\ClinicalHistoryUseCase.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\usecases\\ClinicalHistoryUseCase.cs",
+              "RelativeToolTip": "Hospital\\application\\usecases\\ClinicalHistoryUseCase.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T23:53:42.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IClinicalHistoryPort.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\ports\\IClinicalHistoryPort.cs",
+              "RelativeDocumentMoniker": "Hospital\\application\\ports\\IClinicalHistoryPort.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\ports\\IClinicalHistoryPort.cs",
+              "RelativeToolTip": "Hospital\\application\\ports\\IClinicalHistoryPort.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T23:53:39.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClinicalHistoryValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\validators\\ClinicalHistoryValidator.cs",
+              "RelativeDocumentMoniker": "Hospital\\application\\validators\\ClinicalHistoryValidator.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\validators\\ClinicalHistoryValidator.cs",
+              "RelativeToolTip": "Hospital\\application\\validators\\ClinicalHistoryValidator.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T23:51:33.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BillingUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\usecases\\BillingUseCase.cs",
+              "RelativeDocumentMoniker": "Hospital\\application\\usecases\\BillingUseCase.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\usecases\\BillingUseCase.cs",
+              "RelativeToolTip": "Hospital\\application\\usecases\\BillingUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T23:45:08.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "IProcedurePort.cs",
-              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\ports\\IProcedurePort.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\ports\\IProcedurePort.cs",
               "RelativeDocumentMoniker": "Hospital\\application\\ports\\IProcedurePort.cs",
-              "ToolTip": "C:\\Users\\Sebas\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\ports\\IProcedurePort.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\application\\ports\\IProcedurePort.cs",
               "RelativeToolTip": "Hospital\\application\\ports\\IProcedurePort.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T23:59:04.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T23:59:04.085Z"
             }
           ]
         }

@@ -3,7 +3,6 @@
     "",
     "\\Hospital",
     "\\Hospital\\application",
-    "\\Hospital\\application\\ports",
     "\\Hospital\\application\\usecases",
     "\\Hospital\\application\\validators",
     "\\Hospital\\domain",
@@ -11,6 +10,6 @@
     "\\Hospital\\domain\\ports",
     "\\Hospital\\domain\\services"
   ],
-  "SelectedNode": "\\Hospital\\application\\ports\\IProcedurePort.cs",
+  "SelectedNode": "\\Hospital\\Hospital.csproj",
   "PreviewInSolutionExplorer": false
 }

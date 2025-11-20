@@ -79,7 +79,7 @@ namespace Hospital.application.usecases
         /// Elimina una entrada de historia clínica.
         /// </summary>
         public void DeleteEntry(Patient patient, DateTime attentionDate)
-        {
+        { if (patient == null)
             if (patient == null) throw new ArgumentNullException(nameof(patient));
             _validator.ValidatePatientKey(patient.Id_patient);
 

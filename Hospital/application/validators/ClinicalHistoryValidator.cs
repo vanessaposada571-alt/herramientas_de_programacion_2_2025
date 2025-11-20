@@ -1,30 +1,40 @@
 using System;
+using System.Text.RegularExpressions;
 using Hospital.domain.model;
 
 namespace Hospital.application.validators
-{
-    /// <summary>
-    /// Validaciones mínimas para la creación/actualización de entradas de historia clínica.
-    /// Lanza ArgumentException si la validación falla.
-    /// </summary>
+{                           
     public class ClinicalHistoryValidator
     {
-        public void ValidateCreateOrUpdate(Doctor doctor, Patient patient, DateTime attentionDate, string content)
+        private static readonly Regex DoctorIdRegex = new Regex(@"^\d{1,10}$", RegexOptions.Compiled);
+
+        /// <summary>
+        /// Valida los campos mínimos de una entrada de historia clínica.
+        /// Diagnosis puede ser vacía (por ejemplo, cuando se solicita una ayuda diagnóstica).
+        /// </summary>
+        public void ValidateCreateOrUpdate(Doctor doctor, Patient patient, ClinicalHistoryEntry entry)
         {
             if (doctor == null) throw new ArgumentNullException(nameof(doctor));
             if (patient == null) throw new ArgumentNullException(nameof(patient));
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+
             if (string.IsNullOrWhiteSpace(patient.Id_patient))
                 throw new ArgumentException("El paciente debe tener una cédula válida (Id_patient).", nameof(patient));
-            if (string.IsNullOrWhiteSpace(content))
-                throw new ArgumentException("El contenido de la historia clínica no puede estar vacío.", nameof(content));
 
-            // Atención: no permitir fechas excesivamente en el futuro
-            if (attentionDate > DateTime.Now.AddMinutes(5))
-                throw new ArgumentException("La fecha de atención no puede ser una fecha futura.", nameof(attentionDate));
+            var docId = doctor.Id_doctor ?? entry.DoctorId ?? string.Empty;
+            if (!DoctorIdRegex.IsMatch(docId))
+                throw new ArgumentException("La cédula del médico debe contener sólo dígitos y máximo 10 caracteres.", nameof(doctor));
 
-            // Validación ligera del doctor: si existe Id_doctor se asume válido; se pueden ampliar reglas.
-            if (string.IsNullOrWhiteSpace(doctor.Id_doctor))
-                throw new ArgumentException("El médico debe tener un identificador (Id_doctor).", nameof(doctor));
+            // Fecha no puede ser futura (pequeña tolerancia)
+            if (entry.AttentionDate > DateTime.Now.AddMinutes(5))
+                throw new ArgumentException("La fecha de atención no puede ser una fecha futura.", nameof(entry.AttentionDate));
+
+            if (string.IsNullOrWhiteSpace(entry.Reason))
+                throw new ArgumentException("El motivo de la consulta no puede estar vacío.", nameof(entry.Reason));
+            if (string.IsNullOrWhiteSpace(entry.Symptoms))
+                throw new ArgumentException("La sintomatología no puede estar vacía.", nameof(entry.Symptoms));
+
+            // Diagnosis: opcional (dejar validación adicional al flujo que maneja órdenes/resultados)
         }
 
         public void ValidatePatientKey(string patientId)
@@ -37,7 +47,6 @@ namespace Hospital.application.validators
         {
             if (string.IsNullOrWhiteSpace(dateKey))
                 throw new ArgumentException("La subclave de fecha es obligatoria.", nameof(dateKey));
-            // No estrictamente necesario parsear aquí, pero se recomienda usar un formato ISO consistente.
         }
     }
 }
