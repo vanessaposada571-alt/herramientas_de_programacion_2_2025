@@ -27,3 +27,6 @@ C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Ho
 C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.pdb
 C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.genruntimeconfig.cache
 C:\Users\HP\Desktop\Visual 2022 Proyectos\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\ref\Hospital.dll
+C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.dll
+C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\refint\Hospital.dll
+C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.pdb
