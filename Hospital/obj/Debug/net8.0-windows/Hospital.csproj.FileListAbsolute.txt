@@ -38,3 +38,6 @@ C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debu
 C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.AssemblyInfo.cs
 C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.sourcelink.json
+C:\Users\Sebas\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.dll
+C:\Users\Sebas\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\refint\Hospital.dll
+C:\Users\Sebas\Documents\herramientas_de_programacion_2_2025\Hospital\obj\Debug\net8.0-windows\Hospital.pdb

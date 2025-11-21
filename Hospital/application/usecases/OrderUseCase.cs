@@ -1,23 +1,26 @@
-
 using System;
 using Hospital.application.validators;
 using Hospital.domain.model;
-using Hospital.domain.ports;
+using Hospital.domain.services;
 
 namespace Hospital.application.usecases
 {
     /// <summary>
     /// Casos de uso para crear/actualizar órdenes (medicamento/procedimiento/ayuda diagnóstica).
-    /// Usa el puerto de dominio Order_port para persistencia SQL.
+    /// Ahora delega la persistencia/consulta a los servicios de dominio en domain\services.
     /// </summary>
     public class OrderUseCase
     {
-        private readonly Order_port _orderPort;
+        private readonly C_Order _createOrder;
+        private readonly U_Order _updateOrder;
+        private readonly S_Order _selectOrder;
         private readonly OrderValidator _validator;
 
-        public OrderUseCase(Order_port orderPort, OrderValidator validator)
+        public OrderUseCase(C_Order createOrder, U_Order updateOrder, S_Order selectOrder, OrderValidator validator)
         {
-            _orderPort = orderPort ?? throw new ArgumentNullException(nameof(orderPort));
+            _createOrder = createOrder ?? throw new ArgumentNullException(nameof(createOrder));
+            _updateOrder = updateOrder ?? throw new ArgumentNullException(nameof(updateOrder));
+            _selectOrder = selectOrder ?? throw new ArgumentNullException(nameof(selectOrder));
             _validator = validator ?? throw new ArgumentNullException(nameof(validator));
         }
 
@@ -27,12 +30,8 @@ namespace Hospital.application.usecases
 
             _validator.ValidateForCreateOrUpdate(order);
 
-            // Comprobar unicidad de número de orden (si el puerto lo soporta)
-            var existing = _orderPort.FindByIDOrder(order);
-            if (existing != null)
-                throw new ArgumentException($"Ya existe una orden con el identificador {order.IdOrder1}.");
-
-            _orderPort.Save(order);
+            // Delegar la comprobación de unicidad y la persistencia al servicio de dominio
+            _createOrder.Create(order);
         }
 
         public void UpdateOrder(Order order)
@@ -41,8 +40,14 @@ namespace Hospital.application.usecases
 
             _validator.ValidateForCreateOrUpdate(order);
 
-            // Se delega al puerto la existencia y actualización
-            _orderPort.Update(order);
+            // Delegar la existencia y actualización al servicio de dominio
+            _updateOrder.Update(order);
+        }
+
+        public Order GetByIdOrder(Order probe)
+        {
+            if (probe == null) throw new ArgumentNullException(nameof(probe));
+            return _selectOrder.Select(probe);
         }
     }
 }

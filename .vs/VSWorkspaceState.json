@@ -2,12 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Hospital",
-    "\\Hospital\\application\\ports",
+    "\\Hospital\\application",
     "\\Hospital\\application\\usecases",
-    "\\Hospital\\application\\validators",
-    "\\Hospital\\domain\\ports",
+    "\\Hospital\\domain",
     "\\Hospital\\domain\\services"
   ],
-  "SelectedNode": "\\Hospital\\Hospital.sln",
+  "SelectedNode": "\\Hospital\\domain\\services\\S_Patient.cs",
   "PreviewInSolutionExplorer": false
 }
