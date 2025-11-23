@@ -10,21 +10,21 @@ namespace Hospital.domain.services
 {
     public class C_Patient
     {
-        private Patient_port patient_Port;
-        public void Create (Patient patient)
+        private readonly Patient_port patient_Port;
+
+        public C_Patient(Patient_port patientPort)
+        {
+            patient_Port = patientPort ?? throw new ArgumentNullException(nameof(patientPort));
+        }
+
+        public void Create(Patient patient)
         {
             if (patient_Port.FindById_patient(patient) != null)
-            {
                 throw new Exception("El paciente con ese Id ya existe");
-            }
             if (patient_Port.FindByContact(patient) == null)
-            {
                 throw new Exception("El paciente tiene que tener un contacto de emergencia");
-            }
             if (patient_Port.FindByIdSure(patient) == null)
-            {
                 throw new Exception("El paciente no tiene seguro");
-            }
 
             patient_Port.Save(patient);
         }

@@ -17,10 +17,10 @@ namespace Hospital.application.usecases
             S_Patient selectPatient,
             PatientValidator validator)
         {
-            _createPatient = createPatient;
-            _updatePatient = updatePatient;
-            _selectPatient = selectPatient;
-            _validator = validator;
+            _createPatient = createPatient ?? throw new ArgumentNullException(nameof(createPatient));
+            _updatePatient = updatePatient ?? throw new ArgumentNullException(nameof(updatePatient));
+            _selectPatient = selectPatient ?? throw new ArgumentNullException(nameof(selectPatient));
+            _validator = validator ?? throw new ArgumentNullException(nameof(validator));
         }
 
         public void RegisterPatient(Patient patient)
@@ -47,3 +47,4 @@ namespace Hospital.application.usecases
         }
     }
 }
+

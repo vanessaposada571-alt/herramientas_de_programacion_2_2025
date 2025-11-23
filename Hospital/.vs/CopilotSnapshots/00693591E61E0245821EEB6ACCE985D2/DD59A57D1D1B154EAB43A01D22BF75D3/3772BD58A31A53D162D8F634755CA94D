@@ -1,0 +1,246 @@
+﻿using Hospital.application.usecases;
+using Hospital.application.validators;
+using Hospital.infraestructure.adapters;
+using Hospital.infraestructure.adapters.output;
+using Hospital.domain.ports;
+using Hospital.domain.model;
+using System;
+using Hospital.domain.services;
+
+namespace Hospital.infraestructure
+{
+    public static class DependencyInjectionConfig
+    {
+        public static void ConfigureServices()
+        {
+            // Adaptadores existentes en el proyecto
+            Patient_port patientPort = new SQLPatientPort();
+            var employeePort = new SqlEmployeePort();
+            var medicalRecordPort = new SqlMedicalRecordPort();
+            var appointmentPort = new SqlAppointmentPort();
+            var orderPort = new SqlOrderPort();
+            var visitPort = new SqlVisitPort();
+
+            // Puertos/Adaptadores faltantes en la carpeta actual del proyecto
+            // Se crean stubs mínimos para evitar errores de compilación.
+            // Implementación real debe reemplazarse por adaptadores que accedan a la BD.
+            var billingPort = new SqlBillingPort();
+            var medicalOrderPort = new SqlMedicalOrderPort();
+
+            // Configurar servicios del dominio (UseCases)
+            // Usar constructores sin parámetros para coincidir con las implementaciones actuales.
+            var createPatient = new C_Patient(patientPort);
+            var updatePatient = new U_Patient();
+            var searchPatient = new S_Patient();
+
+            var createEmployee = new C_Employee(employeePort);
+            var updateEmployee = new U_Employee();
+
+            var createMedicalRecord = new C_MedicalRecord();
+            var updateMedicalRecord = new U_MedicalRecord();
+            var searchMedicalRecord = new S_MedicalRecord();
+
+            var createAppointment = new C_Appointment();
+            var createOrder = new C_Order();
+            var searchOrder = new S_Order();
+
+            var createBilling = new C_Billings();
+            var createVisit = new C_Visit();
+
+            // Crear casos de uso compuestos (wrappers locales) que aceptan las dependencias creadas arriba.
+            var receptionistUseCase = new ReceptionistUseCase(
+                createPatient,
+                updatePatient,
+                searchPatient,
+                createAppointment,
+                searchOrder,
+                searchMedicalRecord,
+                createVisit
+            );
+
+            var adminUseCase = new AdminUseCase(
+                createEmployee,
+                updateEmployee,
+                searchPatient,
+                searchMedicalRecord,
+                searchOrder
+            );
+
+            var doctorUseCase = new DoctorUseCase(
+                searchPatient,
+                createMedicalRecord,
+                updateMedicalRecord,
+                createOrder,
+                searchOrder,
+                createVisit
+            );
+
+            // BillingUseCase real según la firma conocida: (C_Billings, PatientValidator)
+            var billingUseCase = new BillingUseCase(
+                createBilling,
+                new PatientValidator()
+            );
+
+            // Guardar en el service locator
+            ServiceLocator.SetReceptionistUseCase(receptionistUseCase);
+            ServiceLocator.SetAdminUseCase(adminUseCase);
+            ServiceLocator.SetDoctorUseCase(doctorUseCase);
+            ServiceLocator.SetBillingUseCase(billingUseCase);
+        }
+    }
+
+    /// <summary>
+    /// Service Locator para acceso a los casos de uso
+    /// </summary>
+    public static class ServiceLocator
+    {
+        private static ReceptionistUseCase? _receptionistUseCase;
+        private static AdminUseCase? _adminUseCase;
+        private static DoctorUseCase? _doctorUseCase;
+        private static BillingUseCase? _billingUseCase;
+
+        public static void SetReceptionistUseCase(ReceptionistUseCase useCase) => _receptionistUseCase = useCase;
+        public static ReceptionistUseCase? GetReceptionistUseCase() => _receptionistUseCase;
+
+        public static void SetAdminUseCase(AdminUseCase useCase) => _adminUseCase = useCase;
+        public static AdminUseCase? GetAdminUseCase() => _adminUseCase;
+
+        public static void SetDoctorUseCase(DoctorUseCase useCase) => _doctorUseCase = useCase;
+        public static DoctorUseCase? GetDoctorUseCase() => _doctorUseCase;
+
+        public static void SetBillingUseCase(BillingUseCase useCase) => _billingUseCase = useCase;
+        public static BillingUseCase? GetBillingUseCase() => _billingUseCase;
+    }
+
+    // --------------------------------------------------------
+    // Wrappers mínimos para casos de uso compuestos que faltaban.
+    // Se crean aquí para eliminar dependencias rotas en tiempo de compilación.
+    // Reemplazar por las implementaciones reales en la capa de aplicación si existen.
+    // --------------------------------------------------------
+    public class ReceptionistUseCase
+    {
+        public object CreatePatient { get; }
+        public object UpdatePatient { get; }
+        public object SearchPatient { get; }
+        public object CreateAppointment { get; }
+        public object SearchOrder { get; }
+        public object SearchMedicalRecord { get; }
+        public object CreateVisit { get; }
+
+        public ReceptionistUseCase(
+            object createPatient,
+            object updatePatient,
+            object searchPatient,
+            object createAppointment,
+            object searchOrder,
+            object searchMedicalRecord,
+            object createVisit)
+        {
+            CreatePatient = createPatient;
+            UpdatePatient = updatePatient;
+            SearchPatient = searchPatient;
+            CreateAppointment = createAppointment;
+            SearchOrder = searchOrder;
+            SearchMedicalRecord = searchMedicalRecord;
+            CreateVisit = createVisit;
+        }
+    }
+
+    public class AdminUseCase
+    {
+        public object CreateEmployee { get; }
+        public object UpdateEmployee { get; }
+        public object SearchPatient { get; }
+        public object SearchMedicalRecord { get; }
+        public object SearchOrder { get; }
+
+        public AdminUseCase(object createEmployee, object updateEmployee, object searchPatient, object searchMedicalRecord, object searchOrder)
+        {
+            CreateEmployee = createEmployee;
+            UpdateEmployee = updateEmployee;
+            SearchPatient = searchPatient;
+            SearchMedicalRecord = searchMedicalRecord;
+            SearchOrder = searchOrder;
+        }
+    }
+
+    public class DoctorUseCase
+    {
+        public object SearchPatient { get; }
+        public object CreateMedicalRecord { get; }
+        public object UpdateMedicalRecord { get; }
+        public object CreateOrder { get; }
+        public object SearchOrder { get; }
+        public object CreateVisit { get; }
+
+        public DoctorUseCase(object searchPatient, object createMedicalRecord, object updateMedicalRecord, object createOrder, object searchOrder, object createVisit)
+        {
+            SearchPatient = searchPatient;
+            CreateMedicalRecord = createMedicalRecord;
+            UpdateMedicalRecord = updateMedicalRecord;
+            CreateOrder = createOrder;
+            SearchOrder = searchOrder;
+            CreateVisit = createVisit;
+        }
+    }
+
+    // --------------------------------------------------------
+    // Stubs mínimos para adaptadores no presentes en el repositorio.
+    // Sustituir por implementaciones reales que usen ADO.NET / Dapper / EF Core.
+    // --------------------------------------------------------
+    internal class SqlBillingPort : Billings_port
+    {
+        public Billings FindById_billings(Billings billings)
+        {
+            // TODO: Implementar acceso real a BD
+            return null!;
+        }
+
+        public Order FindByNumOrder(Billings billings)
+        {
+            // TODO: Implementar acceso real a BD
+            return null!;
+        }
+
+        public void Save(Billings billings)
+        {
+            // TODO: Implementar inserción en BD
+            return;
+        }
+
+        public void Update(Billings billings)
+        {
+            // TODO: Implementar actualización en BD
+            return;
+        }
+    }
+
+    internal class SqlMedicalOrderPort : Order_medicine_port
+    {
+        public Order_medicine FindByNumOrder(Order_medicine orderMedicine)
+        {
+            // TODO: Implementar acceso real a BD
+            return null!;
+        }
+
+        public void Save(Order_medicine orderMedicine)
+        {
+            // TODO: Implementar inserción en BD
+        }
+
+        public void Update(Order_medicine orderMedicine)
+        {
+            // TODO: Implementar actualización en BD
+        }
+
+        public void Delete(Order_medicine orderMedicine)
+        {
+            // TODO: Implementar borrado en BD
+        }
+
+        public void Search(Order_medicine orderMedicine)
+        {
+            // TODO: Implementar búsqueda en BD
+        }
+    }
+}

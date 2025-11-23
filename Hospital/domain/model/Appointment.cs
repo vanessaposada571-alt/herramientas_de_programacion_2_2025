@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Hospital.domain.model
 {
-    internal class Appointment 
+    public class Appointment 
     {
         private string id_appointment;
         private Patient id_Patient;

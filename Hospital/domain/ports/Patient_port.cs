@@ -8,15 +8,14 @@ using System.Threading.Tasks;
 
 namespace Hospital.domain.ports
 {
-    internal interface Patient_port
+    public interface Patient_port
     {
-        public Patient FindById_patient(Patient patient);
-        public Patient FindByContact(Patient patient);
-        public Patient FindByIdSure(Patient patient);
-
-        public void Save(Patient patient);
-        public void Update(Patient patient);
-        public  void Delete(Patient patient);
-        public  Patient Search(Patient patient);
+        Patient FindById_patient(Patient patient);
+        Patient FindByContact(Patient patient);
+        Patient FindByIdSure(Patient patient);
+        void Save(Patient patient);
+        void Update(Patient patient);
+        void Delete(Patient patient);
+        Patient Search(Patient patient);
     }
 }

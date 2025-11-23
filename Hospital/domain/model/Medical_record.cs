@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Hospital.domain.model
 {
-    internal class Medical_record
+    public class Medical_record
     {
         private int Id_RM;
         private Patient id_patient;
