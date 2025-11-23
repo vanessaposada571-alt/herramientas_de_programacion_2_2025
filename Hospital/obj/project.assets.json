@@ -1,131 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {
-      "DotNetOpenAuth.Core/4.3.4.13329": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Net.Http": "(, )"
-        },
-        "compile": {
-          "lib/net45-full/DotNetOpenAuth.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net45-full/DotNetOpenAuth.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "DotNetOpenAuth.OpenId.Core/4.3.4.13329": {
-        "type": "package",
-        "dependencies": {
-          "DotNetOpenAuth.Core": "[4.3.4.13329]"
-        },
-        "compile": {
-          "lib/net45-full/DotNetOpenAuth.OpenId.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net45-full/DotNetOpenAuth.OpenId.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Net.Http/2.0.20505": {
-        "type": "package",
-        "compile": {
-          "lib/net40/System.Net.Http.WebRequest.dll": {
-            "related": ".xml"
-          },
-          "lib/net40/System.Net.Http.dll": {
-            "related": ".WebRequest.xml;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net40/System.Net.Http.WebRequest.dll": {
-            "related": ".xml"
-          },
-          "lib/net40/System.Net.Http.dll": {
-            "related": ".WebRequest.xml;.xml"
-          }
-        }
-      }
-    }
+    "net8.0-windows7.0": {}
   },
-  "libraries": {
-    "DotNetOpenAuth.Core/4.3.4.13329": {
-      "sha512": "sgTuUWHv5tn1weh8jLqXytGQKWpebhk+D4e/RTNNH21eqCEs/ch+x7YxQxzp2u70DO1Hvcjb6dTDj2rO3grgxA==",
-      "type": "package",
-      "path": "dotnetopenauth.core/4.3.4.13329",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/web.config.transform",
-        "dotnetopenauth.core.4.3.4.13329.nupkg.sha512",
-        "dotnetopenauth.core.nuspec",
-        "lib/net35-full/DotNetOpenAuth.Core.dll",
-        "lib/net35-full/DotNetOpenAuth.Core.xml",
-        "lib/net40-full/DotNetOpenAuth.Core.dll",
-        "lib/net40-full/DotNetOpenAuth.Core.xml",
-        "lib/net45-full/DotNetOpenAuth.Core.dll",
-        "lib/net45-full/DotNetOpenAuth.Core.xml"
-      ]
-    },
-    "DotNetOpenAuth.OpenId.Core/4.3.4.13329": {
-      "sha512": "r8XKTJ6c+YvOOQcTLMgjWsfAkNxgxp8QVsP6pRXrg1Onp5TpzNZ9ULVzKkyRRipmC0fEGitydRnjKRDD2QxLtg==",
-      "type": "package",
-      "path": "dotnetopenauth.openid.core/4.3.4.13329",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/net35-full/web.config.transform",
-        "content/net40-full/web.config.transform",
-        "content/net45-full/web.config.transform",
-        "dotnetopenauth.openid.core.4.3.4.13329.nupkg.sha512",
-        "dotnetopenauth.openid.core.nuspec",
-        "lib/net35-full/DotNetOpenAuth.OpenId.dll",
-        "lib/net35-full/DotNetOpenAuth.OpenId.xml",
-        "lib/net35-full/Mono.Math.dll",
-        "lib/net35-full/Mono.Math.xml",
-        "lib/net35-full/Org.Mentalis.Security.Cryptography.dll",
-        "lib/net35-full/Org.Mentalis.Security.Cryptography.xml",
-        "lib/net40-full/DotNetOpenAuth.OpenId.dll",
-        "lib/net40-full/DotNetOpenAuth.OpenId.xml",
-        "lib/net40-full/Mono.Math.dll",
-        "lib/net40-full/Mono.Math.xml",
-        "lib/net40-full/Org.Mentalis.Security.Cryptography.dll",
-        "lib/net40-full/Org.Mentalis.Security.Cryptography.xml",
-        "lib/net45-full/DotNetOpenAuth.OpenId.dll",
-        "lib/net45-full/DotNetOpenAuth.OpenId.xml",
-        "lib/net45-full/Mono.Math.dll",
-        "lib/net45-full/Mono.Math.xml",
-        "lib/net45-full/Org.Mentalis.Security.Cryptography.dll",
-        "lib/net45-full/Org.Mentalis.Security.Cryptography.xml"
-      ]
-    },
-    "Microsoft.Net.Http/2.0.20505": {
-      "sha512": "XRsKQP2XEd/DGLerVsU+T2pKQGTFc9ctWsIVbRblL/y+jT/BUo28aJ5mWN40oAeUwwbpXshAc8uO/LRscWav9A==",
-      "type": "package",
-      "path": "microsoft.net.http/2.0.20505",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Net.Http.WebRequest.dll",
-        "lib/net40/System.Net.Http.WebRequest.xml",
-        "lib/net40/System.Net.Http.dll",
-        "lib/net40/System.Net.Http.xml",
-        "microsoft.net.http.2.0.20505.nupkg.sha512",
-        "microsoft.net.http.nuspec"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": [
-      "DotNetOpenAuth.OpenId.Core >= 4.3.4.13329"
-    ]
+    "net8.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\Usuario\\.nuget\\packages\\": {},
@@ -153,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -176,12 +57,6 @@
     "frameworks": {
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
-        "dependencies": {
-          "DotNetOpenAuth.OpenId.Core": {
-            "target": "Package",
-            "version": "[4.3.4.13329, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -193,24 +68,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.22, 8.0.22]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.22, 8.0.22]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.22, 8.0.22]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.22, 8.0.22]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -222,47 +79,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1602",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "DotNetOpenAuth.Core 4.3.4.13329 no proporciona un límite inferior inclusivo para la dependencia Microsoft.Net.Http. Microsoft.Net.Http 2.0.20505 se resolvió en su lugar.",
-      "libraryId": "Microsoft.Net.Http",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"DotNetOpenAuth.Core 4.3.4.13329\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "libraryId": "DotNetOpenAuth.Core",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"DotNetOpenAuth.OpenId.Core 4.3.4.13329\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "libraryId": "DotNetOpenAuth.OpenId.Core",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"Microsoft.Net.Http 2.0.20505\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "libraryId": "Microsoft.Net.Http",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

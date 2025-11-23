@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Hospital.domain.model
+{
+    public class Contact:Person
+    {
+        private Patient id_patient;
+        private string relation;
+
+        internal Patient Id_patient{ get => id_patient; set => id_patient = value; }
+        public string Relation { get => relation; set => relation = value; }
+    }
+}

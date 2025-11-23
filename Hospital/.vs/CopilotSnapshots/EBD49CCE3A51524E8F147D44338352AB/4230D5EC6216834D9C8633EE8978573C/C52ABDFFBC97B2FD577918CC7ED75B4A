@@ -1,0 +1,21 @@
+﻿using Hospital.domain.model;
+
+namespace Hospital.domain.services
+{
+    // Servicios mínimos para usar desde los casos de uso.
+    // Las implementaciones concretas pueden añadirse en otra parte (p. ej. adapters / infra).
+    public interface C_Order
+    {
+        void Create(Order order);
+    }
+
+    public interface U_Order
+    {
+        void Update(Order order);
+    }
+
+    public interface S_Order
+    {
+        Order Select(Order probe);
+    }
+}

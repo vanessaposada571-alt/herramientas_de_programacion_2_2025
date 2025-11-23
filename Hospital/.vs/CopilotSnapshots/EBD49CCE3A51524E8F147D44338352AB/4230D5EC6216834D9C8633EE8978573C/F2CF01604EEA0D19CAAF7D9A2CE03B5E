@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Hospital.domain.model
+{
+    public class Patient:Person
+    {
+        private string id_patient; //Id del paciente
+        private Medical_insurance idSure; //Seguro medico
+        private string policyNumber; // Número de Poliza
+        private Contact contact;
+
+        public string Id_patient { get => id_patient; set => id_patient = value; }
+        public Medical_insurance IdSure { get => idSure; set => idSure = value; }
+        public string PolicyNumber { get => policyNumber; set => policyNumber = value; }
+        internal Contact Contact { get => contact; set => contact = value; }
+    }
+}

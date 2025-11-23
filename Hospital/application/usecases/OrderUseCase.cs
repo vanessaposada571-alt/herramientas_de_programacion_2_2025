@@ -11,12 +11,12 @@ namespace Hospital.application.usecases
     /// </summary>
     public class OrderUseCase
     {
-        private readonly C_Order _createOrder;
-        private readonly U_Order _updateOrder;
-        private readonly S_Order _selectOrder;
+        private readonly IC_Order _createOrder;
+        private readonly IU_Order _updateOrder;
+        private readonly IS_Order _selectOrder;
         private readonly OrderValidator _validator;
 
-        public OrderUseCase(C_Order createOrder, U_Order updateOrder, S_Order selectOrder, OrderValidator validator)
+        public OrderUseCase(IC_Order createOrder, IU_Order updateOrder, IS_Order selectOrder, OrderValidator validator)
         {
             _createOrder = createOrder ?? throw new ArgumentNullException(nameof(createOrder));
             _updateOrder = updateOrder ?? throw new ArgumentNullException(nameof(updateOrder));

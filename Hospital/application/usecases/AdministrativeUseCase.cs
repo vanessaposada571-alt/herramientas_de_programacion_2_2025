@@ -5,7 +5,7 @@ using Hospital.domain.services;
 namespace Hospital.application.usecases
 {
     public class AdministrativeUseCase
-    {
+    {   
         private readonly C_Patient _createPatient;
         private readonly U_Patient _updatePatient;
         private readonly S_Patient _selectPatient;

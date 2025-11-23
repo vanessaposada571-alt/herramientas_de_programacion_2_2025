@@ -1,14 +1,22 @@
 using Hospital.application.usecases;
+using Hospital.domain.services;
 
 namespace Hospital
 {
     public partial class Form1 : Form
     {
         private OrderUseCase _orderUseCase;
-        public Form1( OrderUseCase orderUseCase)
+        public Form1()
         {
             InitializeComponent();
-            this._orderUseCase = orderUseCase;
+
+            // Crear stubs mínimos en memoria para que la UI funcione si no hay DI configurado.
+            var create = new InMemoryOrderService();
+            var update = new InMemoryOrderService();
+            var select = new InMemoryOrderService();
+            var validator = new Hospital.application.validators.OrderValidator();
+
+            _orderUseCase = new OrderUseCase(create, update, select, validator);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -26,6 +34,25 @@ namespace Hospital
             MessageBox.Show("al hacer click en el boton mueste un mensaje" + textBox1.Text);
 
             _orderUseCase.CreateOrder(null);
+        }
+    }
+
+    // Implementación mínima en memoria para los servicios de orden usados por el caso de uso.
+    internal class InMemoryOrderService : IC_Order, IU_Order, IS_Order
+    {
+        public void Create(Hospital.domain.model.Order order)
+        {
+            // stub: no-op
+        }
+
+        public void Update(Hospital.domain.model.Order order)
+        {
+            // stub: no-op
+        }
+
+        public Hospital.domain.model.Order Select(Hospital.domain.model.Order probe)
+        {
+            return null;
         }
     }
 }

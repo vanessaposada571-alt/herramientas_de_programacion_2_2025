@@ -18,12 +18,5 @@ namespace Hospital.application.validators
         {
             return StringNotNullOrEmpty(idDoctor, "idDoctor");
         }
-
-        private string StringNotNullOrEmpty(string value, string fieldName)
-        {
-            if (string.IsNullOrEmpty(value))
-                throw new Exception($"El campo {fieldName} no puede estar vacío.");
-            return value;
-        }
     }
 }
