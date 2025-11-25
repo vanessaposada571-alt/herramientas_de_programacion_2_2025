@@ -36,7 +36,7 @@ namespace Hospital.infraestructure.adapters.output
             const string sql = @"
                 SELECT u.UserId, u.Role, u.UserName, u.PasswordHash,
                        p.PersonId, p.Name, p.IdNumber, p.Email, p.Cellphone, p.BirthDate, p.Gender, p.Direction
-                FROM dbo.Users u
+                FROM users u
                 INNER JOIN dbo.Person p ON u.PersonId = p.PersonId
                 WHERE p.Name = @name";
 
@@ -52,13 +52,14 @@ namespace Hospital.infraestructure.adapters.output
         {
             // Inserta Person y User en dos pasos (transacción simple)
             const string insertPerson = @"
-                INSERT INTO dbo.Person (Name, IdNumber, Email, Cellphone, BirthDate, Gender, Direction)
+                INSERT INTO person (Name, IdNumber, Email, Cellphone, BirthDate, Gender, Direction)
                 VALUES (@name, @idNumber, @email, @cellphone, @birthDate, @gender, @direction);
                 SELECT CAST(SCOPE_IDENTITY() AS BIGINT);";
 
             const string insertUser = @"
-                INSERT INTO dbo.Users (PersonId, Role, UserName, PasswordHash)
-                VALUES (@personId, @role, @userName, @passwordHash);";
+                INSERT INTO users (PersonId, Role, UserName, PasswordHash)
+                VALUES (@personId, @role, @userName, @passwordHash);
+                SELECT CAST(SCOPE_IDENTITY() AS BIGINT);";
 
             using var cn = GetConn();
             cn.Open();
@@ -66,27 +67,40 @@ namespace Hospital.infraestructure.adapters.output
             try
             {
                 using var cmd1 = new SqlCommand(insertPerson, cn, tx);
-                cmd1.Parameters.AddWithValue("@name", user.Name ?? "");
-                cmd1.Parameters.AddWithValue("@idNumber", user.Id);
-                cmd1.Parameters.AddWithValue("@email", user.Email?.Address ?? "");
-                cmd1.Parameters.AddWithValue("@cellphone", user.Cellphone);
-                cmd1.Parameters.AddWithValue("@birthDate", (object) (user.Birth == default ? DBNull.Value : user.Birth));
-                cmd1.Parameters.AddWithValue("@gender", user.Gender ? 1 : 0);
-                cmd1.Parameters.AddWithValue("@direction", user.Direction ?? "");
-                var personId = (long)cmd1.ExecuteScalar();
+                cmd1.Parameters.AddWithValue("@name", (object)(user.Name ?? string.Empty));
+                cmd1.Parameters.AddWithValue("@idNumber", user.Id != 0 ? (object)user.Id : DBNull.Value);
+                cmd1.Parameters.AddWithValue("@email", !string.IsNullOrWhiteSpace(user.Email?.Address) ? (object)user.Email.Address : DBNull.Value);
+                cmd1.Parameters.AddWithValue("@cellphone", user.Cellphone != 0 ? (object)user.Cellphone : DBNull.Value);
+                cmd1.Parameters.AddWithValue("@birthDate", user.Birth != default ? (object)user.Birth : DBNull.Value);
+                cmd1.Parameters.AddWithValue("@gender", (object)(user.Gender ? 1 : 0));
+                cmd1.Parameters.AddWithValue("@direction", !string.IsNullOrWhiteSpace(user.Direction) ? (object)user.Direction : DBNull.Value);
+
+                var personIdObj = cmd1.ExecuteScalar();
+                if (personIdObj == null || personIdObj == DBNull.Value)
+                    throw new Exception("No se pudo obtener PersonId tras insertar Person.");
+
+                var personId = Convert.ToInt64(personIdObj);
 
                 using var cmd2 = new SqlCommand(insertUser, cn, tx);
                 cmd2.Parameters.AddWithValue("@personId", personId);
-                cmd2.Parameters.AddWithValue("@role", user.Rol ?? "");
-                cmd2.Parameters.AddWithValue("@userName", user.Name_user ?? "");
-                cmd2.Parameters.AddWithValue("@passwordHash", user.Password ?? "");
-                cmd2.ExecuteNonQuery();
+                cmd2.Parameters.AddWithValue("@role", (object)(user.Rol ?? string.Empty));
+                cmd2.Parameters.AddWithValue("@userName", (object)(user.Name_user ?? string.Empty));
+                cmd2.Parameters.AddWithValue("@passwordHash", (object)(user.Password ?? string.Empty));
 
+                var userIdObj = cmd2.ExecuteScalar();
+                if (userIdObj == null || userIdObj == DBNull.Value)
+                    throw new Exception("No se pudo obtener UserId tras insertar Users.");
+
+                // Commit only after both inserts succeeded
                 tx.Commit();
+
+                // Optional: you could set some properties on the domain objects if needed
+                // long newUserId = Convert.ToInt64(userIdObj);
             }
-            catch
+            catch(Exception ex)
             {
                 tx.Rollback();
+                MessageBox.Show("Error al guardar el usuario: " + ex.Message);
                 throw;
             }
         }
@@ -106,16 +120,16 @@ namespace Hospital.infraestructure.adapters.output
             using var cn = GetConn();
             cn.Open();
             using var cmd = new SqlCommand(updatePerson + updateUser, cn);
-            cmd.Parameters.AddWithValue("@name", existingUser.Name ?? "");
-            cmd.Parameters.AddWithValue("@email", existingUser.Email?.Address ?? "");
-            cmd.Parameters.AddWithValue("@cellphone", existingUser.Cellphone);
+            cmd.Parameters.AddWithValue("@name", existingUser.Name ?? string.Empty);
+            cmd.Parameters.AddWithValue("@email", !string.IsNullOrWhiteSpace(existingUser.Email?.Address) ? (object)existingUser.Email.Address : DBNull.Value);
+            cmd.Parameters.AddWithValue("@cellphone", existingUser.Cellphone != 0 ? (object)existingUser.Cellphone : DBNull.Value);
             cmd.Parameters.AddWithValue("@birthDate", (object)(existingUser.Birth == default ? DBNull.Value : existingUser.Birth));
             cmd.Parameters.AddWithValue("@gender", existingUser.Gender ? 1 : 0);
-            cmd.Parameters.AddWithValue("@direction", existingUser.Direction ?? "");
+            cmd.Parameters.AddWithValue("@direction", !string.IsNullOrWhiteSpace(existingUser.Direction) ? (object)existingUser.Direction : DBNull.Value);
             cmd.Parameters.AddWithValue("@idNumber", existingUser.Id);
-            cmd.Parameters.AddWithValue("@role", existingUser.Rol ?? "");
-            cmd.Parameters.AddWithValue("@userName", existingUser.Name_user ?? "");
-            cmd.Parameters.AddWithValue("@passwordHash", existingUser.Password ?? "");
+            cmd.Parameters.AddWithValue("@role", existingUser.Rol ?? string.Empty);
+            cmd.Parameters.AddWithValue("@userName", existingUser.Name_user ?? string.Empty);
+            cmd.Parameters.AddWithValue("@passwordHash", existingUser.Password ?? string.Empty);
             cmd.ExecuteNonQuery();
         }
 
@@ -142,14 +156,14 @@ namespace Hospital.infraestructure.adapters.output
         private static User MapUser(SqlDataReader rd)
         {
             var u = new User();
-            u.Name = rd["Name"]?.ToString() ?? "";
+            u.Name = rd["Name"]?.ToString() ?? string.Empty;
             u.Id = rd["IdNumber"] != DBNull.Value ? Convert.ToInt64(rd["IdNumber"]) : 0L;
             var emailStr = rd["Email"]?.ToString();
             u.Email = !string.IsNullOrWhiteSpace(emailStr) ? new MailAddress(emailStr) : null;
             u.Cellphone = rd["Cellphone"] != DBNull.Value ? Convert.ToInt64(rd["Cellphone"]) : 0L;
-            u.Rol = rd["Role"]?.ToString() ?? "";
-            u.Name_user = rd["UserName"]?.ToString() ?? "";
-            u.Password = rd["PasswordHash"]?.ToString() ?? "";
+            u.Rol = rd["Role"]?.ToString() ?? string.Empty;
+            u.Name_user = rd["UserName"]?.ToString() ?? string.Empty;
+            u.Password = rd["PasswordHash"]?.ToString() ?? string.Empty;
             return u;
         }
     }

@@ -23,5 +23,8 @@ namespace Hospital.domain.model
 
         // Some parts of the code expect contact.Cellphone.Cellphone, keep a wrapper
         internal Person Cellphone { get => _cellphoneWrapper; set => _cellphoneWrapper = value; }
+
+        // Nuevo: guarda el PersonId (BIGINT) correspondiente a la fila en dbo.Person
+        public long PersonId { get; set; }
     }
 }

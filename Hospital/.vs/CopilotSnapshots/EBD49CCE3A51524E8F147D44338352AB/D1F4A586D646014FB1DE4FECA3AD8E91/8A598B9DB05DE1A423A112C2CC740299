@@ -1,0 +1,156 @@
+﻿using Hospital.domain.ports;
+using Hospital.domain.model;
+using System;
+using System.Data;
+using Microsoft.Data.SqlClient;
+using System.Net.Mail;
+
+namespace Hospital.infraestructure.adapters.output
+{
+    public class SqlEmployeePort : Employee_port
+    {
+        private SqlConnection GetConn() => new SqlConnection(Config.SqlConnectionString);
+
+        public User FindById1(User user)
+        {
+            if (user == null) return null;
+            // Buscamos por número de identificación (Id en el dominio -> Person.IdNumber)
+            const string sql = @"
+                SELECT u.UserId, u.Role, u.UserName, u.PasswordHash,
+                       p.PersonId, p.Name, p.IdNumber, p.Email, p.Cellphone, p.BirthDate, p.Gender, p.Direction
+                FROM dbo.Users u
+                INNER JOIN dbo.Person p ON u.PersonId = p.PersonId
+                WHERE p.IdNumber = @idNumber";
+
+            using var cn = GetConn();
+            cn.Open();
+            using var cmd = new SqlCommand(sql, cn);
+            cmd.Parameters.AddWithValue("@idNumber", user.Id);
+            using var rd = cmd.ExecuteReader(CommandBehavior.SingleRow);
+            return rd.Read() ? MapUser(rd) : null;
+        }
+
+        public User FindByName_user(User user)
+        {
+            if (user == null) return null;
+            const string sql = @"
+                SELECT u.UserId, u.Role, u.UserName, u.PasswordHash,
+                       p.PersonId, p.Name, p.IdNumber, p.Email, p.Cellphone, p.BirthDate, p.Gender, p.Direction
+                FROM dbo.Users u
+                INNER JOIN dbo.Person p ON u.PersonId = p.PersonId
+                WHERE p.Name = @name";
+
+            using var cn = GetConn();
+            cn.Open();
+            using var cmd = new SqlCommand(sql, cn);
+            cmd.Parameters.AddWithValue("@name", user.Name ?? string.Empty);
+            using var rd = cmd.ExecuteReader(CommandBehavior.SingleRow);
+            return rd.Read() ? MapUser(rd) : null;
+        }
+
+        public void Save(User user)
+        {
+            // Inserta Person y User en dos pasos (transacción simple)
+            const string insertPerson = @"
+                INSERT INTO dbo.Person (Name, IdNumber, Email, Cellphone, BirthDate, Gender, Direction)
+                VALUES (@name, @idNumber, @email, @cellphone, @birthDate, @gender, @direction);
+                SELECT CAST(SCOPE_IDENTITY() AS BIGINT);";
+
+            const string insertUser = @"
+                INSERT INTO dbo.Users (PersonId, Role, UserName, PasswordHash)
+                VALUES (@personId, @role, @userName, @passwordHash);";
+
+            using var cn = GetConn();
+            cn.Open();
+            using var tx = cn.BeginTransaction();
+            try
+            {
+                using var cmd1 = new SqlCommand(insertPerson, cn, tx);
+                cmd1.Parameters.AddWithValue("@name", user.Name ?? "");
+                cmd1.Parameters.AddWithValue("@idNumber", user.Id);
+                cmd1.Parameters.AddWithValue("@email", user.Email?.Address ?? "");
+                cmd1.Parameters.AddWithValue("@cellphone", user.Cellphone);
+                cmd1.Parameters.AddWithValue("@birthDate", (object) (user.Birth == default ? DBNull.Value : user.Birth));
+                cmd1.Parameters.AddWithValue("@gender", user.Gender ? 1 : 0);
+                cmd1.Parameters.AddWithValue("@direction", user.Direction ?? "");
+                var personId = (long)cmd1.ExecuteScalar();
+
+                using var cmd2 = new SqlCommand(insertUser, cn, tx);
+                cmd2.Parameters.AddWithValue("@personId", personId);
+                cmd2.Parameters.AddWithValue("@role", user.Rol ?? "");
+                cmd2.Parameters.AddWithValue("@userName", user.Name_user ?? "");
+                cmd2.Parameters.AddWithValue("@passwordHash", user.Password ?? "");
+                cmd2.ExecuteNonQuery();
+
+                tx.Commit();
+            }
+            catch
+            {
+                tx.Rollback();
+                throw;
+            }
+        }
+
+        public void Update(User existingUser)
+        {
+            const string updatePerson = @"
+                UPDATE dbo.Person
+                SET Name = @name, Email = @email, Cellphone = @cellphone, BirthDate = @birthDate, Gender = @gender, Direction = @direction
+                WHERE IdNumber = @idNumber;";
+
+            const string updateUser = @"
+                UPDATE dbo.Users
+                SET Role = @role, UserName = @userName, PasswordHash = @passwordHash
+                WHERE PersonId = (SELECT PersonId FROM dbo.Person WHERE IdNumber = @idNumber);";
+
+            using var cn = GetConn();
+            cn.Open();
+            using var cmd = new SqlCommand(updatePerson + updateUser, cn);
+            cmd.Parameters.AddWithValue("@name", existingUser.Name ?? "");
+            cmd.Parameters.AddWithValue("@email", existingUser.Email?.Address ?? "");
+            cmd.Parameters.AddWithValue("@cellphone", existingUser.Cellphone);
+            cmd.Parameters.AddWithValue("@birthDate", (object)(existingUser.Birth == default ? DBNull.Value : existingUser.Birth));
+            cmd.Parameters.AddWithValue("@gender", existingUser.Gender ? 1 : 0);
+            cmd.Parameters.AddWithValue("@direction", existingUser.Direction ?? "");
+            cmd.Parameters.AddWithValue("@idNumber", existingUser.Id);
+            cmd.Parameters.AddWithValue("@role", existingUser.Rol ?? "");
+            cmd.Parameters.AddWithValue("@userName", existingUser.Name_user ?? "");
+            cmd.Parameters.AddWithValue("@passwordHash", existingUser.Password ?? "");
+            cmd.ExecuteNonQuery();
+        }
+
+        public void Delete(User user)
+        {
+            // Borra usuario y persona asociada (cascada definida en la BD si se desea)
+            const string deleteUser = @"
+                DELETE FROM dbo.Users WHERE PersonId = (SELECT PersonId FROM dbo.Person WHERE IdNumber = @idNumber);
+                DELETE FROM dbo.Person WHERE IdNumber = @idNumber;";
+
+            using var cn = GetConn();
+            cn.Open();
+            using var cmd = new SqlCommand(deleteUser, cn);
+            cmd.Parameters.AddWithValue("@idNumber", user.Id);
+            cmd.ExecuteNonQuery();
+        }
+
+        public void Search(User user)
+        {
+            // No implementado: la consulta depende de criterios
+            throw new NotImplementedException();
+        }
+
+        private static User MapUser(SqlDataReader rd)
+        {
+            var u = new User();
+            u.Name = rd["Name"]?.ToString() ?? "";
+            u.Id = rd["IdNumber"] != DBNull.Value ? Convert.ToInt64(rd["IdNumber"]) : 0L;
+            var emailStr = rd["Email"]?.ToString();
+            u.Email = !string.IsNullOrWhiteSpace(emailStr) ? new MailAddress(emailStr) : null;
+            u.Cellphone = rd["Cellphone"] != DBNull.Value ? Convert.ToInt64(rd["Cellphone"]) : 0L;
+            u.Rol = rd["Role"]?.ToString() ?? "";
+            u.Name_user = rd["UserName"]?.ToString() ?? "";
+            u.Password = rd["PasswordHash"]?.ToString() ?? "";
+            return u;
+        }
+    }
+}

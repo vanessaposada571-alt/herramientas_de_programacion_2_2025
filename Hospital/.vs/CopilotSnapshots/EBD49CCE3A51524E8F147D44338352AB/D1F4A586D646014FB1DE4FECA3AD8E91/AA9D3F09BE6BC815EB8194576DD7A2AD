@@ -1,0 +1,160 @@
+﻿using Hospital.domain.model;
+using Hospital.domain.ports;
+using System;
+using System.Data;
+using Microsoft.Data.SqlClient;
+using System.Net.Mail;
+
+namespace Hospital.infraestructure.adapters.output
+{
+    public class SQLPatientPort : Patient_port
+    {
+        private SqlConnection GetConn() => new SqlConnection(Config.SqlConnectionString);
+
+        public Patient FindById_patient(Patient patient)
+        {
+            if (patient == null) return null;
+            const string sql = @"
+                SELECT p.PatientId, p.PolicyNumber,
+                       per.PersonId, per.Name, per.IdNumber, per.Email, per.Cellphone, per.BirthDate, per.Gender, per.Direction,
+                       mi.MedicalInsuranceId, mi.CompanyName, mi.PolicyNumber AS MiPolicyNumber, mi.EffectiveDate
+                FROM dbo.Patient p
+                LEFT JOIN dbo.Person per ON p.PersonId = per.PersonId
+                LEFT JOIN dbo.MedicalInsurance mi ON p.MedicalInsuranceId = mi.MedicalInsuranceId
+                WHERE p.PatientId = @patientId";
+
+            using var cn = GetConn();
+            cn.Open();
+            using var cmd = new SqlCommand(sql, cn);
+            cmd.Parameters.AddWithValue("@patientId", patient.Id_patient ?? string.Empty);
+            using var rd = cmd.ExecuteReader(CommandBehavior.SingleRow);
+            if (!rd.Read()) return null;
+
+            var res = new Patient();
+            res.Id_patient = rd["PatientId"]?.ToString();
+            res.Name1 = new Person { Name = rd["Name"]?.ToString() ?? "" };
+            res.Gender1 = new Person { Gender = rd["Gender"] != DBNull.Value && Convert.ToBoolean(rd["Gender"]) };
+            var emailStr = rd["Email"]?.ToString();
+            if (!string.IsNullOrWhiteSpace(emailStr)) res.Email1 = new Person { Email = new MailAddress(emailStr) };
+            return res;
+        }
+
+        public Patient FindByContact(Patient patient)
+        {
+            // Buscar paciente por contacto: usar tabla Contact
+            const string sql = @"
+                SELECT p.PatientId, per.Name, c.Name AS ContactName, c.Cellphone, c.Relation
+                FROM dbo.Patient p
+                LEFT JOIN dbo.Person per ON p.PersonId = per.PersonId
+                LEFT JOIN dbo.Contact c ON c.PatientId = p.PatientId
+                WHERE c.Cellphone = @cellphone";
+
+            using var cn = GetConn();
+            cn.Open();
+            using var cmd = new SqlCommand(sql, cn);
+            cmd.Parameters.AddWithValue("@cellphone", patient.Cellphone1?.Cellphone ?? 0L);
+            using var rd = cmd.ExecuteReader(CommandBehavior.SingleRow);
+            return rd.Read() ? new Patient { Id_patient = rd["PatientId"]?.ToString() ?? "" } : null;
+        }
+
+        public Patient FindByIdSure(Patient patient)
+        {
+            // Buscar por seguro asociado
+            const string sql = @"
+                SELECT p.PatientId
+                FROM dbo.Patient p
+                WHERE p.MedicalInsuranceId = @miId";
+
+            using var cn = GetConn();
+            cn.Open();
+            using var cmd = new SqlCommand(sql, cn);
+            cmd.Parameters.AddWithValue("@miId", patient.IdSure?.IdSure ?? 0);
+            using var rd = cmd.ExecuteReader(CommandBehavior.SingleRow);
+            return rd.Read() ? new Patient { Id_patient = rd["PatientId"]?.ToString() ?? "" } : null;
+        }
+
+        public void Save(Patient patient)
+        {
+            // Guardado mínimo: insertar Person y Patient (no Contact/Insurance completo)
+            const string insertPerson = @"
+                INSERT INTO dbo.Person (Name, IdNumber, Email, Cellphone, BirthDate, Gender, Direction)
+                VALUES (@name, @idNumber, @email, @cellphone, @birthDate, @gender, @direction);
+                SELECT CAST(SCOPE_IDENTITY() AS BIGINT);";
+
+            const string insertPatient = @"
+                INSERT INTO dbo.Patient (PatientId, PersonId, MedicalInsuranceId, PolicyNumber)
+                VALUES (@patientId, @personId, @medicalInsuranceId, @policyNumber);";
+
+            using var cn = GetConn();
+            cn.Open();
+            using var tx = cn.BeginTransaction();
+            try
+            {
+                using var cmd1 = new SqlCommand(insertPerson, cn, tx);
+                cmd1.Parameters.AddWithValue("@name", patient.Name1?.Name ?? "");
+                cmd1.Parameters.AddWithValue("@idNumber", patient.Name1?.Id ?? 0L);
+                cmd1.Parameters.AddWithValue("@email", patient.Email1?.Email?.Address ?? "");
+                cmd1.Parameters.AddWithValue("@cellphone", patient.Cellphone1?.Cellphone ?? 0L);
+                cmd1.Parameters.AddWithValue("@birthDate", (object)(patient.Birth == default ? DBNull.Value : patient.Birth));
+                cmd1.Parameters.AddWithValue("@gender", patient.Gender1?.Gender == true ? 1 : 0);
+                cmd1.Parameters.AddWithValue("@direction", patient.Direction1?.Direction ?? "");
+                var personId = (long)cmd1.ExecuteScalar();
+
+                using var cmd2 = new SqlCommand(insertPatient, cn, tx);
+                cmd2.Parameters.AddWithValue("@patientId", patient.Id_patient ?? Guid.NewGuid().ToString());
+                cmd2.Parameters.AddWithValue("@personId", personId);
+                cmd2.Parameters.AddWithValue("@medicalInsuranceId", patient.IdSure?.IdSure ?? (object)DBNull.Value);
+                cmd2.Parameters.AddWithValue("@policyNumber", patient.PolicyNumber ?? "");
+                cmd2.ExecuteNonQuery();
+
+                tx.Commit();
+            }
+            catch
+            {
+                tx.Rollback();
+                throw;
+            }
+        }
+
+        public void Update(Patient p)
+        {
+            const string updatePerson = @"
+                UPDATE dbo.Person
+                SET Name = @name, Email = @email, Cellphone = @cellphone, BirthDate = @birthDate, Gender = @gender, Direction = @direction
+                WHERE PersonId = (SELECT PersonId FROM dbo.Patient WHERE PatientId = @patientId);";
+
+            using var cn = GetConn();
+            cn.Open();
+            using var cmd = new SqlCommand(updatePerson, cn);
+            cmd.Parameters.AddWithValue("@name", p.Name1?.Name ?? "");
+            cmd.Parameters.AddWithValue("@email", p.Email1?.Email?.Address ?? "");
+            cmd.Parameters.AddWithValue("@cellphone", p.Cellphone1?.Cellphone ?? 0L);
+            cmd.Parameters.AddWithValue("@birthDate", (object)(p.Birth == default ? DBNull.Value : p.Birth));
+            cmd.Parameters.AddWithValue("@gender", p.Gender1?.Gender == true ? 1 : 0);
+            cmd.Parameters.AddWithValue("@direction", p.Direction1?.Direction ?? "");
+            cmd.Parameters.AddWithValue("@patientId", p.Id_patient ?? string.Empty);
+            cmd.ExecuteNonQuery();
+        }
+
+        public void Delete(Patient patient)
+        {
+            // Implementación básica: eliminar paciente por Id
+            const string sql = @"DELETE FROM dbo.Patient WHERE PatientId = @patientId";
+            using var cn = GetConn();
+            cn.Open();
+            using var cmd = new SqlCommand(sql, cn);
+            cmd.Parameters.AddWithValue("@patientId", patient.Id_patient ?? string.Empty);
+            cmd.ExecuteNonQuery();
+        }
+
+        public Patient Search(Patient patient)
+        {
+            return FindById_patient(patient);
+        }
+
+        public Patient Search(Patient patient, bool dummy = false)
+        {
+            return FindById_patient(patient);
+        }
+    }
+}
