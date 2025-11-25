@@ -1,0 +1,53 @@
+﻿using Hospital.domain.model;
+using Hospital.domain.ports;
+using System;
+
+namespace Hospital.domain.services
+{
+    public class C_Medical_insurance
+    {
+        private readonly Medical_insurance_port insurancePort;
+        private readonly Patient_port patientPort; // nuevo: puerto para paciente
+
+        public C_Medical_insurance(Medical_insurance_port insurancePort, Patient_port patientPort)
+        {
+            this.insurancePort = insurancePort ?? throw new ArgumentNullException(nameof(insurancePort));
+            this.patientPort = patientPort ?? throw new ArgumentNullException(nameof(patientPort));
+        }
+
+        public void Create(Medical_insurance insurance)
+        {
+            if (insurance == null) throw new ArgumentNullException(nameof(insurance));
+
+            // Verificar existencia de paciente
+            if (insurance.PatientId == null)
+            {
+                throw new Exception("La póliza debe especificar un PatientId");
+            }
+
+            var patientProbe = new Patient { Id = insurance.PatientId.Value };
+            var existingPatient = patientPort.FindById(patientProbe);
+            if (existingPatient == null)
+            {
+                throw new Exception("No existe el paciente especificado");
+            }
+
+            if (insurancePort.FindByPolicy_number(insurance) != null)
+            {
+                throw new Exception("Ya existe una póliza con ese número");
+            }
+            if (insurancePort.FindByIdSure(insurance) != null)
+            {
+                throw new Exception("Ya existe el id del seguro");
+            }
+
+            // Guardar póliza
+            insurancePort.Save(insurance);
+
+            // Asociar en tabla patient: actualizar campos MedicalInsuranceId y PolicyNumber
+            existingPatient.MedicalInsuranceId = insurance.IdSure; // asume que Save pobló IdSure
+            existingPatient.PolicyNumber = insurance.Policy_number;
+            patientPort.Update(existingPatient);
+        }
+    }
+}

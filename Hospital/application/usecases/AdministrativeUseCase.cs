@@ -5,7 +5,7 @@ using Hospital.domain.services;
 namespace Hospital.application.usecases
 {
     public class AdministrativeUseCase
-    {   
+    {
         private readonly C_Patient _createPatient;
         private readonly U_Patient _updatePatient;
         private readonly S_Patient _selectPatient;
@@ -27,7 +27,7 @@ namespace Hospital.application.usecases
         {
             var result = _validator.Validate(patient);
             if (!result.IsValid)
-                throw new System.ArgumentException(result.ErrorMessage);
+                throw new ArgumentException(result.ErrorMessage);
 
             _createPatient.Create(patient);
         }
@@ -36,7 +36,7 @@ namespace Hospital.application.usecases
         {
             var result = _validator.Validate(patient);
             if (!result.IsValid)
-                throw new System.ArgumentException(result.ErrorMessage);
+                throw new ArgumentException(result.ErrorMessage);
 
             _updatePatient.Update(patient);
         }
@@ -47,4 +47,3 @@ namespace Hospital.application.usecases
         }
     }
 }
-

@@ -1,4 +1,4 @@
-using System;
+Ôªøusing System;
 using System.Drawing;
 using System.Net.Mail;
 using System.Windows.Forms;
@@ -21,7 +21,7 @@ namespace Hospital
         private Label lblBirth;
         private DateTimePicker dtpBirth;
         private Label lblGender;
-        private ComboBox cmbGender;
+        private TextBox txtGender;
         private Label lblDirection;
         private TextBox txtDirection;
 
@@ -36,6 +36,7 @@ namespace Hospital
         private Button btnRegister;
         private Button btnUpdate;
         private Button btnGet;
+        private Button btnBack; // nuevo
 
         public AdministrativeForm(application.usecases.AdministrativeUseCase useCase)
         {
@@ -45,7 +46,7 @@ namespace Hospital
 
         private void InitializeComponents()
         {
-            Text = "AdministraciÛn de Pacientes";
+            Text = "Administraci√≥n de Pacientes";
             Size = new Size(520, 460);
             StartPosition = FormStartPosition.CenterScreen;
             FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -70,7 +71,7 @@ namespace Hospital
             txtEmail = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
             y += rowHeight;
 
-            lblCellphone = new Label { Text = "TelÈfono:", Left = leftCol, Top = y, Width = labelWidth };
+            lblCellphone = new Label { Text = "Tel√©fono:", Left = leftCol, Top = y, Width = labelWidth };
             txtCellphone = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
             y += rowHeight;
 
@@ -78,13 +79,11 @@ namespace Hospital
             dtpBirth = new DateTimePicker { Left = inputLeft, Top = y - 4, Width = 200, Format = DateTimePickerFormat.Short };
             y += rowHeight;
 
-            lblGender = new Label { Text = "GÈnero:", Left = leftCol, Top = y, Width = labelWidth };
-            cmbGender = new ComboBox { Left = inputLeft, Top = y - 4, Width = 150, DropDownStyle = ComboBoxStyle.DropDownList };
-            cmbGender.Items.AddRange(new[] { "No especificado", "Masculino", "Femenino" });
-            cmbGender.SelectedIndex = 0;
+            lblGender = new Label { Text = "G√©nero:", Left = leftCol, Top = y, Width = labelWidth };
+            txtGender = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
             y += rowHeight;
 
-            lblDirection = new Label { Text = "DirecciÛn:", Left = leftCol, Top = y, Width = labelWidth };
+            lblDirection = new Label { Text = "Direcci√≥n:", Left = leftCol, Top = y, Width = labelWidth };
             txtDirection = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
             y += rowHeight + 6;
 
@@ -93,17 +92,21 @@ namespace Hospital
             txtContactName = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
             y += rowHeight;
 
-            lblContactRelation = new Label { Text = "RelaciÛn Contacto:", Left = leftCol, Top = y, Width = labelWidth };
+            lblContactRelation = new Label { Text = "Relaci√≥n Contacto:", Left = leftCol, Top = y, Width = labelWidth };
             txtContactRelation = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
             y += rowHeight;
 
-            lblContactPhone = new Label { Text = "TelÈfono Contacto:", Left = leftCol, Top = y, Width = labelWidth };
+            lblContactPhone = new Label { Text = "Tel√≥fono Contacto:", Left = leftCol, Top = y, Width = labelWidth };
             txtContactPhone = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
             y += rowHeight + 6;
 
             btnRegister = new Button { Text = "Registrar", Left = leftCol + 10, Top = y, Width = 120 };
             btnUpdate = new Button { Text = "Actualizar", Left = leftCol + 150, Top = y, Width = 120 };
             btnGet = new Button { Text = "Obtener por Id", Left = leftCol + 290, Top = y, Width = 120 };
+
+            // Bot√≥n regresar agregado
+            btnBack = new Button { Text = "Regresar", Left = leftCol + 420, Top = y, Width = 80 };
+            btnBack.Click += (_, _) => Close();
 
             btnRegister.Click += BtnRegister_Click;
             btnUpdate.Click += BtnUpdate_Click;
@@ -116,13 +119,13 @@ namespace Hospital
                 lblEmail, txtEmail,
                 lblCellphone, txtCellphone,
                 lblBirth, dtpBirth,
-                lblGender, cmbGender,
+                lblGender, txtGender,
                 lblDirection, txtDirection,
                 // controls de contacto
                 lblContactName, txtContactName,
                 lblContactRelation, txtContactRelation,
                 lblContactPhone, txtContactPhone,
-                btnRegister, btnUpdate, btnGet
+                btnRegister, btnUpdate, btnGet, btnBack
             });
         }
 
@@ -132,7 +135,7 @@ namespace Hospital
             try
             {
                 _useCase.RegisterPatient(patient);
-                MessageBox.Show("Paciente registrado correctamente.", "…xito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Paciente registrado correctamente.", "√âxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -146,7 +149,7 @@ namespace Hospital
             try
             {
                 _useCase.UpdatePatient(patient);
-                MessageBox.Show("Paciente actualizado correctamente.", "…xito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Paciente actualizado correctamente.", "√âxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -162,7 +165,7 @@ namespace Hospital
                 var found = _useCase.GetPatientById(query);
                 if (found == null)
                 {
-                    MessageBox.Show("No se encontrÛ el paciente.", "InformaciÛn", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No se encontr√≥ el paciente.", "Informaci√≥n", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
 
@@ -173,10 +176,8 @@ namespace Hospital
                 dtpBirth.Value = found.Birth == default ? DateTime.Today : found.Birth;
                 txtDirection.Text = found.Direction ?? "";
 
-                if (found.Gender1 != null)
-                    cmbGender.SelectedIndex = found.Gender1.Gender ? 1 : 2;
-                else
-                    cmbGender.SelectedIndex = 0;
+                // Mostrar el g√©nero desde el wrapper Person (ahora es TextBox)
+                txtGender.Text = found.Gender1?.Gender ?? "";
 
                 // Si hay contacto, rellenar los campos nuevos
                 if (found.Contact != null)
@@ -239,7 +240,8 @@ namespace Hospital
             p.Birth = dtpBirth.Value;
             p.Direction = txtDirection.Text?.Trim() ?? "";
 
-            p.Gender1 = new Person { Gender = cmbGender.SelectedIndex == 1 };
+            // Asignar g√©nero desde el TextBox al wrapper Person (Gender1.Gender)
+            p.Gender1 = new Person { Gender = txtGender.Text?.Trim() ?? string.Empty };
 
             // Construir contacto de emergencia a partir de los nuevos campos
             var contactName = txtContactName.Text?.Trim();
@@ -261,7 +263,7 @@ namespace Hospital
                 {
                     contact.Cellphone.Cellphone = contactPhone;
                 }
-                // si no parsea, dejar cellphone en 0; el validador lo detectar· y retornar· error si falta
+                // si no parsea, dejar cellphone en 0; el validador lo detectar√° y retornar√° error si falta
                 p.Contact = contact;
             }
 

@@ -63,6 +63,21 @@ namespace Hospital.infraestructure.adapters.output
 
             using var cn = GetConn();
             cn.Open();
+
+            // Validación: UserName no repetido (comparación trim + LOWER)
+            var userNameToCheck = user.Name_user?.Trim();
+            if (!string.IsNullOrWhiteSpace(userNameToCheck))
+            {
+                const string checkSql = @"
+                    SELECT COUNT(1)
+                    FROM dbo.Users
+                    WHERE LOWER(LTRIM(RTRIM(UserName))) = LOWER(LTRIM(@userName))";
+                using var checkCmd = new SqlCommand(checkSql, cn);
+                checkCmd.Parameters.AddWithValue("@userName", userNameToCheck);
+                var exists = Convert.ToInt32(checkCmd.ExecuteScalar() ?? 0) > 0;
+                if (exists) throw new Exception("El UserName ya está en uso.");
+            }
+
             using var tx = cn.BeginTransaction();
             try
             {
@@ -72,7 +87,11 @@ namespace Hospital.infraestructure.adapters.output
                 cmd1.Parameters.AddWithValue("@email", !string.IsNullOrWhiteSpace(user.Email?.Address) ? (object)user.Email.Address : DBNull.Value);
                 cmd1.Parameters.AddWithValue("@cellphone", user.Cellphone != 0 ? (object)user.Cellphone : DBNull.Value);
                 cmd1.Parameters.AddWithValue("@birthDate", user.Birth != default ? (object)user.Birth : DBNull.Value);
-                cmd1.Parameters.AddWithValue("@gender", (object)(user.Gender ? 1 : 0));
+
+                // Normalizar género: aceptar que el cliente escriba "masculino" o "femenino" (variantes toleradas)
+                var genderNormalized = NormalizeGender(user.Gender);
+                cmd1.Parameters.AddWithValue("@gender", genderNormalized != null ? (object)genderNormalized : DBNull.Value);
+
                 cmd1.Parameters.AddWithValue("@direction", !string.IsNullOrWhiteSpace(user.Direction) ? (object)user.Direction : DBNull.Value);
 
                 var personIdObj = cmd1.ExecuteScalar();
@@ -124,7 +143,11 @@ namespace Hospital.infraestructure.adapters.output
             cmd.Parameters.AddWithValue("@email", !string.IsNullOrWhiteSpace(existingUser.Email?.Address) ? (object)existingUser.Email.Address : DBNull.Value);
             cmd.Parameters.AddWithValue("@cellphone", existingUser.Cellphone != 0 ? (object)existingUser.Cellphone : DBNull.Value);
             cmd.Parameters.AddWithValue("@birthDate", (object)(existingUser.Birth == default ? DBNull.Value : existingUser.Birth));
-            cmd.Parameters.AddWithValue("@gender", existingUser.Gender ? 1 : 0);
+
+            // Normalizar género: aceptar texto tal como lo escribe el cliente ("masculino" / "femenino")
+            var genderNormalized = NormalizeGender(existingUser.Gender);
+            cmd.Parameters.AddWithValue("@gender", genderNormalized != null ? (object)genderNormalized : DBNull.Value);
+
             cmd.Parameters.AddWithValue("@direction", !string.IsNullOrWhiteSpace(existingUser.Direction) ? (object)existingUser.Direction : DBNull.Value);
             cmd.Parameters.AddWithValue("@idNumber", existingUser.Id);
             cmd.Parameters.AddWithValue("@role", existingUser.Rol ?? string.Empty);
@@ -161,10 +184,26 @@ namespace Hospital.infraestructure.adapters.output
             var emailStr = rd["Email"]?.ToString();
             u.Email = !string.IsNullOrWhiteSpace(emailStr) ? new MailAddress(emailStr) : null;
             u.Cellphone = rd["Cellphone"] != DBNull.Value ? Convert.ToInt64(rd["Cellphone"]) : 0L;
+
+            // Mapear y normalizar género para que sea "masculino" o "femenino" si es posible
+            u.Gender = NormalizeGender(rd["Gender"]?.ToString());
+
             u.Rol = rd["Role"]?.ToString() ?? string.Empty;
             u.Name_user = rd["UserName"]?.ToString() ?? string.Empty;
             u.Password = rd["PasswordHash"]?.ToString() ?? string.Empty;
+            u.Direction = rd["Direction"]?.ToString() ?? string.Empty;
             return u;
+        }
+
+        // Helper: normaliza variantes comunes y devuelve "masculino" o "femenino" si se reconoce.
+        // Si no se reconoce y el valor es no vacío, devuelve el valor saneado en minúsculas; si está vacío, devuelve null.
+        private static string NormalizeGender(string gender)
+        {
+            if (string.IsNullOrWhiteSpace(gender)) return null;
+            var g = gender.Trim().ToLowerInvariant();
+            if (g == "m" || g == "masculino" || g == "male" || g == "masc" || g == "Masculino") return "masculino";
+            if (g == "f" || g == "femenino" || g == "female" || g == "fem" || g == "Femenino") return "femenino";
+            return g; // devolver la forma saneada para flexibilidad
         }
     }
 }

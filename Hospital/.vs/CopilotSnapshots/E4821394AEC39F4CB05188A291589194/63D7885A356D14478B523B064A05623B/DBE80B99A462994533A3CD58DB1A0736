@@ -1,0 +1,22 @@
+﻿using Hospital.domain.model;
+using Hospital.domain.ports;
+using System;
+
+namespace Hospital.domain.services
+{
+    public class S_Medical_insurance
+    {
+        private readonly Medical_insurance_port insurancePort;
+
+        public S_Medical_insurance(Medical_insurance_port insurancePort)
+        {
+            this.insurancePort = insurancePort ?? throw new ArgumentNullException(nameof(insurancePort));
+        }
+
+        public Medical_insurance Select(Medical_insurance probe)
+        {
+            var found = insurancePort.FindByPolicy_number(probe);
+            return found;
+        }
+    }
+}

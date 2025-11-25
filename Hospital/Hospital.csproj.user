@@ -4,6 +4,15 @@
     <Compile Update="AdministrativeForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="application\forms\MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="application\forms\PatientConsultationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MedicalInsuranceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="BillingForm.cs">
       <SubType>Form</SubType>
     </Compile>

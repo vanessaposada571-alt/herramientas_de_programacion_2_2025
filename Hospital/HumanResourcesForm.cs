@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Windows.Forms;
 using Hospital.application.usecases;
 using Hospital.domain.model;
@@ -6,7 +6,6 @@ using Hospital.domain.model;
 public class HumanResourcesForm : Form
 {
     private readonly HumanResourcesUseCase _useCase;
-    private TextBox txtName;
     private TextBox txtUsername;
     private TextBox txtPassword;
     private TextBox txtRole;
@@ -28,13 +27,10 @@ public class HumanResourcesForm : Form
         FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
 
-        var lblName = new Label() { Text = "Nombre completo:", Left = 12, Top = 20, Width = 110 };
-        txtName = new TextBox() { Left = 130, Top = 18, Width = 260 };
-
         var lblUsername = new Label() { Text = "Usuario:", Left = 12, Top = 60, Width = 110 };
-        txtUsername = new TextBox() { Left = 130, Top = 58, Width = 260 };
+        txtUsername = new TextBox() { Left = 130, Top = 58, Width = 260};
 
-        var lblPassword = new Label() { Text = "Contraseña:", Left = 12, Top = 100, Width = 110 };
+        var lblPassword = new Label() { Text = "ContraseÃ±a:", Left = 12, Top = 100, Width = 110 };
         txtPassword = new TextBox() { Left = 130, Top = 98, Width = 260, UseSystemPasswordChar = true };
 
         var lblRole = new Label() { Text = "Rol:", Left = 12, Top = 140, Width = 110 };
@@ -43,11 +39,11 @@ public class HumanResourcesForm : Form
         btnRegister = new Button() { Text = "Registrar", Left = 130, Top = 180, Width = 120 };
         btnRegister.Click += BtnRegister_Click;
 
-        btnClose = new Button() { Text = "Cerrar", Left = 270, Top = 180, Width = 120 };
+        // Cambiado a Regresar para consistencia; cierra el form
+        btnClose = new Button() { Text = "Regresar", Left = 270, Top = 180, Width = 120 };
         btnClose.Click += (_, _) => Close();
 
         Controls.AddRange(new Control[] {
-            lblName, txtName,
             lblUsername, txtUsername,
             lblPassword, txtPassword,
             lblRole, txtRole,
@@ -68,7 +64,7 @@ public class HumanResourcesForm : Form
         try
         {
             _useCase.Register(user);
-            MessageBox.Show("Empleado registrado.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Empleado registrado.", "Ã‰xito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Close();
         }
         catch (Exception ex)

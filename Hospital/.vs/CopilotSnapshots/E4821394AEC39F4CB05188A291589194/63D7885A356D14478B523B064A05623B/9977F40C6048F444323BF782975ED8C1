@@ -1,0 +1,98 @@
+﻿using System;
+using System.Windows.Forms;
+using Hospital.application.usecases;
+using Hospital.domain.services;
+using Hospital.application.validators;
+using Hospital.infraestructure.adapters.output;
+using Hospital;
+using Hospital.application.forms; // <-- Corregido: usar el espacio de nombres donde realmente está MedicalInsuranceForm
+
+static class Program
+{
+    [STAThread]
+    static void Main()
+    {
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+
+        int choice = ShowSelectionDialog();
+        if (choice == 1)
+        {
+            var employeePort = new SqlEmployeePort();
+            var hrUseCase = new HumanResourcesUseCase(
+                new C_Employee(employeePort),
+                new U_Employee(),
+                new S_Employee()
+            );
+
+            Application.Run(new HumanResourcesForm(hrUseCase));
+        }
+        else if (choice == 2)
+        {
+            var patientPort = new SQLPatientPort();
+            var selectPatient = new S_Patient(patientPort);
+            var createPatient = new C_Patient(patientPort);
+            var updatePatient = new U_Patient(patientPort);
+            var validator = new PatientValidator();
+
+            var administrativeUseCase = new AdministrativeUseCase(
+                createPatient,
+                updatePatient,
+                selectPatient,
+                validator
+            );
+
+            Application.Run(new AdministrativeForm(administrativeUseCase));
+        }
+        else if (choice == 3)
+        {
+            // Abrir formulario de Póliza (MedicalInsurance)
+            var insurancePort = new SQLMedicalInsurancePort(); // nombre real según tu infra
+            var patientPort = new SQLPatientPort();
+
+            var createInsurance = new C_Medical_insurance(insurancePort, patientPort);
+            var updateInsurance = new U_Medical_insurance(insurancePort);
+            var selectInsurance = new S_Medical_insurance(insurancePort);
+
+            var miUseCase = new MedicalInsuranceUseCase(
+                createInsurance,
+                updateInsurance,
+                selectInsurance,
+                new MedicalInsuranceValidator()
+            );
+
+            Application.Run(new MedicalInsuranceForm(miUseCase)); // <-- MedicalInsuranceForm ahora se resuelve via Hospital.application.forms
+        }
+    }
+
+    // Muestra un diálogo simple para seleccionar el formulario
+    private static int ShowSelectionDialog()
+    {
+        using var dlg = new Form()
+        {
+            Text = "Seleccionar módulo",
+            StartPosition = FormStartPosition.CenterScreen,
+            Width = 420,
+            Height = 180,
+            FormBorderStyle = FormBorderStyle.FixedDialog,
+            MaximizeBox = false,
+            MinimizeBox = false
+        };
+
+        var btnHR = new Button() { Text = "Recursos Humanos", Left = 20, Top = 50, Width = 120 };
+        var btnPatient = new Button() { Text = "Registrar Paciente", Left = 150, Top = 50, Width = 140 };
+        var btnPolicy = new Button() { Text = "Pólizas", Left = 300, Top = 50, Width = 80 };
+
+        int result = 0;
+        btnHR.Click += (_, _) => { result = 1; dlg.Close(); };
+        btnPatient.Click += (_, _) => { result = 2; dlg.Close(); };
+        btnPolicy.Click += (_, _) => { result = 3; dlg.Close(); };
+
+        dlg.Controls.Add(btnHR);
+        dlg.Controls.Add(btnPatient);
+        dlg.Controls.Add(btnPolicy);
+
+        dlg.ShowDialog();
+        return result;
+    }
+}

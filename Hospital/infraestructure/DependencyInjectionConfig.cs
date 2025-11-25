@@ -30,7 +30,7 @@ namespace Hospital.infraestructure
             // Configurar servicios del dominio (UseCases)
             // Usar constructores sin parámetros para coincidir con las implementaciones actuales.
             var createPatient = new C_Patient(patientPort);
-            var updatePatient = new U_Patient();
+            var updatePatient = new U_Patient(patientPort);
             var searchPatient = new S_Patient();
 
             var createEmployee = new C_Employee(employeePort);

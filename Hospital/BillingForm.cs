@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Hospital.application.usecases;
 using Hospital.domain.model;
+using Hospital.domain.ports;
 
 namespace Hospital
 {
@@ -11,56 +12,65 @@ namespace Hospital
     {
         private readonly BillingUseCase _useCase;
 
-        private Label lblPatientName;
-        private TextBox txtPatientName;
-        private Label lblAge;
-        private NumericUpDown numAge;
-        private Label lblCedula;
-        private TextBox txtCedula;
+        // Controles inicializados en InitializeComponent; usar null-forgiving para silenciar advertencias de análisis de nullability
+        private Label lblPatientName = null!;
+        private TextBox txtPatientName = null!;
+        private Label lblAge = null!;
+        private NumericUpDown numAge = null!;
+        private Label lblCedula = null!;
+        private TextBox txtCedula = null!;
 
-        private Label lblDoctorName;
-        private TextBox txtDoctorName;
+        private Label lblDoctorName = null!;
+        private TextBox txtDoctorName = null!;
 
-        private Label lblInsuranceCompany;
-        private TextBox txtInsuranceCompany;
-        private Label lblPolicyNumber;
-        private TextBox txtPolicyNumber;
-        private Label lblPolicyDays;
-        private NumericUpDown numPolicyDays;
-        private Label lblPolicyEnd;
-        private DateTimePicker dtpPolicyEnd;
+        private Label lblInsuranceCompany = null!;
+        private TextBox txtInsuranceCompany = null!;
+        private Label lblPolicyNumber = null!;
+        private TextBox txtPolicyNumber = null!;
+        private Label lblPolicyDays = null!;
+        private NumericUpDown numPolicyDays = null!;
+        private Label lblPolicyEnd = null!;
+        private DateTimePicker dtpPolicyEnd = null!;
 
         // Listas para órdenes / medicamentos / procedimientos
-        private Label lblDiagnostics;
-        private ListBox lstDiagnostics;
-        private TextBox txtAddDiagnostic;
-        private Button btnAddDiagnostic;
-        private Button btnRemoveDiagnostic;
+        private Label lblDiagnostics = null!;
+        private ListBox lstDiagnostics = null!;
+        private TextBox txtAddDiagnostic = null!;
+        private Button btnAddDiagnostic = null!;
+        private Button btnRemoveDiagnostic = null!;
 
-        private Label lblMedicines;
-        private ListBox lstMedicines;
-        private TextBox txtAddMedicine;
-        private Button btnAddMedicine;
-        private Button btnRemoveMedicine;
+        private Label lblMedicines = null!;
+        private ListBox lstMedicines = null!;
+        private TextBox txtAddMedicine = null!;
+        private Button btnAddMedicine = null!;
+        private Button btnRemoveMedicine = null!;
 
-        private Label lblProcedures;
-        private ListBox lstProcedures;
-        private TextBox txtAddProcedure;
-        private Button btnAddProcedure;
-        private Button btnRemoveProcedure;
+        private Label lblProcedures = null!;
+        private ListBox lstProcedures = null!;
+        private TextBox txtAddProcedure = null!;
+        private Button btnAddProcedure = null!;
+        private Button btnRemoveProcedure = null!;
 
-        private Label lblAmount;
-        private TextBox txtAmount;
+        private Label lblAmount = null!;
+        private TextBox txtAmount = null!;
 
-        private Button btnSave;
-        private Button btnUpdate;
-        private Button btnFind;
-        private Button btnClose;
+        private Button btnSave = null!;
+        private Button btnUpdate = null!;
+        private Button btnFind = null!;
+        private Button btnClose = null!;
+        private Patient_port patientPort;
+        private Medical_insurance_port insurancePort;
 
-        public BillingForm(BillingUseCase useCase)
+        public BillingForm(domain.ports.Patient_port patientPort, BillingUseCase useCase)
         {
             _useCase = useCase ?? throw new ArgumentNullException(nameof(useCase));
             InitializeComponent();
+        }
+
+        public BillingForm(Patient_port patientPort, Medical_insurance_port insurancePort)
+        {
+            this.patientPort = patientPort;
+            this.insurancePort = insurancePort;
         }
 
         private void InitializeComponent()
@@ -180,8 +190,9 @@ namespace Hospital
 
         private void RemoveSelectedFromList(ListBox list)
         {
-            while (list.SelectedItems.Count > 0)
-                list.Items.Remove(list.SelectedItems[0]);
+            var item = list.SelectedItem;
+            if (item != null)
+                list.Items.Remove(item);
         }
 
         private Billings BuildBillingFromInputs()
@@ -189,16 +200,13 @@ namespace Hospital
             var b = new Billings();
 
             // Identificadores / datos de paciente
-            // Se intenta reutilizar las propiedades del modelo disponible en el proyecto.
             try
             {
-                // Si existe propiedad pública Id_patient (compatibilidad con otras partes del código)
                 var pi = typeof(Billings).GetProperty("Id_patient");
                 if (pi != null)
                     pi.SetValue(b, txtCedula.Text?.Trim() ?? string.Empty);
                 else
                 {
-                    // intentar campo/backing si existe (código defensivo)
                     var f = typeof(Billings).GetField("id_patient", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
                     if (f != null)
                         f.SetValue(b, txtCedula.Text?.Trim() ?? string.Empty);
@@ -206,19 +214,8 @@ namespace Hospital
             }
             catch { /* ignorar incompatibilidades y seguir */ }
 
-            // Monto
             if (long.TryParse(txtAmount.Text?.Trim(), out var amt))
                 b.Amount = amt;
-
-            // No confiamos en la forma exacta de Order en el dominio;
-            // mantenemos los listados en la UI para presentar/almacenar si se implementa la persistencia adecuada.
-            // Guardamos las listas en propiedades dinámicas si existen (compatibilidad limitada).
-            try
-            {
-                // Si existe una propiedad 'Order' que soporte lista, omitir (dejar para adaptador).
-                // No forzamos conversiones complejas aquí.
-            }
-            catch { }
 
             return b;
         }

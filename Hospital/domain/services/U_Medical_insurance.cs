@@ -4,17 +4,20 @@ using System;
 
 namespace Hospital.domain.services
 {
- public class U_Medical_insurance
- {
- private Medical_insurance_port insurancePort;
+    public class U_Medical_insurance
+    {
+        private readonly Medical_insurance_port insurancePort;
 
- public void Update(Medical_insurance insurance)
- {
- if (insurancePort.FindByIdSure(insurance) == null)
- {
- throw new Exception("La póliza no existe");
- }
- insurancePort.Update(insurance);
- }
- }
+        public U_Medical_insurance(Medical_insurance_port insurancePort)
+        {
+            this.insurancePort = insurancePort ?? throw new ArgumentNullException(nameof(insurancePort));
+        }
+
+        public void Update(Medical_insurance insurance)
+        {
+            if (insurancePort.FindByIdSure(insurance) == null)
+                throw new Exception("La póliza no existe");
+            insurancePort.Update(insurance);
+        }
+    }
 }

@@ -47,5 +47,22 @@ namespace Hospital.application.usecases
             var probe = new Medical_insurance { Policy_number = policyNumber };
             return _selectInsurance.Select(probe);
         }
+
+        // Nuevo: exponer búsqueda por PatientId
+        public Medical_insurance GetByPatientId(string patientId)
+        {
+            return _selectInsurance.SelectByPatientId(patientId);
+        }
+
+        // Nuevo: exponer paciente por InsuranceId o por PatientId
+        public Patient GetPatientByInsuranceId(int insuranceId)
+        {
+            return _selectInsurance.GetPatientByInsuranceId(insuranceId);
+        }
+
+        public Patient GetPatientById(string patientId)
+        {
+            return _selectInsurance.GetPatientById(patientId);
+        }
     }
 }

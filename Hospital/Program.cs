@@ -5,7 +5,8 @@ using Hospital.domain.services;
 using Hospital.application.validators;
 using Hospital.infraestructure.adapters.output;
 using Hospital;
- 
+using Hospital.application.forms;
+
 static class Program
 {
     [STAThread]
@@ -13,76 +14,79 @@ static class Program
     {
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);
- 
-        int choice = ShowSelectionDialog();
-        if (choice == 1)
+
+        // Instanciar ports y usecases (reutilizar lógica anterior)
+        var employeePort = new SqlEmployeePort();
+        var hrUseCase = new HumanResourcesUseCase(
+            new C_Employee(employeePort),
+            new U_Employee(),
+            new S_Employee()
+        );
+
+        var patientPort = new SQLPatientPort();
+        var selectPatient = new S_Patient(patientPort);
+        var createPatient = new C_Patient(patientPort);
+        var updatePatient = new U_Patient(patientPort);
+        var patientValidator = new PatientValidator();
+
+        var administrativeUseCase = new AdministrativeUseCase(
+            createPatient,
+            updatePatient,
+            selectPatient,
+            patientValidator
+        );
+
+        var insurancePort = new SQLMedicalInsurancePort();
+        var createInsurance = new C_Medical_insurance(insurancePort, patientPort);
+        var updateInsurance = new U_Medical_insurance(insurancePort);
+        var selectInsurance = new S_Medical_insurance(insurancePort, patientPort);
+
+        var miUseCase = new MedicalInsuranceUseCase(
+            createInsurance,
+            updateInsurance,
+            selectInsurance,
+            new MedicalInsuranceValidator()
+        );
+
+        // Crear formulario lanzador con opción adicional "Facturación"
+        var launcher = new Form
         {
-            var employeePort = new SqlEmployeePort();
-            var hrUseCase = new HumanResourcesUseCase(
-                new C_Employee(employeePort),
-                new U_Employee(),
-                new S_Employee()
-            );
- 
-            Application.Run(new HumanResourcesForm(hrUseCase));
-        }
-        else if (choice == 2)
-        {
-            var patientPort = new SQLPatientPort();
-            var createPatient = new C_Patient(patientPort);
-            var updatePatient = new U_Patient();
-            var selectPatient = new S_Patient();
-            var validator = new PatientValidator();
- 
-            var administrativeUseCase = new AdministrativeUseCase(
-                createPatient,
-                updatePatient,
-                selectPatient,
-                validator
-            );
- 
-            Application.Run(new AdministrativeForm(administrativeUseCase));
-        }
-        else if (choice == 3)
-        {
-            // Construir use case de facturación y abrir BillingForm
-            var billingUseCase = new BillingUseCase(
-                new C_Billings(),
-                new PatientValidator()
-            );
- 
-            Application.Run(new BillingForm(billingUseCase));
-        }
-    }
- 
-    // Muestra un diálogo simple para seleccionar el formulario
-    private static int ShowSelectionDialog()
-    {
-        using var dlg = new Form()
-        {
-            Text = "Seleccionar módulo",
-            StartPosition = FormStartPosition.CenterScreen,
+            Text = "Inicio - Seleccione opción",
             Width = 420,
             Height = 180,
+            StartPosition = FormStartPosition.CenterScreen,
             FormBorderStyle = FormBorderStyle.FixedDialog,
             MaximizeBox = false,
             MinimizeBox = false
         };
- 
-        var btnHR = new Button() { Text = "Recursos Humanos", Left = 20, Top = 50, Width = 120 };
-        var btnPatient = new Button() { Text = "Registrar Paciente", Left = 150, Top = 50, Width = 140 };
-        var btnBilling = new Button() { Text = "Facturación", Left = 300, Top = 50, Width = 80 };
- 
-        int result = 0;
-        btnHR.Click += (_, _) => { result = 1; dlg.Close(); };
-        btnPatient.Click += (_, _) => { result = 2; dlg.Close(); };
-        btnBilling.Click += (_, _) => { result = 3; dlg.Close(); };
- 
-        dlg.Controls.Add(btnHR);
-        dlg.Controls.Add(btnPatient);
-        dlg.Controls.Add(btnBilling);
- 
-        dlg.ShowDialog();
-        return result;
+
+        var btnMainMenu = new Button { Text = "Menú principal", Left = 20, Top = 20, Width = 160, Height = 36 };
+        var btnBilling = new Button { Text = "Facturación", Left = 200, Top = 20, Width = 160, Height = 36 };
+        var btnExit = new Button { Text = "Salir", Left = 20, Top = 70, Width = 340, Height = 36 };
+
+        btnMainMenu.Click += (_, _) =>
+        {
+            using var main = new MainMenuForm(
+                hrUseCase,
+                administrativeUseCase,
+                miUseCase,
+                patientPort,
+                insurancePort);
+            main.ShowDialog(launcher);
+        };
+
+        btnBilling.Click += (_, _) =>
+        {
+            using var billing = new BillingForm((Patient_port)patientPort, (Medical_insurance_port)insurancePort);
+            billing.ShowDialog(launcher);
+        };
+
+        btnExit.Click += (_, _) => launcher.Close();
+
+        launcher.Controls.Add(btnMainMenu);
+        launcher.Controls.Add(btnBilling);
+        launcher.Controls.Add(btnExit);
+
+        Application.Run(launcher);
     }
 }

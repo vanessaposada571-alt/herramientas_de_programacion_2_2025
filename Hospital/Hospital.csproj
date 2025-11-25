@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Folder Include="application\common\" />
-    <Folder Include="application\forms\" />
   </ItemGroup>
 
   <ItemGroup>

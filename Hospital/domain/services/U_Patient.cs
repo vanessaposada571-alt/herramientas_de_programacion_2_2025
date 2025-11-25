@@ -1,16 +1,18 @@
 ﻿using Hospital.domain.model;
 using Hospital.domain.ports;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hospital.domain.services
 {
     public class U_Patient
     {
-        private Patient_port patient_Port;
+        private readonly Patient_port patient_Port;
+
+        public U_Patient(Patient_port patientPort)
+        {
+            patient_Port = patientPort ?? throw new ArgumentNullException(nameof(patientPort));
+        }
+
         public void Update(Patient patient)
         {
             if (patient_Port.FindById_patient(patient) == null)
