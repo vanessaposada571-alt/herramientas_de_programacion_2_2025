@@ -1,49 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\",
+  "WorkspaceRootPath": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\usuario\\documents\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:infraestructure\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\application\\validators\\emergencycontactvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:application\\validators\\emergencycontactvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\usuario\\documents\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\adapters\\output\\sqlbillingport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:infraestructure\\adapters\\output\\sqlbillingport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\humanresourcesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:humanresourcesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\usuario\\documents\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\usuario\\documents\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\adapters\\output\\sqlpatientport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:infraestructure\\adapters\\output\\sqlpatientport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\usuario\\documents\\herramientas_de_programacion_2_2025\\hospital\\administrativeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:administrativeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\usuario\\documents\\herramientas_de_programacion_2_2025\\hospital\\administrativeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:administrativeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\usuario\\documents\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\adapters\\output\\sqlemployeeport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\adapters\\output\\sqlemployeeport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:infraestructure\\adapters\\output\\sqlemployeeport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\usuario\\documents\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\dependencyinjectionconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\application\\validators\\patientvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:application\\validators\\patientvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\domain\\services\\c_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\services\\c_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\adapters\\output\\sqlpatientport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:infraestructure\\adapters\\output\\sqlpatientport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\application\\validators\\billingvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:application\\validators\\billingvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\application\\usecases\\emergencycontactusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:application\\usecases\\emergencycontactusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\application\\usecases\\billingusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:application\\usecases\\billingusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\administrativeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:administrativeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\domain\\model\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:domain\\model\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\application\\ports\\icontactport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:application\\ports\\icontactport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\dependencyinjectionconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:infraestructure\\dependencyinjectionconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\usuario\\documents\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\dbconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\humanresourcesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:humanresourcesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:infraestructure\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\adapters\\output\\sqlbillingport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:infraestructure\\adapters\\output\\sqlbillingport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\dbconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:infraestructure\\dbconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\usuario\\documents\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\adapters\\output\\sqlmedicalorderport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\adapters\\output\\sqlmedicalorderport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:infraestructure\\adapters\\output\\sqlmedicalorderport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\usuario\\documents\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\adapters\\output\\sqlorderport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|c:\\users\\baren\\onedrive\\documentos\\herramientas_de_programacion_2_2025\\hospital\\infraestructure\\adapters\\output\\sqlorderport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4474D3B-3035-48D4-98B6-42E993EDB0C9}|Hospital.csproj|solutionrelative:infraestructure\\adapters\\output\\sqlorderport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,149 +94,260 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Contact.cs",
-              "RelativeDocumentMoniker": "domain\\model\\Contact.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Contact.cs",
-              "RelativeToolTip": "domain\\model\\Contact.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T00:55:47.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SQLBillingPort.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLBillingPort.cs",
-              "RelativeDocumentMoniker": "infraestructure\\adapters\\output\\SQLBillingPort.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLBillingPort.cs",
-              "RelativeToolTip": "infraestructure\\adapters\\output\\SQLBillingPort.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T00:14:21.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SQLMedicalOrderPort.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLMedicalOrderPort.cs",
-              "RelativeDocumentMoniker": "infraestructure\\adapters\\output\\SQLMedicalOrderPort.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLMedicalOrderPort.cs",
-              "RelativeToolTip": "infraestructure\\adapters\\output\\SQLMedicalOrderPort.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T00:13:58.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SQLOrderPort.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLOrderPort.cs",
-              "RelativeDocumentMoniker": "infraestructure\\adapters\\output\\SQLOrderPort.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLOrderPort.cs",
-              "RelativeToolTip": "infraestructure\\adapters\\output\\SQLOrderPort.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAmwA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T00:12:58.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Config.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\Config.cs",
-              "RelativeDocumentMoniker": "infraestructure\\Config.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\Config.cs",
-              "RelativeToolTip": "infraestructure\\Config.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T22:56:35.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SQLPatientPort.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLPatientPort.cs",
-              "RelativeDocumentMoniker": "infraestructure\\adapters\\output\\SQLPatientPort.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLPatientPort.cs",
-              "RelativeToolTip": "infraestructure\\adapters\\output\\SQLPatientPort.cs",
-              "ViewState": "AgIAANYAAAAAAAAAAAAiwN4AAABhAAAAAAAAAA==",
+              "Title": "PatientValidator.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\application\\validators\\PatientValidator.cs",
+              "RelativeDocumentMoniker": "application\\validators\\PatientValidator.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\application\\validators\\PatientValidator.cs",
+              "RelativeToolTip": "application\\validators\\PatientValidator.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwEoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T22:56:46.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T05:12:32.352Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AdministrativeForm.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\AdministrativeForm.cs",
-              "RelativeDocumentMoniker": "AdministrativeForm.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\AdministrativeForm.cs",
-              "RelativeToolTip": "AdministrativeForm.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAcwHwAAAAsAAAAAAAAAA==",
+              "Title": "C_Patient.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Patient.cs",
+              "RelativeDocumentMoniker": "domain\\services\\C_Patient.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Patient.cs",
+              "RelativeToolTip": "domain\\services\\C_Patient.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T00:44:30.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T06:42:59.17Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AdministrativeForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\AdministrativeForm.cs",
-              "RelativeDocumentMoniker": "AdministrativeForm.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\AdministrativeForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "AdministrativeForm.cs [Dise\u00F1o]",
+              "Title": "SQLPatientPort.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLPatientPort.cs",
+              "RelativeDocumentMoniker": "infraestructure\\adapters\\output\\SQLPatientPort.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLPatientPort.cs",
+              "RelativeToolTip": "infraestructure\\adapters\\output\\SQLPatientPort.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAtwIYAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T00:44:25.258Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-11-23T22:56:46.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DependencyInjectionConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\DependencyInjectionConfig.cs",
-              "RelativeDocumentMoniker": "infraestructure\\DependencyInjectionConfig.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\DependencyInjectionConfig.cs",
-              "RelativeToolTip": "infraestructure\\DependencyInjectionConfig.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAqwBAAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T23:00:43.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "SQLEmployeePort.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLEmployeePort.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLEmployeePort.cs",
               "RelativeDocumentMoniker": "infraestructure\\adapters\\output\\SQLEmployeePort.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLEmployeePort.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLEmployeePort.cs",
               "RelativeToolTip": "infraestructure\\adapters\\output\\SQLEmployeePort.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAhwGkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAQwGwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T00:18:18.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HumanResourcesForm.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\HumanResourcesForm.cs",
+              "RelativeDocumentMoniker": "HumanResourcesForm.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\HumanResourcesForm.cs",
+              "RelativeToolTip": "HumanResourcesForm.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwD0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:58:20.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmergencyContactValidator.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\application\\validators\\EmergencyContactValidator.cs",
+              "RelativeDocumentMoniker": "application\\validators\\EmergencyContactValidator.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\application\\validators\\EmergencyContactValidator.cs",
+              "RelativeToolTip": "application\\validators\\EmergencyContactValidator.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T05:12:52.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BillingValidator.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\application\\validators\\BillingValidator.cs",
+              "RelativeDocumentMoniker": "application\\validators\\BillingValidator.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\application\\validators\\BillingValidator.cs",
+              "RelativeToolTip": "application\\validators\\BillingValidator.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAlwBEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T06:28:58.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmergencyContactUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\application\\usecases\\EmergencyContactUseCase.cs",
+              "RelativeDocumentMoniker": "application\\usecases\\EmergencyContactUseCase.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\application\\usecases\\EmergencyContactUseCase.cs",
+              "RelativeToolTip": "application\\usecases\\EmergencyContactUseCase.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAACUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T05:12:11.309Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "BillingUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\application\\usecases\\BillingUseCase.cs",
+              "RelativeDocumentMoniker": "application\\usecases\\BillingUseCase.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\application\\usecases\\BillingUseCase.cs",
+              "RelativeToolTip": "application\\usecases\\BillingUseCase.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAACkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T06:25:14.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Contact.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Contact.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Contact.cs",
+              "RelativeToolTip": "domain\\model\\Contact.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:55:47.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdministrativeForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\AdministrativeForm.cs",
+              "RelativeDocumentMoniker": "AdministrativeForm.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\AdministrativeForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AdministrativeForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:44:25.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Patient.cs",
+              "RelativeDocumentMoniker": "domain\\model\\Patient.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\domain\\model\\Patient.cs",
+              "RelativeToolTip": "domain\\model\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T05:19:45.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IContactPort.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\application\\ports\\IContactPort.cs",
+              "RelativeDocumentMoniker": "application\\ports\\IContactPort.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\application\\ports\\IContactPort.cs",
+              "RelativeToolTip": "application\\ports\\IContactPort.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T05:13:51.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SQLOrderPort.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLOrderPort.cs",
+              "RelativeDocumentMoniker": "infraestructure\\adapters\\output\\SQLOrderPort.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLOrderPort.cs",
+              "RelativeToolTip": "infraestructure\\adapters\\output\\SQLOrderPort.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAmwA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:12:58.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Config.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\Config.cs",
+              "RelativeDocumentMoniker": "infraestructure\\Config.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\Config.cs",
+              "RelativeToolTip": "infraestructure\\Config.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:56:35.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DependencyInjectionConfig.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\DependencyInjectionConfig.cs",
+              "RelativeDocumentMoniker": "infraestructure\\DependencyInjectionConfig.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\DependencyInjectionConfig.cs",
+              "RelativeToolTip": "infraestructure\\DependencyInjectionConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T23:00:43.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAtwB8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:37:05.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SQLMedicalOrderPort.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLMedicalOrderPort.cs",
+              "RelativeDocumentMoniker": "infraestructure\\adapters\\output\\SQLMedicalOrderPort.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLMedicalOrderPort.cs",
+              "RelativeToolTip": "infraestructure\\adapters\\output\\SQLMedicalOrderPort.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:13:58.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SQLBillingPort.cs",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLBillingPort.cs",
+              "RelativeDocumentMoniker": "infraestructure\\adapters\\output\\SQLBillingPort.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\adapters\\output\\SQLBillingPort.cs",
+              "RelativeToolTip": "infraestructure\\adapters\\output\\SQLBillingPort.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T00:14:21.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HumanResourcesForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\HumanResourcesForm.cs",
+              "RelativeDocumentMoniker": "HumanResourcesForm.cs",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\HumanResourcesForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "HumanResourcesForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T03:59:53.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "dbconfig.json",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\dbconfig.json",
+              "DocumentMoniker": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\dbconfig.json",
               "RelativeDocumentMoniker": "infraestructure\\dbconfig.json",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\dbconfig.json",
+              "ToolTip": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\infraestructure\\dbconfig.json",
               "RelativeToolTip": "infraestructure\\dbconfig.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-25T00:30:00.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T00:30:00.774Z"
             }
           ]
         }

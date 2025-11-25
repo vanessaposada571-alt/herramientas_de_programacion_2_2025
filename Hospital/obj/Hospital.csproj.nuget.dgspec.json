@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj": {}
+    "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj": {
+    "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
+        "projectUniqueName": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
         "projectName": "Hospital",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\obj\\",
+        "projectPath": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\Hospital.csproj",
+        "packagesPath": "C:\\Users\\baren\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\baren\\OneDrive\\Documentos\\herramientas_de_programacion_2_2025\\Hospital\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\baren\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -67,6 +66,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

@@ -126,13 +126,13 @@ namespace Hospital.infraestructure.adapters.output
             try
             {
                 using var cmd1 = new SqlCommand(insertPerson, cn, tx);
-                cmd1.Parameters.AddWithValue("@name", patient.Name1?.Name ?? (object)DBNull.Value);
-                cmd1.Parameters.AddWithValue("@idNumber", patient.Name1?.Id ?? (object)DBNull.Value);
-                cmd1.Parameters.AddWithValue("@email", !string.IsNullOrWhiteSpace(patient.Email1?.Email?.Address) ? (object)patient.Email1.Email.Address : DBNull.Value);
-                cmd1.Parameters.AddWithValue("@cellphone", patient.Cellphone1?.Cellphone ?? (object)DBNull.Value);
+                cmd1.Parameters.AddWithValue("@name", patient.Name?? (object)DBNull.Value);
+                cmd1.Parameters.AddWithValue("@idNumber", patient.Id_patient??(object)DBNull.Value);
+                cmd1.Parameters.AddWithValue("@email", !string.IsNullOrWhiteSpace(patient.Email.ToString()));
+                cmd1.Parameters.AddWithValue("@cellphone", patient.Cellphone.ToString() ?? (object)DBNull.Value);
                 cmd1.Parameters.AddWithValue("@birthDate", (object)(patient.Birth == default ? DBNull.Value : patient.Birth));
-                cmd1.Parameters.AddWithValue("@gender", patient.Gender1?.Gender == true ? 1 : (object)DBNull.Value);
-                cmd1.Parameters.AddWithValue("@direction", !string.IsNullOrWhiteSpace(patient.Direction1?.Direction) ? (object)patient.Direction1.Direction : DBNull.Value);
+                cmd1.Parameters.AddWithValue("@gender", patient.Gender == true ? 1 : (object)DBNull.Value);
+                cmd1.Parameters.AddWithValue("@direction", !string.IsNullOrWhiteSpace(patient.Direction));
                 var personIdObj = cmd1.ExecuteScalar();
                 if (personIdObj == null || personIdObj == DBNull.Value) throw new Exception("No se obtuvo PersonId al insertar Person.");
                 var personId = (long)personIdObj;

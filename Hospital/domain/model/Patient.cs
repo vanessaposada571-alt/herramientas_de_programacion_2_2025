@@ -24,7 +24,7 @@ namespace Hospital.domain.model
         public string Id_patient { get => id_patient; set => id_patient = value; }
         public Medical_insurance IdSure { get => idSure; set => idSure = value; }
         public string PolicyNumber { get => policyNumber; set => policyNumber = value; }
-        internal Contact Contact { get => contact; set => contact = value; }
+        public Contact Contact { get => contact; set => contact = value; }
 
         // Wrapper properties kept for backward compatibility with existing validators/usecases
         internal Person Name1 { get => _name1; set => _name1 = value; }
