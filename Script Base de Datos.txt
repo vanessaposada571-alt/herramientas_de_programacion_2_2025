@@ -1,0 +1,155 @@
+BASE DE DATOS PROYECTO 
+
+CREATE DATABASE HospitalDB;
+USE HospitalDB;
+
+-- Tabla Persona
+CREATE TABLE dbo.Person (
+    PersonId BIGINT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(200) NULL,
+    IdNumber BIGINT NULL,            -- Person.Id (long)
+    Email NVARCHAR(256) NULL,
+    Cellphone BIGINT NULL,
+    BirthDate DATE NULL,
+    Gender VARCHAR(50) NULL,
+    Direction NVARCHAR(200) NULL
+);
+GO
+
+-- Tabla Usuarios
+CREATE TABLE dbo.Users (
+    UserId BIGINT IDENTITY(1,1) PRIMARY KEY,
+    PersonId BIGINT NOT NULL REFERENCES dbo.Person(PersonId) ON DELETE CASCADE,
+    Role NVARCHAR(50) NULL,
+    UserName NVARCHAR(50) NULL,
+    PasswordHash NVARCHAR(256) NULL
+);
+GO
+
+-- Seguro médico
+CREATE TABLE dbo.MedicalInsurance (
+    MedicalInsuranceId INT IDENTITY(1,1) PRIMARY KEY,
+    CompanyName NVARCHAR(150) NOT NULL,
+    PolicyNumber NVARCHAR(60) NOT NULL,
+    PolicyStatus BIT NOT NULL DEFAULT(1),
+    EffectiveDate DATE NOT NULL,
+    Copayment BIGINT NULL,
+    InsuranceCost BIGINT NULL
+);
+GO
+
+-- Paciente
+CREATE TABLE dbo.Patient (
+    PatientId NVARCHAR(50) PRIMARY KEY,   -- Id_patient (string en el modelo)
+    PersonId BIGINT NULL REFERENCES dbo.Person(PersonId) ON DELETE SET NULL,
+    MedicalInsuranceId INT NULL REFERENCES dbo.MedicalInsurance(MedicalInsuranceId),
+    PolicyNumber NVARCHAR(60) NULL
+);
+GO
+
+-- Contacto de emergencia
+CREATE TABLE dbo.Contact (
+    ContactId INT IDENTITY(1,1) PRIMARY KEY,
+
+    -- PersonId del contacto (PERSONA del contacto)
+    PersonId BIGINT NOT NULL
+        REFERENCES dbo.Person(PersonId)
+        ON DELETE CASCADE,
+
+    -- Paciente dueño del contacto
+    PatientId NVARCHAR(50) NOT NULL
+        REFERENCES dbo.Patient(PatientId)
+        ON DELETE CASCADE,
+
+    Name NVARCHAR(200) NULL,
+    Cellphone BIGINT NULL,
+    Relation NVARCHAR(100) NULL
+);
+GO
+
+
+-- Órdenes generales
+CREATE TABLE dbo.Orders (
+    OrderId INT IDENTITY(1,1) PRIMARY KEY
+    -- si se necesita relacionar con paciente/doctor, agregar columnas PatientId, CreatedBy, etc.
+);
+GO
+
+-- Orden de ayuda
+CREATE TABLE dbo.OrderHelp (
+    OrderHelpId INT IDENTITY(1,1) PRIMARY KEY,
+    OrderId INT NOT NULL REFERENCES dbo.Orders(OrderId) ON DELETE CASCADE,
+    NumOrderA BIGINT NULL,
+    IdHelp BIGINT NULL,
+    Amount INT NULL,
+    Assistance BIT NULL,
+    IdSpecialist BIGINT NULL,
+    Item BIGINT NULL
+);
+GO
+
+-- Orden de medicina
+CREATE TABLE dbo.OrderMedicine (
+    OrderMedicineId INT IDENTITY(1,1) PRIMARY KEY,
+    OrderId INT NOT NULL REFERENCES dbo.Orders(OrderId) ON DELETE CASCADE,
+    NumOrder BIGINT NULL,
+    IdMedicine BIGINT NULL,
+    Dose NVARCHAR(100) NULL,
+    DurationTreat INT NULL,
+    Item BIGINT NULL
+);
+GO
+
+-- Orden de procedimiento 
+CREATE TABLE dbo.OrderProcedure (
+    OrderProcedureId INT IDENTITY(1,1) PRIMARY KEY,
+    OrderId INT NOT NULL REFERENCES dbo.Orders(OrderId) ON DELETE CASCADE,
+    NumOrderP BIGINT NULL,
+    IdProcedure BIGINT NULL,
+    Amount INT NULL,
+    Frequency NVARCHAR(100) NULL,
+    Specialist BIT NULL,
+    IdSpecialist BIGINT NULL,
+    Item BIGINT NULL
+);
+GO
+
+-- Datos vitales
+CREATE TABLE dbo.VitalData (
+    VitalDataId INT IDENTITY(1,1) PRIMARY KEY,
+    Temperature FLOAT NULL,
+    BloodPressure NVARCHAR(50) NULL,
+    HeartRate INT NULL,
+    RespiratoryRate INT NULL,
+    Notes NVARCHAR(400) NULL
+);
+GO
+
+-- Visitas
+CREATE TABLE dbo.Visit (
+    VisitId INT IDENTITY(1,1) PRIMARY KEY,
+    PatientId NVARCHAR(50) NULL REFERENCES dbo.Patient(PatientId),
+    DoctorUserId BIGINT NULL REFERENCES dbo.Users(UserId),
+    OrderProcedureId INT NULL REFERENCES dbo.OrderProcedure(OrderProcedureId),
+    VitalDataId INT NULL REFERENCES dbo.VitalData(VitalDataId),
+    VisitDate DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME()
+);
+GO
+
+-- Facturación
+CREATE TABLE dbo.Billings (
+    BillingId INT IDENTITY(1,1) PRIMARY KEY,
+    PatientId NVARCHAR(50) NULL REFERENCES dbo.Patient(PatientId),
+    OrderId INT NULL REFERENCES dbo.Orders(OrderId),
+    MedicalInsuranceId INT NULL REFERENCES dbo.MedicalInsurance(MedicalInsuranceId),
+    Amount BIGINT NOT NULL DEFAULT 0,
+    InsuranceCost BIGINT NULL,
+    CreatedAt DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME()
+);
+GO
+
+-- Índices 
+CREATE INDEX IX_Person_IdNumber ON dbo.Person(IdNumber);
+CREATE INDEX IX_Users_UserName ON dbo.Users(UserName);
+CREATE INDEX IX_Patient_MedicalInsuranceId ON dbo.Patient(MedicalInsuranceId);
+GO

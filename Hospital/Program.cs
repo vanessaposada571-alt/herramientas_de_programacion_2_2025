@@ -2,10 +2,13 @@ using System;
 using System.Windows.Forms;
 using Hospital.application.usecases;
 using Hospital.domain.services;
+using Hospital.domain.ports;
 using Hospital.application.validators;
 using Hospital.infraestructure.adapters.output;
 using Hospital;
 using Hospital.application.forms;
+using System.Collections.Generic;
+using Hospital.domain.model;
 
 static class Program
 {
@@ -48,22 +51,20 @@ static class Program
             new MedicalInsuranceValidator()
         );
 
-        // Crear formulario lanzador con opción adicional "Facturación"
+        // Crear formulario lanzador con opciones reorganizadas
         var launcher = new Form
         {
             Text = "Inicio - Seleccione opción",
-            Width = 420,
-            Height = 180,
+            Width = 520,
+            Height = 320,
             StartPosition = FormStartPosition.CenterScreen,
             FormBorderStyle = FormBorderStyle.FixedDialog,
             MaximizeBox = false,
             MinimizeBox = false
         };
 
-        var btnMainMenu = new Button { Text = "Menú principal", Left = 20, Top = 20, Width = 160, Height = 36 };
-        var btnBilling = new Button { Text = "Facturación", Left = 200, Top = 20, Width = 160, Height = 36 };
-        var btnExit = new Button { Text = "Salir", Left = 20, Top = 70, Width = 340, Height = 36 };
-
+        var btnMainMenu = new Button { Text = "Menú principal", Left = 20, Top = 20, Width = 200, Height = 36 };
+        var btnBilling = new Button { Text = "Facturación", Left = 240, Top = 20, Width = 200, Height = 36 };
         btnMainMenu.Click += (_, _) =>
         {
             using var main = new MainMenuForm(
@@ -81,11 +82,8 @@ static class Program
             billing.ShowDialog(launcher);
         };
 
-        btnExit.Click += (_, _) => launcher.Close();
-
         launcher.Controls.Add(btnMainMenu);
         launcher.Controls.Add(btnBilling);
-        launcher.Controls.Add(btnExit);
 
         Application.Run(launcher);
     }

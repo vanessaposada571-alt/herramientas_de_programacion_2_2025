@@ -1,0 +1,23 @@
+FACTURA
+Fecha: 2025-11-26 08:57
+
+=== Datos del paciente ===
+Nombre: Bryan
+Cédula: 1001
+Edad: 0
+
+=== Seguro médico ===
+Compañía: Seguros Bolivar
+Número póliza: 1052
+Fecha fin póliza: 2025-11-30
+
+=== Detalle clínico de órdenes ===
+
+Total servicios (estimado): XDR0.00
+
+=== Resumen de cobros ===
+Copago aplicado: XDR50,000.00
+A cargo paciente: XDR0.00
+A cargo aseguradora: XDR0.00
+
+Médico tratante: Vanessa

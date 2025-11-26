@@ -114,21 +114,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "C_Employee.cs",
-              "DocumentMoniker": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Employee.cs",
-              "RelativeDocumentMoniker": "domain\\services\\C_Employee.cs",
-              "ToolTip": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Employee.cs",
-              "RelativeToolTip": "domain\\services\\C_Employee.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T23:15:19.816Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -139,8 +126,7 @@
               "RelativeToolTip": "HumanResourcesForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T23:14:28.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T23:14:28.103Z"
             },
             {
               "$type": "Document",
@@ -152,8 +138,7 @@
               "RelativeToolTip": "AdministrativeForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T23:14:25.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T23:14:25.327Z"
             },
             {
               "$type": "Document",
@@ -175,10 +160,9 @@
               "RelativeDocumentMoniker": "BillingForm.cs",
               "ToolTip": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\BillingForm.cs",
               "RelativeToolTip": "BillingForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAF4BAAAAAAAAAAAkwGUBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T22:16:02.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T22:16:02.074Z"
             },
             {
               "$type": "Document",
@@ -195,6 +179,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwEUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T18:53:32.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
               "Title": "S_Medical_insurance.cs",
               "DocumentMoniker": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\S_Medical_insurance.cs",
@@ -207,16 +204,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAgwDAAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "C_Employee.cs",
+              "DocumentMoniker": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Employee.cs",
+              "RelativeDocumentMoniker": "domain\\services\\C_Employee.cs",
+              "ToolTip": "C:\\Users\\SISTEMAS\\Documents\\herramientas_de_programacion_2_2025\\Hospital\\domain\\services\\C_Employee.cs",
+              "RelativeToolTip": "domain\\services\\C_Employee.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T18:53:32.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T23:15:19.816Z"
             },
             {
               "$type": "Document",
@@ -228,8 +224,7 @@
               "RelativeToolTip": "infraestructure\\DependencyInjectionConfig.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAIA1wCEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T18:50:46.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T18:50:46.166Z"
             },
             {
               "$type": "Document",
@@ -241,8 +236,7 @@
               "RelativeToolTip": "infraestructure\\adapters\\output\\SQLMedicalInsurancePort.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAABUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T20:24:14.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T20:24:14.472Z"
             },
             {
               "$type": "Document",
@@ -254,8 +248,7 @@
               "RelativeToolTip": "domain\\model\\Patient.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAvwAwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T19:07:45.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T19:07:45.614Z"
             },
             {
               "$type": "Document",
