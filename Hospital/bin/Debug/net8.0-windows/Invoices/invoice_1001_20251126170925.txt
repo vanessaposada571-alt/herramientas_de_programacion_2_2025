@@ -1,0 +1,29 @@
+FACTURA
+Fecha: 2025-11-26 17:09
+
+=== Datos del paciente ===
+Nombre: Brayan
+Cédula: 1001
+Edad: 22
+
+=== Seguro médico ===
+Compañía: Seguros Bolivar
+Número póliza: 1050
+Fecha fin póliza: 2025-12-01
+
+=== Detalle clínico de órdenes ===
+Medicamentos:
+ - Brayan;150000;10mg
+ - Acetaminofen;50000;20mg
+Procedimientos:
+ - Rayos X;50000
+ - Tomografia;85000
+
+Total servicios (estimado): $ 335.000,00
+
+=== Resumen de cobros ===
+Copago aplicado: $ 50.000,00
+A cargo paciente: $ 50.000,00
+A cargo aseguradora: $ 285.000,00
+
+Médico tratante: Brayan

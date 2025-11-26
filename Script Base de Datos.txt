@@ -19,7 +19,6 @@ GO
 -- Tabla Usuarios
 CREATE TABLE dbo.Users (
     UserId BIGINT IDENTITY(1,1) PRIMARY KEY,
-    PersonId BIGINT NOT NULL REFERENCES dbo.Person(PersonId) ON DELETE CASCADE,
     Role NVARCHAR(50) NULL,
     UserName NVARCHAR(50) NULL,
     PasswordHash NVARCHAR(256) NULL

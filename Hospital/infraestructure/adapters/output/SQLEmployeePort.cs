@@ -14,51 +14,49 @@ namespace Hospital.infraestructure.adapters.output
         public User FindById1(User user)
         {
             if (user == null) return null;
-            // Buscamos por número de identificación (Id en el dominio -> Person.IdNumber)
+
             const string sql = @"
-                SELECT u.UserId, u.Role, u.UserName, u.PasswordHash,
-                       p.PersonId, p.Name, p.IdNumber, p.Email, p.Cellphone, p.BirthDate, p.Gender, p.Direction
-                FROM dbo.Users u
-                INNER JOIN dbo.Person p ON u.PersonId = p.PersonId
-                WHERE p.IdNumber = @idNumber";
+        SELECT 
+            u.UserId, u.Role, u.UserName, u.PasswordHash
+        FROM dbo.Users u
+        WHERE u.UserName = @userName";
 
             using var cn = GetConn();
             cn.Open();
+
             using var cmd = new SqlCommand(sql, cn);
-            cmd.Parameters.AddWithValue("@idNumber", user.Id);
+            cmd.Parameters.AddWithValue("@userName", user.Name_user);
+
             using var rd = cmd.ExecuteReader(CommandBehavior.SingleRow);
             return rd.Read() ? MapUser(rd) : null;
         }
+
 
         public User FindByName_user(User user)
         {
             if (user == null) return null;
+
             const string sql = @"
-                SELECT u.UserId, u.Role, u.UserName, u.PasswordHash,
-                       p.PersonId, p.Name, p.IdNumber, p.Email, p.Cellphone, p.BirthDate, p.Gender, p.Direction
-                FROM users u
-                INNER JOIN dbo.Person p ON u.PersonId = p.PersonId
-                WHERE p.Name = @name";
+        SELECT UserId, Role, UserName, PasswordHash
+        FROM dbo.Users
+        WHERE UserName = @userName";
 
             using var cn = GetConn();
             cn.Open();
+
             using var cmd = new SqlCommand(sql, cn);
-            cmd.Parameters.AddWithValue("@name", user.Name ?? string.Empty);
+            cmd.Parameters.AddWithValue("@userName", user.Name_user ?? string.Empty);
+
             using var rd = cmd.ExecuteReader(CommandBehavior.SingleRow);
             return rd.Read() ? MapUser(rd) : null;
         }
 
+
         public void Save(User user)
         {
-            // Inserta Person y User en dos pasos (transacción simple)
-            const string insertPerson = @"
-                INSERT INTO person (Name, IdNumber, Email, Cellphone, BirthDate, Gender, Direction)
-                VALUES (@name, @idNumber, @email, @cellphone, @birthDate, @gender, @direction);
-                SELECT CAST(SCOPE_IDENTITY() AS BIGINT);";
-
             const string insertUser = @"
-                INSERT INTO users (PersonId, Role, UserName, PasswordHash)
-                VALUES (@personId, @role, @userName, @passwordHash);
+                INSERT INTO users (Role, UserName, PasswordHash)
+                VALUES (@role, @userName, @passwordHash);
                 SELECT CAST(SCOPE_IDENTITY() AS BIGINT);";
 
             using var cn = GetConn();
@@ -81,42 +79,18 @@ namespace Hospital.infraestructure.adapters.output
             using var tx = cn.BeginTransaction();
             try
             {
-                using var cmd1 = new SqlCommand(insertPerson, cn, tx);
-                cmd1.Parameters.AddWithValue("@name", (object)(user.Name ?? string.Empty));
-                cmd1.Parameters.AddWithValue("@idNumber", user.Id != 0 ? (object)user.Id : DBNull.Value);
-                cmd1.Parameters.AddWithValue("@email", !string.IsNullOrWhiteSpace(user.Email?.Address) ? (object)user.Email.Address : DBNull.Value);
-                cmd1.Parameters.AddWithValue("@cellphone", user.Cellphone != 0 ? (object)user.Cellphone : DBNull.Value);
-                cmd1.Parameters.AddWithValue("@birthDate", user.Birth != default ? (object)user.Birth : DBNull.Value);
+                using var cmd = new SqlCommand(insertUser, cn, tx);
+                cmd.Parameters.AddWithValue("@role", (object)(user.Rol ?? string.Empty));
+                cmd.Parameters.AddWithValue("@userName", (object)(user.Name_user ?? string.Empty));
+                cmd.Parameters.AddWithValue("@passwordHash", (object)(user.Password ?? string.Empty));
 
-                // Normalizar género: aceptar que el cliente escriba "masculino" o "femenino" (variantes toleradas)
-                var genderNormalized = NormalizeGender(user.Gender);
-                cmd1.Parameters.AddWithValue("@gender", genderNormalized != null ? (object)genderNormalized : DBNull.Value);
-
-                cmd1.Parameters.AddWithValue("@direction", !string.IsNullOrWhiteSpace(user.Direction) ? (object)user.Direction : DBNull.Value);
-
-                var personIdObj = cmd1.ExecuteScalar();
-                if (personIdObj == null || personIdObj == DBNull.Value)
-                    throw new Exception("No se pudo obtener PersonId tras insertar Person.");
-
-                var personId = Convert.ToInt64(personIdObj);
-
-                using var cmd2 = new SqlCommand(insertUser, cn, tx);
-                cmd2.Parameters.AddWithValue("@personId", personId);
-                cmd2.Parameters.AddWithValue("@role", (object)(user.Rol ?? string.Empty));
-                cmd2.Parameters.AddWithValue("@userName", (object)(user.Name_user ?? string.Empty));
-                cmd2.Parameters.AddWithValue("@passwordHash", (object)(user.Password ?? string.Empty));
-
-                var userIdObj = cmd2.ExecuteScalar();
+                var userIdObj = cmd.ExecuteScalar();
                 if (userIdObj == null || userIdObj == DBNull.Value)
                     throw new Exception("No se pudo obtener UserId tras insertar Users.");
 
-                // Commit only after both inserts succeeded
                 tx.Commit();
-
-                // Optional: you could set some properties on the domain objects if needed
-                // long newUserId = Convert.ToInt64(userIdObj);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 tx.Rollback();
                 MessageBox.Show("Error al guardar el usuario: " + ex.Message);

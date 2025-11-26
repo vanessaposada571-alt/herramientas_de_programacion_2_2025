@@ -1,0 +1,28 @@
+FACTURA
+Fecha: 2025-11-26 13:10
+
+=== Datos del paciente ===
+Nombre: vanessa
+Cédula: 1
+Edad: 0
+
+=== Seguro médico ===
+Compañía: seguros bolivar
+Número póliza: 122
+Fecha fin póliza: 2026-11-26
+
+=== Detalle clínico de órdenes ===
+Medicamentos:
+ - acetaminofen 2 cap diaria 50000
+ - naproxeno 3 cap diaria 5000
+Procedimientos:
+ - ecografia 30000
+
+Total servicios (estimado): $ 85.000,00
+
+=== Resumen de cobros ===
+Copago aplicado: $ 50.000,00
+A cargo paciente: $ 50.000,00
+A cargo aseguradora: $ 35.000,00
+
+Médico tratante: Juan Pablo Ortega 

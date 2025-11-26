@@ -9,6 +9,7 @@ namespace Hospital
     public class AdministrativeForm : Form
     {
         private readonly application.usecases.AdministrativeUseCase _useCase;
+        private Form _mainMenu;
 
         private Label lblIdPatient;
         private TextBox txtIdPatient;
@@ -38,110 +39,173 @@ namespace Hospital
         private Button btnGet;
         private Button btnBack; // nuevo
 
-        public AdministrativeForm(application.usecases.AdministrativeUseCase useCase)
+        public AdministrativeForm(application.usecases.AdministrativeUseCase useCase, Form mainMenu)
         {
             _useCase = useCase ?? throw new ArgumentNullException(nameof(useCase));
+            _mainMenu = mainMenu;
             InitializeComponents();
         }
 
         private void InitializeComponents()
         {
+            
             Text = "Administración de Pacientes";
-            Size = new Size(520, 460);
+            Size = new Size(720, 720); 
             StartPosition = FormStartPosition.CenterScreen;
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
+            BackColor = Color.FromArgb(30, 60, 100);
+            Font = new Font("Segoe UI", 10);
 
-            int leftCol = 20;
-            int labelWidth = 120;
-            int inputLeft = leftCol + labelWidth + 10;
-            int y = 20;
-            int rowHeight = 30;
-            int inputWidth = 350;
+            
+            Panel card = new Panel
+            {
+                Left = 20,
+                Top = 20,
+                Width = 660,   
+                Height = 630,  
+                BackColor = Color.White,
+                BorderStyle = BorderStyle.FixedSingle
+            };
+            Controls.Add(card);
 
-            lblIdPatient = new Label { Text = "Id paciente:", Left = leftCol, Top = y, Width = labelWidth };
-            txtIdPatient = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
-            y += rowHeight;
+           
+            Label title = new Label
+            {
+                Text = "Registro y Gestión de Pacientes",
+                Font = new Font("Segoe UI Semibold", 15, FontStyle.Bold),
+                ForeColor = Color.FromArgb(30, 60, 100),
+                AutoSize = false,
+                Width = card.Width,
+                Height = 45,
+                Top = 10,
+                TextAlign = ContentAlignment.MiddleCenter
+            };
+            card.Controls.Add(title);
 
-            lblName = new Label { Text = "Nombre:", Left = leftCol, Top = y, Width = labelWidth };
-            txtName = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
-            y += rowHeight;
+          
+            Label CreateLabel(string text, int top)
+                => new Label { Text = text, Left = 25, Top = top, Width = 180 };
 
-            lblEmail = new Label { Text = "Email:", Left = leftCol, Top = y, Width = labelWidth };
-            txtEmail = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
-            y += rowHeight;
+            TextBox CreateTextBox(int top)
+                => new TextBox { Left = 210, Top = top - 4, Width = 410 };
 
-            lblCellphone = new Label { Text = "Teléfono:", Left = leftCol, Top = y, Width = labelWidth };
-            txtCellphone = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
-            y += rowHeight;
+            int y = 70;
+            int row = 38;
 
-            lblBirth = new Label { Text = "Nacimiento:", Left = leftCol, Top = y, Width = labelWidth };
-            dtpBirth = new DateTimePicker { Left = inputLeft, Top = y - 4, Width = 200, Format = DateTimePickerFormat.Short };
-            y += rowHeight;
+            
+            card.Controls.Add(lblIdPatient = CreateLabel("Id Paciente:", y));
+            card.Controls.Add(txtIdPatient = CreateTextBox(y));
+            y += row;
 
-            lblGender = new Label { Text = "Género:", Left = leftCol, Top = y, Width = labelWidth };
-            txtGender = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
-            y += rowHeight;
+            card.Controls.Add(lblName = CreateLabel("Nombre:", y));
+            card.Controls.Add(txtName = CreateTextBox(y));
+            y += row;
 
-            lblDirection = new Label { Text = "Dirección:", Left = leftCol, Top = y, Width = labelWidth };
-            txtDirection = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
-            y += rowHeight + 6;
+            card.Controls.Add(lblEmail = CreateLabel("Correo:", y));
+            card.Controls.Add(txtEmail = CreateTextBox(y));
+            y += row;
 
-            // Controles de contacto de emergencia (agregados)
-            lblContactName = new Label { Text = "Nombre Contacto:", Left = leftCol, Top = y, Width = labelWidth };
-            txtContactName = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
-            y += rowHeight;
+            card.Controls.Add(lblCellphone = CreateLabel("Teléfono:", y));
+            card.Controls.Add(txtCellphone = CreateTextBox(y));
+            y += row;
 
-            lblContactRelation = new Label { Text = "Relación Contacto:", Left = leftCol, Top = y, Width = labelWidth };
-            txtContactRelation = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
-            y += rowHeight;
+            card.Controls.Add(lblBirth = CreateLabel("Fecha Nacimiento:", y));
+            dtpBirth = new DateTimePicker
+            {
+                Left = 210,
+                Top = y - 4,
+                Width = 160,
+                Format = DateTimePickerFormat.Short
+            };
+            card.Controls.Add(dtpBirth);
+            y += row;
 
-            lblContactPhone = new Label { Text = "Telófono Contacto:", Left = leftCol, Top = y, Width = labelWidth };
-            txtContactPhone = new TextBox { Left = inputLeft, Top = y - 4, Width = inputWidth };
-            y += rowHeight + 6;
+            card.Controls.Add(lblGender = CreateLabel("Género:", y));
+            card.Controls.Add(txtGender = CreateTextBox(y));
+            y += row;
 
-            btnRegister = new Button { Text = "Registrar", Left = leftCol + 10, Top = y, Width = 120 };
-            btnUpdate = new Button { Text = "Actualizar", Left = leftCol + 150, Top = y, Width = 120 };
-            btnGet = new Button { Text = "Obtener por Id", Left = leftCol + 290, Top = y, Width = 120 };
+            card.Controls.Add(lblDirection = CreateLabel("Dirección:", y));
+            card.Controls.Add(txtDirection = CreateTextBox(y));
+            y += row + 12;
 
-            // Botón regresar agregado
-            btnBack = new Button { Text = "Regresar", Left = leftCol + 420, Top = y, Width = 80 };
-            btnBack.Click += (_, _) => Close();
+            var contactTitle = new Label
+            {
+                Text = "Contacto de Emergencia",
+                Left = 22,
+                Top = y,
+                Font = new Font("Segoe UI", 12, FontStyle.Bold),
+                ForeColor = Color.FromArgb(40, 80, 140),
+                AutoSize = true
+            };
+            card.Controls.Add(contactTitle);
+            y += row;
+
+            card.Controls.Add(lblContactName = CreateLabel("Nombre Contacto:", y));
+            card.Controls.Add(txtContactName = CreateTextBox(y));
+            y += row;
+
+            card.Controls.Add(lblContactRelation = CreateLabel("Relación:", y));
+            card.Controls.Add(txtContactRelation = CreateTextBox(y));
+            y += row;
+
+            card.Controls.Add(lblContactPhone = CreateLabel("Teléfono Contacto:", y));
+            card.Controls.Add(txtContactPhone = CreateTextBox(y));
+            y += row + 20;
+
+            
+            Button CreateButton(string text, int left)
+            {
+                return new Button
+                {
+                    Text = text,
+                    Left = left,
+                    Top = y,
+                    Width = 180,
+                    Height = 40,
+                    BackColor = Color.FromArgb(70, 130, 180),
+                    ForeColor = Color.White,
+                    FlatStyle = FlatStyle.Flat,
+                    Font = new Font("Segoe UI Semibold", 10)
+                };
+            }
+
+            btnRegister = CreateButton("Registrar", 25);
+            btnUpdate = CreateButton("Actualizar", 225);
+            btnGet = CreateButton("Buscar por ID", 425);
+
+            card.Controls.Add(btnRegister);
+            card.Controls.Add(btnUpdate);
+            card.Controls.Add(btnGet);
+
+            y += 60; 
+
+            
+            btnBack = new Button
+            {
+                Text = "⟵ Regresar al menú principal",
+                Left = 25,
+                Top = y,
+                Width = 250,
+                Height = 45,
+                BackColor = Color.LightGray,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 11)
+            };
+
+            btnBack.Click += (_, _) =>
+            {
+                this.Close();
+                _mainMenu.Show();
+            };
+
+            card.Controls.Add(btnBack);
 
             btnRegister.Click += BtnRegister_Click;
             btnUpdate.Click += BtnUpdate_Click;
             btnGet.Click += BtnGet_Click;
-
-            Controls.AddRange(new Control[]
-            {
-                lblIdPatient, txtIdPatient,
-                lblName, txtName,
-                lblEmail, txtEmail,
-                lblCellphone, txtCellphone,
-                lblBirth, dtpBirth,
-                lblGender, txtGender,
-                lblDirection, txtDirection,
-                // controls de contacto
-                lblContactName, txtContactName,
-                lblContactRelation, txtContactRelation,
-                lblContactPhone, txtContactPhone,
-                btnRegister, btnUpdate, btnGet, btnBack
-            });
         }
 
-        private void BtnRegister_Click(object sender, EventArgs e)
-        {
-            var patient = BuildPatientFromInputs();
-            try
-            {
-                _useCase.RegisterPatient(patient);
-                MessageBox.Show("Paciente registrado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al registrar: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
@@ -176,7 +240,7 @@ namespace Hospital
                 dtpBirth.Value = found.Birth == default ? DateTime.Today : found.Birth;
                 txtDirection.Text = found.Direction ?? "";
 
-                // Mostrar el género desde el wrapper Person (ahora es TextBox)
+                
                 txtGender.Text = found.Gender1?.Gender ?? "";
 
                 // Si hay contacto, rellenar los campos nuevos
@@ -273,6 +337,20 @@ namespace Hospital
         private void AdministrativeForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnRegister_Click(object sender, EventArgs e)
+        {
+            var patient = BuildPatientFromInputs();
+            try
+            {
+                _useCase.RegisterPatient(patient);
+                MessageBox.Show("Paciente registrado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al registrar: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

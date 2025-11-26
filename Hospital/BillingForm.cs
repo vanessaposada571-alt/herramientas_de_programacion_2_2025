@@ -89,122 +89,149 @@ namespace Hospital
 
         private void InitializeComponent()
         {
-            Text = "Facturación";
+            // Ventana principal
+            Text = "Facturación – Hospital PB";
             StartPosition = FormStartPosition.CenterScreen;
-            Size = new Size(820, 680);
+            Width = 900;
+            Height = 700;
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
+            BackColor = Color.FromArgb(245, 248, 255);
 
-            int left = 12;
-            int top = 12;
-            int labelW = 140;
-            int inputLeft = left + labelW + 8;
-            int inputW = 620;
-            int rowH = 30;
+            // Panel principal
+            var mainPanel = new Panel
+            {
+                Left = 20,
+                Top = 20,
+                Width = 840,
+                Height = 620,
+                BackColor = Color.White,
+                BorderStyle = BorderStyle.FixedSingle
+            };
+            Controls.Add(mainPanel);
 
-            // Paciente
-            lblPatientName = new Label { Text = "Nombre paciente:", Left = left, Top = top, Width = labelW };
-            txtPatientName = new TextBox { Left = inputLeft, Top = top - 4, Width = inputW };
-            top += rowH;
+            int labelW = 140, inputW = 220, rowH = 32, col1 = 20, col2 = 180, col3 = 440, y = 20;
 
-            lblAge = new Label { Text = "Edad:", Left = left, Top = top, Width = labelW };
-            numAge = new NumericUpDown { Left = inputLeft, Top = top - 6, Width = 80, Minimum = 0, Maximum = 150 };
-            lblCedula = new Label { Text = "Cédula:", Left = inputLeft + 100, Top = top, Width = 60 };
-            txtCedula = new TextBox { Left = inputLeft + 160, Top = top - 4, Width = 200 };
-            // Buscar automáticamente cuando el usuario presione Enter en el textbox
+            // Datos del paciente
+            var header = new Label
+            {
+                Text = "FACTURACIÓN DE SERVICIOS",
+                ForeColor = Color.FromArgb(30, 60, 100),
+                Font = new Font("Segoe UI", 20, FontStyle.Bold),
+                AutoSize = false,
+                TextAlign = ContentAlignment.MiddleCenter,
+                Dock = DockStyle.Top,
+                Height = 60,
+                BackColor = Color.FromArgb(230, 235, 250)
+            };
+            Controls.Add(header);
+
+            mainPanel.Controls.AddRange(new Control[]
+            {
+                new Label { Text = "Nombre paciente:", Left = col1, Top = y, Width = labelW },
+                txtPatientName = new TextBox { Left = col2, Top = y - 2, Width = inputW },
+                new Label { Text = "Edad:", Left = col3, Top = y, Width = 50 },
+                numAge = new NumericUpDown { Left = col3 + 60, Top = y - 2, Width = 60, Minimum = 0, Maximum = 150 },
+            });
+            y += rowH;
+
+            mainPanel.Controls.AddRange(new Control[]
+            {
+                new Label { Text = "Cédula:", Left = col1, Top = y, Width = labelW },
+                txtCedula = new TextBox { Left = col2, Top = y - 2, Width = inputW },
+                new Label { Text = "Médico tratante:", Left = col3, Top = y, Width = 120 },
+                txtDoctorName = new TextBox { Left = col3 + 130, Top = y - 2, Width = inputW }
+            });
             txtCedula.KeyDown += TxtCedula_KeyDown;
             txtCedula.Leave += TxtCedula_Leave;
+            y += rowH;
 
-            top += rowH;
+            mainPanel.Controls.AddRange(new Control[]
+            {
+                new Label { Text = "Compañía seguro:", Left = col1, Top = y, Width = labelW },
+                txtInsuranceCompany = new TextBox { Left = col2, Top = y - 2, Width = inputW },
+                new Label { Text = "Nº Póliza:", Left = col3, Top = y, Width = 70 },
+                txtPolicyNumber = new TextBox { Left = col3 + 80, Top = y - 2, Width = 120 }
+            });
+            y += rowH;
 
-            // Médico
-            lblDoctorName = new Label { Text = "Nombre médico:", Left = left, Top = top, Width = labelW };
-            txtDoctorName = new TextBox { Left = inputLeft, Top = top - 4, Width = inputW };
-            top += rowH;
+            mainPanel.Controls.AddRange(new Control[]
+            {
+                new Label { Text = "Días vigencia:", Left = col1, Top = y, Width = labelW },
+                numPolicyDays = new NumericUpDown { Left = col2, Top = y - 2, Width = 80, Minimum = 0, Maximum = 3650 },
+                new Label { Text = "Fecha fin póliza:", Left = col3, Top = y, Width = 120 },
+                dtpPolicyEnd = new DateTimePicker { Left = col3 + 130, Top = y - 2, Width = 120, Format = DateTimePickerFormat.Short }
+            });
+            y += rowH + 10;
 
-            // Seguro
-            lblInsuranceCompany = new Label { Text = "Compañía seguro:", Left = left, Top = top, Width = labelW };
-            txtInsuranceCompany = new TextBox { Left = inputLeft, Top = top - 4, Width = 360 };
-            lblPolicyNumber = new Label { Text = "Nº Póliza:", Left = inputLeft + 380, Top = top, Width = 70 };
-            txtPolicyNumber = new TextBox { Left = inputLeft + 460, Top = top - 4, Width = 180 };
-            top += rowH;
-
-            lblPolicyDays = new Label { Text = "Días vigencia:", Left = left, Top = top, Width = labelW };
-            numPolicyDays = new NumericUpDown { Left = inputLeft, Top = top - 6, Width = 80, Minimum = 0, Maximum = 3650 };
-            lblPolicyEnd = new Label { Text = "Fecha fin póliza:", Left = inputLeft + 100, Top = top, Width = 120 };
-            dtpPolicyEnd = new DateTimePicker { Left = inputLeft + 230, Top = top - 6, Width = 200, Format = DateTimePickerFormat.Short };
-            top += rowH + 6;
-
-            // Amount
-            lblAmount = new Label { Text = "Importe (total):", Left = left, Top = top, Width = labelW };
-            txtAmount = new TextBox { Left = inputLeft, Top = top - 4, Width = 200, ReadOnly = true };
-
-            // Copagos acumulados año (para regla anual)
-            lblPreviousCopay = new Label { Text = "Copagos acumulados (año):", Left = inputLeft + 220, Top = top, Width = 180 };
-            numPreviousCopay = new NumericUpDown { Left = inputLeft + 420, Top = top - 6, Width = 120, Minimum = 0, Maximum = 10_000_000, Increment = 50_000 };
-
-            top += rowH + 6;
+            // Listas y controles de órdenes, medicamentos y procedimientos
+            int listH = 90;
 
             // Órdenes diagnósticas
-            lblDiagnostics = new Label { Text = "Órdenes (Ayuda diagnóstica):", Left = left, Top = top, Width = 220 };
-            lstDiagnostics = new ListBox { Left = inputLeft, Top = top - 4, Width = 360, Height = 120 };
-            txtAddDiagnostic = new TextBox { Left = inputLeft + 370, Top = top - 4, Width = 220 };
-            btnAddDiagnostic = new Button { Text = "Agregar", Left = inputLeft + 370, Top = top + 30, Width = 100 };
-            btnRemoveDiagnostic = new Button { Text = "Quitar", Left = inputLeft + 490, Top = top + 30, Width = 100 };
+            mainPanel.Controls.AddRange(new Control[]
+            {
+                lblDiagnostics = new Label { Text = "Órdenes diagnósticas:", Left = col1, Top = y, Width = labelW + 40 },
+                lstDiagnostics = new ListBox { Left = col2, Top = y, Width = inputW, Height = listH },
+                txtAddDiagnostic = new TextBox { Left = col2 + inputW + 10, Top = y, Width = 120 },
+                btnAddDiagnostic = new Button { Text = "Cargar", Left = col2 + inputW + 135, Top = y, Width = 60 },
+                btnRemoveDiagnostic = new Button { Text = "Borrar", Left = col2 + inputW + 200, Top = y, Width = 60 }
+            });
             btnAddDiagnostic.Click += (_, _) => AddToList(lstDiagnostics, txtAddDiagnostic);
             btnRemoveDiagnostic.Click += (_, _) => RemoveSelectedFromList(lstDiagnostics);
-            top += 130;
+            y += listH + 10;
 
             // Medicamentos
-            lblMedicines = new Label { Text = "Medicamentos (formato: Nombre;Costo;Dosis):", Left = left, Top = top, Width = 300 };
-            lstMedicines = new ListBox { Left = inputLeft, Top = top - 4, Width = 360, Height = 120 };
-            txtAddMedicine = new TextBox { Left = inputLeft + 370, Top = top - 4, Width = 220 };
-            btnAddMedicine = new Button { Text = "Agregar", Left = inputLeft + 370, Top = top + 30, Width = 100 };
-            btnRemoveMedicine = new Button { Text = "Quitar", Left = inputLeft + 490, Top = top + 30, Width = 100 };
+            mainPanel.Controls.AddRange(new Control[]
+            {
+                lblMedicines = new Label { Text = "Medicamentos (Nombre;Costo;Dosis):", Left = col1, Top = y, Width = labelW + 80 },
+                lstMedicines = new ListBox { Left = col2, Top = y, Width = inputW, Height = listH },
+                txtAddMedicine = new TextBox { Left = col2 + inputW + 10, Top = y, Width = 120 },
+                btnAddMedicine = new Button { Text = "Cargar", Left = col2 + inputW + 135, Top = y, Width = 60 },
+                btnRemoveMedicine = new Button { Text = "Borrar", Left = col2 + inputW + 200, Top = y, Width = 60 }
+            });
             btnAddMedicine.Click += (_, _) => AddToList(lstMedicines, txtAddMedicine);
             btnRemoveMedicine.Click += (_, _) => RemoveSelectedFromList(lstMedicines);
-            top += 130;
+            y += listH + 10;
 
             // Procedimientos
-            lblProcedures = new Label { Text = "Procedimientos (formato: Nombre;Costo):", Left = left, Top = top, Width = 300 };
-            lstProcedures = new ListBox { Left = inputLeft, Top = top - 4, Width = 360, Height = 120 };
-            txtAddProcedure = new TextBox { Left = inputLeft + 370, Top = top - 4, Width = 220 };
-            btnAddProcedure = new Button { Text = "Agregar", Left = inputLeft + 370, Top = top + 30, Width = 100 };
-            btnRemoveProcedure = new Button { Text = "Quitar", Left = inputLeft + 490, Top = top + 30, Width = 100 };
+            mainPanel.Controls.AddRange(new Control[]
+            {
+                lblProcedures = new Label { Text = "Procedimientos (Nombre;Costo):", Left = col1, Top = y, Width = labelW + 60 },
+                lstProcedures = new ListBox { Left = col2, Top = y, Width = inputW, Height = listH },
+                txtAddProcedure = new TextBox { Left = col2 + inputW + 10, Top = y, Width = 120 },
+                btnAddProcedure = new Button { Text = "Cargar", Left = col2 + inputW + 135, Top = y, Width = 60 },
+                btnRemoveProcedure = new Button { Text = "Borrar", Left = col2 + inputW + 200, Top = y, Width = 60 }
+            });
             btnAddProcedure.Click += (_, _) => AddToList(lstProcedures, txtAddProcedure);
             btnRemoveProcedure.Click += (_, _) => RemoveSelectedFromList(lstProcedures);
-            top += 150;
+            y += listH + 20;
 
-            // Botones
-            btnSave = new Button { Text = "Registrar", Left = left + 8, Top = top, Width = 120 };
-            btnUpdate = new Button { Text = "Actualizar", Left = left + 140, Top = top, Width = 120 };
-            btnFind = new Button { Text = "Buscar por cédula", Left = left + 272, Top = top, Width = 140 };
-            btnCalculate = new Button { Text = "Calcular cobros", Left = left + 420, Top = top, Width = 120 };
-            btnSaveInvoice = new Button { Text = "Guardar factura", Left = left + 560, Top = top, Width = 120 };
-            btnClose = new Button { Text = "Cerrar", Left = left + 700, Top = top, Width = 80 };
-            btnBack = new Button { Text = "Atrás", Left = left + 700, Top = top + 44, Width = 80 };
+            // Importe y copago
+            mainPanel.Controls.AddRange(new Control[]
+            {
+                new Label { Text = "Importe (total):", Left = col1, Top = y, Width = labelW },
+                txtAmount = new TextBox { Left = col2, Top = y - 2, Width = 120, ReadOnly = true },
+                new Label { Text = "Copagos acumulados (año):", Left = col3, Top = y, Width = 180 },
+                numPreviousCopay = new NumericUpDown { Left = col3 + 190, Top = y - 2, Width = 120, Minimum = 0, Maximum = 10_000_000, Increment = 50_000 }
+            });
+            y += rowH + 10;
 
+            // Botones de acción
+            mainPanel.Controls.AddRange(new Control[]
+            {
+                btnSave = new Button { Text = "Registrar", Left = col1, Top = y, Width = 110 },
+                btnUpdate = new Button { Text = "Actualizar", Left = col1 + 120, Top = y, Width = 110 },
+                btnFind = new Button { Text = "Buscar por cédula", Left = col1 + 240, Top = y, Width = 140 },
+                btnCalculate = new Button { Text = "Calcular cobros", Left = col1 + 390, Top = y, Width = 120 },
+                btnSaveInvoice = new Button { Text = "Guardar factura", Left = col1 + 520, Top = y, Width = 140 },
+                btnBack = new Button { Text = "Atrás", Left = col1 + 670, Top = y, Width = 80 }
+            });
             btnSave.Click += BtnSave_Click;
             btnUpdate.Click += BtnUpdate_Click;
             btnFind.Click += BtnFind_Click;
             btnCalculate.Click += BtnCalculate_Click;
             btnSaveInvoice.Click += BtnSaveInvoice_Click;
-            btnClose.Click += (_, _) => Close();
-            btnBack.Click += (_, _) => Close(); // acción atrás: cerrar el formulario
-
-            Controls.AddRange(new Control[]
-            {
-                lblPatientName, txtPatientName,
-                lblAge, numAge, lblCedula, txtCedula,
-                lblDoctorName, txtDoctorName,
-                lblInsuranceCompany, txtInsuranceCompany, lblPolicyNumber, txtPolicyNumber,
-                lblPolicyDays, numPolicyDays, lblPolicyEnd, dtpPolicyEnd,
-                lblAmount, txtAmount, lblPreviousCopay, numPreviousCopay,
-                lblDiagnostics, lstDiagnostics, txtAddDiagnostic, btnAddDiagnostic, btnRemoveDiagnostic,
-                lblMedicines, lstMedicines, txtAddMedicine, btnAddMedicine, btnRemoveMedicine,
-                lblProcedures, lstProcedures, txtAddProcedure, btnAddProcedure, btnRemoveProcedure,
-                btnSave, btnUpdate, btnFind, btnCalculate, btnSaveInvoice, btnClose, btnBack
-            });
+            btnBack.Click += (_, _) => Close();
         }
 
         private void AddToList(ListBox list, TextBox input)
